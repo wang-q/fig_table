@@ -1,0 +1,65 @@
+---
+charts:
+  S288Cvsself_spo11hot_center_intact.ofg.chart.xls:
+    ofg_all:
+      3:
+        - 0
+        - 0
+      4:
+        - 1
+        - 0
+  S288CvsVIII_WGS_spo11hot_center_intact.ofg.chart.xls:
+    ofg_all:
+      2:
+        - 2
+        - 0
+  AthvsLer_0_gcco_center_intact.ofg.chart.xls:
+    ofg_all:
+      3:
+        - 0
+        - 1
+      4:
+        - 1
+        - 1
+  AthvsXIX_gcco_center_intact.ofg.chart.xls:
+    ofg_all:
+      2:
+        - 2
+        - 1
+texts:
+  - text: a
+    size: 12
+    bold: 1
+    pos:
+      - 0
+      - -0.05
+  - text: b
+    size: 12
+    bold: 1
+    pos:
+      - 0
+      - 0.95
+  - text: Spo11 hotspots in S288C
+    size: 7
+    bold: 0
+    pos:
+      - 0.1
+      - -0.05
+  - text: Spo11 hotspots mapping to 8 yeast lines
+    size: 7
+    bold: 0
+    pos:
+      - 1.9
+      - -0.05
+  - text: DSBs in Arabidopsis Col-0 and Ler-0
+    size: 7
+    bold: 0
+    pos:
+      - 0.1
+      - 0.95
+  - text: DSBs mapping to 19 Arabidopsis lines
+    size: 7
+    bold: 0
+    pos:
+      - 1.9
+      - 0.95

@@ -1,0 +1,1995 @@
+---
+charts:
+  Humanvsself_BED_cells_TFBS_SPP.antibody.ofg.chart.xlsx:
+    ofg_type_AP2ALPHA:
+      1:
+        - 0
+        - 0
+    ofg_type_AP2GAMMA:
+      1:
+        - 1
+        - 0
+    ofg_type_ATF3:
+      1:
+        - 2
+        - 0
+    ofg_type_BAF155:
+      1:
+        - 3
+        - 0
+    ofg_type_BAF170:
+      1:
+        - 0
+        - 1
+    ofg_type_BATF:
+      1:
+        - 1
+        - 1
+    ofg_type_BCL11A:
+      1:
+        - 2
+        - 1
+    ofg_type_BCL3:
+      1:
+        - 3
+        - 1
+    ofg_type_BCLAF1:
+      1:
+        - 0
+        - 2
+    ofg_type_BHLHE40:
+      1:
+        - 1
+        - 2
+    ofg_type_BRCA1:
+      1:
+        - 2
+        - 2
+    ofg_type_BRG1:
+      1:
+        - 3
+        - 2
+    ofg_type_CCNT2:
+      1:
+        - 0
+        - 3
+    ofg_type_CEBPB:
+      1:
+        - 1
+        - 3
+    ofg_type_CFOS:
+      1:
+        - 2
+        - 3
+    ofg_type_CHD2:
+      1:
+        - 3
+        - 3
+    ofg_type_CJUN:
+      1:
+        - 0
+        - 4
+    ofg_type_CMYC:
+      1:
+        - 1
+        - 4
+    ofg_type_CTBP2:
+      1:
+        - 2
+        - 4
+    ofg_type_CTCF:
+      1:
+        - 3
+        - 4
+    ofg_type_CTCFc:
+      1:
+        - 0
+        - 5
+    ofg_type_CTCFL:
+      1:
+        - 1
+        - 5
+    ofg_type_E2F1:
+      1:
+        - 2
+        - 5
+    ofg_type_E2F4:
+      1:
+        - 3
+        - 5
+    ofg_type_E2F6:
+      1:
+        - 0
+        - 6
+    ofg_type_EBF:
+      1:
+        - 1
+        - 6
+    ofg_type_EBF1:
+      1:
+        - 2
+        - 6
+    ofg_type_EGR1:
+      1:
+        - 3
+        - 6
+    ofg_type_ELF1:
+      1:
+        - 0
+        - 7
+    ofg_type_ELK4:
+      1:
+        - 1
+        - 7
+    ofg_type_ETS1:
+      1:
+        - 2
+        - 7
+    ofg_type_FOSe:
+      1:
+        - 3
+        - 7
+    ofg_type_FOSL1:
+      1:
+        - 0
+        - 8
+    ofg_type_FOSL2:
+      1:
+        - 1
+        - 8
+    ofg_type_FOXA1:
+      1:
+        - 2
+        - 8
+    ofg_type_FOXA2:
+      1:
+        - 3
+        - 8
+    ofg_type_GABP:
+      1:
+        - 0
+        - 9
+    ofg_type_GATA1:
+      1:
+        - 1
+        - 9
+    ofg_type_GATA2:
+      1:
+        - 2
+        - 9
+    ofg_type_GATA2e:
+      1:
+        - 3
+        - 9
+    ofg_type_GR:
+      1:
+        - 0
+        - 10
+    ofg_type_GTF2B:
+      1:
+        - 1
+        - 10
+    ofg_type_GTF2F1:
+      1:
+        - 2
+        - 10
+    ofg_type_HAE2F1:
+      1:
+        - 3
+        - 10
+    ofg_type_HDAC2SC6296:
+      1:
+        - 0
+        - 11
+    ofg_type_HMGN3:
+      1:
+        - 1
+        - 11
+    ofg_type_HNF4A:
+      1:
+        - 2
+        - 11
+    ofg_type_HNF4G:
+      1:
+        - 3
+        - 11
+    ofg_type_INI1:
+      1:
+        - 0
+        - 12
+    ofg_type_IRF1:
+      1:
+        - 1
+        - 12
+    ofg_type_IRF3:
+      1:
+        - 2
+        - 12
+    ofg_type_IRF4:
+      1:
+        - 3
+        - 12
+    ofg_type_JUNBe:
+      1:
+        - 0
+        - 13
+    ofg_type_JUND:
+      1:
+        - 1
+        - 13
+    ofg_type_JUNDe:
+      1:
+        - 2
+        - 13
+    ofg_type_KAP1:
+      1:
+        - 3
+        - 13
+    ofg_type_MAFF:
+      1:
+        - 0
+        - 14
+    ofg_type_MAFK:
+      1:
+        - 1
+        - 14
+    ofg_type_MAFKb:
+      1:
+        - 2
+        - 14
+    ofg_type_MAX:
+      1:
+        - 3
+        - 14
+    ofg_type_MEF2A:
+      1:
+        - 0
+        - 15
+    ofg_type_MEF2C:
+      1:
+        - 1
+        - 15
+    ofg_type_Mxi1:
+      1:
+        - 2
+        - 15
+    ofg_type_NANOG:
+      1:
+        - 3
+        - 15
+    ofg_type_NFE2:
+      1:
+        - 0
+        - 16
+    ofg_type_NFKB:
+      1:
+        - 1
+        - 16
+    ofg_type_NFYA:
+      1:
+        - 2
+        - 16
+    ofg_type_NFYB:
+      1:
+        - 3
+        - 16
+    ofg_type_NRF1:
+      1:
+        - 0
+        - 17
+    ofg_type_NRSF:
+      1:
+        - 1
+        - 17
+    ofg_type_Oct-2:
+      1:
+        - 2
+        - 17
+    ofg_type_P300:
+      1:
+        - 3
+        - 17
+    ofg_type_PAX5:
+      1:
+        - 0
+        - 18
+    ofg_type_PAX5b:
+      1:
+        - 1
+        - 18
+    ofg_type_PBX3:
+      1:
+        - 2
+        - 18
+    ofg_type_POL2:
+      1:
+        - 3
+        - 18
+    ofg_type_POL24H8:
+      1:
+        - 0
+        - 19
+    ofg_type_POL2S2:
+      1:
+        - 1
+        - 19
+    ofg_type_POU2F2:
+      1:
+        - 2
+        - 19
+    ofg_type_POU5F1:
+      1:
+        - 3
+        - 19
+    ofg_type_PRDM1:
+      1:
+        - 0
+        - 20
+    ofg_type_PU1:
+      1:
+        - 1
+        - 20
+    ofg_type_RAD21:
+      1:
+        - 2
+        - 20
+    ofg_type_RFX5:
+      1:
+        - 3
+        - 20
+    ofg_type_RPC155:
+      1:
+        - 0
+        - 21
+    ofg_type_RXRA:
+      1:
+        - 1
+        - 21
+    ofg_type_SETDB1:
+      1:
+        - 2
+        - 21
+    ofg_type_SIN3AK20:
+      1:
+        - 3
+        - 21
+    ofg_type_SIRT6:
+      1:
+        - 0
+        - 22
+    ofg_type_SIX5:
+      1:
+        - 1
+        - 22
+    ofg_type_SMC3:
+      1:
+        - 2
+        - 22
+    ofg_type_SP1:
+      1:
+        - 3
+        - 22
+    ofg_type_SP2:
+      1:
+        - 0
+        - 23
+    ofg_type_SREBP1:
+      1:
+        - 1
+        - 23
+    ofg_type_SRF:
+      1:
+        - 2
+        - 23
+    ofg_type_STAT1:
+      1:
+        - 3
+        - 23
+    ofg_type_STAT2:
+      1:
+        - 0
+        - 24
+    ofg_type_STAT3:
+      1:
+        - 1
+        - 24
+    ofg_type_SUZ12:
+      1:
+        - 2
+        - 24
+    ofg_type_TAF1:
+      1:
+        - 3
+        - 24
+    ofg_type_TAF7:
+      1:
+        - 0
+        - 25
+    ofg_type_TAL1:
+      1:
+        - 1
+        - 25
+    ofg_type_TBP:
+      1:
+        - 2
+        - 25
+    ofg_type_TCF12:
+      1:
+        - 3
+        - 25
+    ofg_type_TF3C110:
+      1:
+        - 0
+        - 26
+    ofg_type_THAP1:
+      1:
+        - 1
+        - 26
+    ofg_type_TR4:
+      1:
+        - 2
+        - 26
+    ofg_type_USF1:
+      1:
+        - 3
+        - 26
+    ofg_type_USF2:
+      1:
+        - 0
+        - 27
+    ofg_type_WHIP:
+      1:
+        - 1
+        - 27
+    ofg_type_YY1:
+      1:
+        - 2
+        - 27
+    ofg_type_YY1SC281:
+      1:
+        - 3
+        - 27
+    ofg_type_ZBTB33:
+      1:
+        - 0
+        - 28
+    ofg_type_ZBTB7A:
+      1:
+        - 1
+        - 28
+    ofg_type_ZEB1:
+      1:
+        - 2
+        - 28
+    ofg_type_ZNF143:
+      1:
+        - 3
+        - 28
+    ofg_type_ZNF263:
+      1:
+        - 0
+        - 29
+texts:
+  - text: AP2ALPHA
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - -0.05
+  - text: AP2GAMMA
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - -0.05
+  - text: ATF3
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - -0.05
+  - text: BAF155
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - -0.05
+  - text: BAF170
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 0.95
+  - text: BATF
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 0.95
+  - text: BCL11A
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 0.95
+  - text: BCL3
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 0.95
+  - text: BCLAF1
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 1.95
+  - text: BHLHE40
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 1.95
+  - text: BRCA1
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 1.95
+  - text: BRG1
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 1.95
+  - text: CCNT2
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 2.95
+  - text: CEBPB
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 2.95
+  - text: CFOS
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 2.95
+  - text: CHD2
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 2.95
+  - text: CJUN
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 3.95
+  - text: CMYC
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 3.95
+  - text: CTBP2
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 3.95
+  - text: CTCF
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 3.95
+  - text: CTCFc
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 4.95
+  - text: CTCFL
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 4.95
+  - text: E2F1
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 4.95
+  - text: E2F4
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 4.95
+  - text: E2F6
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 5.95
+  - text: EBF
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 5.95
+  - text: EBF1
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 5.95
+  - text: EGR1
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 5.95
+  - text: ELF1
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 6.95
+  - text: ELK4
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 6.95
+  - text: ETS1
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 6.95
+  - text: FOSe
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 6.95
+  - text: FOSL1
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 7.95
+  - text: FOSL2
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 7.95
+  - text: FOXA1
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 7.95
+  - text: FOXA2
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 7.95
+  - text: GABP
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 8.95
+  - text: GATA1
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 8.95
+  - text: GATA2
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 8.95
+  - text: GATA2e
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 8.95
+  - text: GR
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 9.95
+  - text: GTF2B
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 9.95
+  - text: GTF2F1
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 9.95
+  - text: HAE2F1
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 9.95
+  - text: HDAC2SC6296
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 10.95
+  - text: HMGN3
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 10.95
+  - text: HNF4A
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 10.95
+  - text: HNF4G
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 10.95
+  - text: INI1
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 11.95
+  - text: IRF1
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 11.95
+  - text: IRF3
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 11.95
+  - text: IRF4
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 11.95
+  - text: JUNBe
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 12.95
+  - text: JUND
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 12.95
+  - text: JUNDe
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 12.95
+  - text: KAP1
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 12.95
+  - text: MAFF
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 13.95
+  - text: MAFK
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 13.95
+  - text: MAFKb
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 13.95
+  - text: MAX
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 13.95
+  - text: MEF2A
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 14.95
+  - text: MEF2C
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 14.95
+  - text: Mxi1
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 14.95
+  - text: NANOG
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 14.95
+  - text: NFE2
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 15.95
+  - text: NFKB
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 15.95
+  - text: NFYA
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 15.95
+  - text: NFYB
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 15.95
+  - text: NRF1
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 16.95
+  - text: NRSF
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 16.95
+  - text: Oct-2
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 16.95
+  - text: P300
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 16.95
+  - text: PAX5
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 17.95
+  - text: PAX5b
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 17.95
+  - text: PBX3
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 17.95
+  - text: POL2
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 17.95
+  - text: POL24H8
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 18.95
+  - text: POL2S2
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 18.95
+  - text: POU2F2
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 18.95
+  - text: POU5F1
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 18.95
+  - text: PRDM1
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 19.95
+  - text: PU1
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 19.95
+  - text: RAD21
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 19.95
+  - text: RFX5
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 19.95
+  - text: RPC155
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 20.95
+  - text: RXRA
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 20.95
+  - text: SETDB1
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 20.95
+  - text: SIN3AK20
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 20.95
+  - text: SIRT6
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 21.95
+  - text: SIX5
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 21.95
+  - text: SMC3
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 21.95
+  - text: SP1
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 21.95
+  - text: SP2
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 22.95
+  - text: SREBP1
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 22.95
+  - text: SRF
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 22.95
+  - text: STAT1
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 22.95
+  - text: STAT2
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 23.95
+  - text: STAT3
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 23.95
+  - text: SUZ12
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 23.95
+  - text: TAF1
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 23.95
+  - text: TAF7
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 24.95
+  - text: TAL1
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 24.95
+  - text: TBP
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 24.95
+  - text: TCF12
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 24.95
+  - text: TF3C110
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 25.95
+  - text: THAP1
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 25.95
+  - text: TR4
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 25.95
+  - text: USF1
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 25.95
+  - text: USF2
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 26.95
+  - text: WHIP
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 26.95
+  - text: YY1
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 26.95
+  - text: YY1SC281
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 26.95
+  - text: ZBTB33
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 27.95
+  - text: ZBTB7A
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 27.95
+  - text: ZEB1
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 27.95
+  - text: ZNF143
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 27.95
+  - text: ZNF263
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 28.95
+ranges:
+  Humanvsself_BED_cells_TFBS_SPP.antibody.ofg.chart.xlsx:
+    ofg_type_AP2ALPHA:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - -0.05
+    ofg_type_AP2GAMMA:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - -0.05
+    ofg_type_ATF3:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - -0.05
+    ofg_type_BAF155:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - -0.05
+    ofg_type_BAF170:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 0.95
+    ofg_type_BATF:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 0.95
+    ofg_type_BCL11A:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 0.95
+    ofg_type_BCL3:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 0.95
+    ofg_type_BCLAF1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 1.95
+    ofg_type_BHLHE40:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 1.95
+    ofg_type_BRCA1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 1.95
+    ofg_type_BRG1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 1.95
+    ofg_type_CCNT2:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 2.95
+    ofg_type_CEBPB:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 2.95
+    ofg_type_CFOS:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 2.95
+    ofg_type_CHD2:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 2.95
+    ofg_type_CJUN:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 3.95
+    ofg_type_CMYC:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 3.95
+    ofg_type_CTBP2:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 3.95
+    ofg_type_CTCF:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 3.95
+    ofg_type_CTCFc:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 4.95
+    ofg_type_CTCFL:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 4.95
+    ofg_type_E2F1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 4.95
+    ofg_type_E2F4:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 4.95
+    ofg_type_E2F6:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 5.95
+    ofg_type_EBF:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 5.95
+    ofg_type_EBF1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 5.95
+    ofg_type_EGR1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 5.95
+    ofg_type_ELF1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 6.95
+    ofg_type_ELK4:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 6.95
+    ofg_type_ETS1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 6.95
+    ofg_type_FOSe:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 6.95
+    ofg_type_FOSL1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 7.95
+    ofg_type_FOSL2:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 7.95
+    ofg_type_FOXA1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 7.95
+    ofg_type_FOXA2:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 7.95
+    ofg_type_GABP:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 8.95
+    ofg_type_GATA1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 8.95
+    ofg_type_GATA2:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 8.95
+    ofg_type_GATA2e:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 8.95
+    ofg_type_GR:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 9.95
+    ofg_type_GTF2B:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 9.95
+    ofg_type_GTF2F1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 9.95
+    ofg_type_HAE2F1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 9.95
+    ofg_type_HDAC2SC6296:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 10.95
+    ofg_type_HMGN3:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 10.95
+    ofg_type_HNF4A:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 10.95
+    ofg_type_HNF4G:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 10.95
+    ofg_type_INI1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 11.95
+    ofg_type_IRF1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 11.95
+    ofg_type_IRF3:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 11.95
+    ofg_type_IRF4:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 11.95
+    ofg_type_JUNBe:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 12.95
+    ofg_type_JUND:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 12.95
+    ofg_type_JUNDe:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 12.95
+    ofg_type_KAP1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 12.95
+    ofg_type_MAFF:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 13.95
+    ofg_type_MAFK:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 13.95
+    ofg_type_MAFKb:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 13.95
+    ofg_type_MAX:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 13.95
+    ofg_type_MEF2A:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 14.95
+    ofg_type_MEF2C:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 14.95
+    ofg_type_Mxi1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 14.95
+    ofg_type_NANOG:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 14.95
+    ofg_type_NFE2:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 15.95
+    ofg_type_NFKB:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 15.95
+    ofg_type_NFYA:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 15.95
+    ofg_type_NFYB:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 15.95
+    ofg_type_NRF1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 16.95
+    ofg_type_NRSF:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 16.95
+    ofg_type_Oct-2:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 16.95
+    ofg_type_P300:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 16.95
+    ofg_type_PAX5:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 17.95
+    ofg_type_PAX5b:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 17.95
+    ofg_type_PBX3:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 17.95
+    ofg_type_POL2:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 17.95
+    ofg_type_POL24H8:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 18.95
+    ofg_type_POL2S2:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 18.95
+    ofg_type_POU2F2:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 18.95
+    ofg_type_POU5F1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 18.95
+    ofg_type_PRDM1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 19.95
+    ofg_type_PU1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 19.95
+    ofg_type_RAD21:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 19.95
+    ofg_type_RFX5:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 19.95
+    ofg_type_RPC155:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 20.95
+    ofg_type_RXRA:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 20.95
+    ofg_type_SETDB1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 20.95
+    ofg_type_SIN3AK20:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 20.95
+    ofg_type_SIRT6:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 21.95
+    ofg_type_SIX5:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 21.95
+    ofg_type_SMC3:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 21.95
+    ofg_type_SP1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 21.95
+    ofg_type_SP2:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 22.95
+    ofg_type_SREBP1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 22.95
+    ofg_type_SRF:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 22.95
+    ofg_type_STAT1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 22.95
+    ofg_type_STAT2:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 23.95
+    ofg_type_STAT3:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 23.95
+    ofg_type_SUZ12:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 23.95
+    ofg_type_TAF1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 23.95
+    ofg_type_TAF7:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 24.95
+    ofg_type_TAL1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 24.95
+    ofg_type_TBP:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 24.95
+    ofg_type_TCF12:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 24.95
+    ofg_type_TF3C110:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 25.95
+    ofg_type_THAP1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 25.95
+    ofg_type_TR4:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 25.95
+    ofg_type_USF1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 25.95
+    ofg_type_USF2:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 26.95
+    ofg_type_WHIP:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 26.95
+    ofg_type_YY1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 26.95
+    ofg_type_YY1SC281:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 26.95
+    ofg_type_ZBTB33:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 27.95
+    ofg_type_ZBTB7A:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 27.95
+    ofg_type_ZEB1:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 27.95
+    ofg_type_ZNF143:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 27.95
+    ofg_type_ZNF263:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 28.95

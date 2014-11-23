@@ -1,0 +1,208 @@
+---
+charts:
+  HumanvsRhesus.common.chart.xlsx:
+    combined_distance:
+      4:
+        - 0
+        - 0
+  HumanvsGibbon.common.chart.xlsx:
+    combined_distance:
+      4:
+        - 1
+        - 0
+  MousevsXIIS.multi.chart.xlsx:
+    combined_pigccv:
+      4:
+        - 0
+        - 1
+  MousevsSpretus_Ei.common.chart.xlsx:
+    combined_distance:
+      4:
+        - 1
+        - 1
+  DsimvsDsec.common.chart.xlsx:
+    combined_distance:
+      4:
+        - 0
+        - 2
+  DyakvsDere.common.chart.xlsx:
+    combined_distance:
+      4:
+        - 1
+        - 2
+  NipvsXXIV.multi.chart.xlsx:
+    combined_pigccv:
+      4:
+        - 0
+        - 3
+  Nipvs9311.common.chart.xlsx:
+    combined_distance:
+      4:
+        - 1
+        - 3
+  AthvsLyrata.common.chart.xlsx:
+    combined_distance:
+      4:
+        - 0
+        - 4
+  S288CvsSpar.common.chart.xlsx:
+    combined_distance:
+      4:
+        - 1
+        - 4
+  AfumvsNfis.common.chart.xlsx:
+    combined_distance:
+      4:
+        - 0
+        - 5
+  AoryvsAfla.common.chart.xlsx:
+    combined_distance:
+      4:
+        - 1
+        - 5
+texts:
+  - text: a
+    size: 12
+    bold: 1
+    pos:
+      - 0
+      - -0.05
+  - text: b
+    size: 12
+    bold: 1
+    pos:
+      - 1
+      - -0.05
+  - text: c
+    size: 12
+    bold: 1
+    pos:
+      - 0
+      - 0.95
+  - text: d
+    size: 12
+    bold: 1
+    pos:
+      - 1
+      - 0.95
+  - text: e
+    size: 12
+    bold: 1
+    pos:
+      - 0
+      - 1.95
+  - text: f
+    size: 12
+    bold: 1
+    pos:
+      - 1
+      - 1.95
+  - text: g
+    size: 12
+    bold: 1
+    pos:
+      - 0
+      - 2.95
+  - text: h
+    size: 12
+    bold: 1
+    pos:
+      - 1
+      - 2.95
+  - text: i
+    size: 12
+    bold: 1
+    pos:
+      - 0
+      - 3.95
+  - text: j
+    size: 12
+    bold: 1
+    pos:
+      - 1
+      - 3.95
+  - text: k
+    size: 12
+    bold: 1
+    pos:
+      - 0
+      - 4.95
+  - text: l
+    size: 12
+    bold: 1
+    pos:
+      - 1
+      - 4.95
+  - text: Human versus Rhesus
+    size: 7
+    bold: 1
+    pos:
+      - 0.1
+      - -0.05
+  - text: Human versus Gibbon
+    size: 7
+    bold: 1
+    pos:
+      - 1.1
+      - -0.05
+  - text: 12 mouse lines
+    size: 7
+    bold: 1
+    pos:
+      - 0.1
+      - 0.95
+  - text: Mouse versus M. spretus
+    size: 7
+    bold: 1
+    pos:
+      - 1.1
+      - 0.95
+  - text: D. simulans versus D. sechellia
+    size: 7
+    bold: 1
+    pos:
+      - 0.1
+      - 1.95
+  - text: D. yakuba versus D. erecta
+    size: 7
+    bold: 1
+    pos:
+      - 1.1
+      - 1.95
+  - text: 24 japonica rice lines
+    size: 7
+    bold: 1
+    pos:
+      - 0.1
+      - 2.95
+  - text: Nipponbare versus 93-11
+    size: 7
+    bold: 1
+    pos:
+      - 1.1
+      - 2.95
+  - text: A. thaliana versus A. lyrata
+    size: 7
+    bold: 1
+    pos:
+      - 0.1
+      - 3.95
+  - text: S. cerevisiae versus S. paradoxus
+    size: 7
+    bold: 1
+    pos:
+      - 1.1
+      - 3.95
+  - text: A. fumigatus versus N. fischeri
+    size: 7
+    bold: 1
+    pos:
+      - 0.1
+      - 4.95
+  - text: A. oryzae versus A. flavus
+    size: 7
+    bold: 1
+    pos:
+      - 1.1
+      - 4.95
+

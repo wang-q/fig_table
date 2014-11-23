@@ -1,0 +1,731 @@
+---
+autofit: A:J
+texts:
+  - text: "Species"
+    pos: A2:A3
+    merge: 1
+  - text: "No. of Genomes"
+    pos: B2:B3
+    merge: 1
+  - text: "GC-content"
+    pos: C2:C3
+    merge: 1
+  - text: "Aligned length (Mb)"
+    pos: D2:D3
+    merge: 1
+  - text: "Indels Per 100 bp"
+    pos: E2:E3
+    merge: 1
+  - text: "Substitutions Per 100 bp"
+    pos: F2:F3
+    merge: 1
+  - text: "Correlation coefficients (r) between"
+    pos: G2:J2
+    merge: 1
+  - text: "GC & D"
+    pos: G3
+  - text: "GC & Indel"
+    pos: H3
+  - text: "CV & D"
+    pos: I3
+  - text: "CV & Indel"
+    pos: J3
+  - text: "r_squared"
+    pos: K2:N2
+    merge: 1
+  - text: "GC & D"
+    pos: K3
+  - text: "GC & Indel"
+    pos: L3
+  - text: "CV & D"
+    pos: M3
+  - text: "CV & Indel"
+    pos: N3
+  - text: "p_value"
+    pos: O2:R2
+    merge: 1
+  - text: "GC & D"
+    pos: O3
+  - text: "GC & Indel"
+    pos: P3
+  - text: "CV & D"
+    pos: Q3
+  - text: "CV & Indel"
+    pos: R3
+  - text: "slope"
+    pos: S2:V2
+    merge: 1
+  - text: "GC & D"
+    pos: S3
+  - text: "GC & Indel"
+    pos: T3
+  - text: "CV & D"
+    pos: U3
+  - text: "CV & Indel"
+    pos: V3
+  - text: =CONCATENATE(IF(S4<0,"-",""),ROUND(SQRT(K4),3),IF(O4<0.01,"**",IF(O4<0.05,"*","")))
+    pos: G4
+  - text: Human, chimp, gorilla and orangutan
+    pos: A4
+  - text: 22 Drosophila lines
+    pos: A5
+  - text: 19 Arabidopsis lines
+    pos: A6
+  - text: 8 yeast lines
+    pos: A7
+  - text: Human versus Rhesus
+    pos: A8
+  - text: Human versus Gibbon
+    pos: A9
+  - text: 12 mouse lines
+    pos: A10
+  - text: Mouse versus M. spretus
+    pos: A11
+  - text: D. simulans versus D. sechellia
+    pos: A12
+  - text: D. yakuba versus D. erecta
+    pos: A13
+  - text: 24 japonica rice lines
+    pos: A14
+  - text: Nipponbare versus 93-11
+    pos: A15
+  - text: A. thaliana versus A. lyrata
+    pos: A16
+  - text: S. cerevisiae versus S. paradoxus
+    pos: A17
+  - text: A. fumigatus versus N. fischeri
+    pos: A18
+  - text: A. oryzae versus A. flavus
+    pos: A19
+borders:
+  - range: A2:J2
+    top: 1
+  - range: A3:J3
+    bottom: 1
+  - range: G2:J2
+    bottom: 1
+ranges:
+  HumanvsCGOR.multi.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B4
+      - copy: B8
+        paste: C4
+      - copy: B4
+        paste: D4
+      - copy: B5
+        paste: E4
+      - copy: B6
+        paste: F4
+  HumanvsCGOR.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K4
+      - copy: Q4
+        paste: O4
+      - copy: Q6
+        paste: S4
+      - copy: Q18
+        paste: L4
+      - copy: Q19
+        paste: P4
+      - copy: Q21
+        paste: T4
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M4
+      - copy: Q4
+        paste: Q4
+      - copy: Q6
+        paste: U4
+      - copy: Q18
+        paste: N4
+      - copy: Q19
+        paste: R4
+      - copy: Q21
+        paste: V4
+  DmelvsXXII.multi.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B5
+      - copy: B8
+        paste: C5
+      - copy: B4
+        paste: D5
+      - copy: B5
+        paste: E5
+      - copy: B6
+        paste: F5
+  DmelvsXXII.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K5
+      - copy: Q4
+        paste: O5
+      - copy: Q6
+        paste: S5
+      - copy: Q18
+        paste: L5
+      - copy: Q19
+        paste: P5
+      - copy: Q21
+        paste: T5
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M5
+      - copy: Q4
+        paste: Q5
+      - copy: Q6
+        paste: U5
+      - copy: Q18
+        paste: N5
+      - copy: Q19
+        paste: R5
+      - copy: Q21
+        paste: V5
+  AthvsXIX.multi.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B6
+      - copy: B8
+        paste: C6
+      - copy: B4
+        paste: D6
+      - copy: B5
+        paste: E6
+      - copy: B6
+        paste: F6
+  AthvsXIX.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K6
+      - copy: Q4
+        paste: O6
+      - copy: Q6
+        paste: S6
+      - copy: Q18
+        paste: L6
+      - copy: Q19
+        paste: P6
+      - copy: Q21
+        paste: T6
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M6
+      - copy: Q4
+        paste: Q6
+      - copy: Q6
+        paste: U6
+      - copy: Q18
+        paste: N6
+      - copy: Q19
+        paste: R6
+      - copy: Q21
+        paste: V6
+  S288CvsVIII_WGS.multi.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B7
+      - copy: B8
+        paste: C7
+      - copy: B4
+        paste: D7
+      - copy: B5
+        paste: E7
+      - copy: B6
+        paste: F7
+  S288CvsVIII_WGS.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K7
+      - copy: Q4
+        paste: O7
+      - copy: Q6
+        paste: S7
+      - copy: Q18
+        paste: L7
+      - copy: Q19
+        paste: P7
+      - copy: Q21
+        paste: T7
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M7
+      - copy: Q4
+        paste: Q7
+      - copy: Q6
+        paste: U7
+      - copy: Q18
+        paste: N7
+      - copy: Q19
+        paste: R7
+      - copy: Q21
+        paste: V7
+  HumanvsRhesus.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B8
+      - copy: B8
+        paste: C8
+      - copy: B4
+        paste: D8
+      - copy: B5
+        paste: E8
+      - copy: B6
+        paste: F8
+  HumanvsRhesus.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K8
+      - copy: Q4
+        paste: O8
+      - copy: Q6
+        paste: S8
+      - copy: Q18
+        paste: L8
+      - copy: Q19
+        paste: P8
+      - copy: Q21
+        paste: T8
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M8
+      - copy: Q4
+        paste: Q8
+      - copy: Q6
+        paste: U8
+      - copy: Q18
+        paste: N8
+      - copy: Q19
+        paste: R8
+      - copy: Q21
+        paste: V8
+  HumanvsGibbon.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B9
+      - copy: B8
+        paste: C9
+      - copy: B4
+        paste: D9
+      - copy: B5
+        paste: E9
+      - copy: B6
+        paste: F9
+  HumanvsGibbon.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K9
+      - copy: Q4
+        paste: O9
+      - copy: Q6
+        paste: S9
+      - copy: Q18
+        paste: L9
+      - copy: Q19
+        paste: P9
+      - copy: Q21
+        paste: T9
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M9
+      - copy: Q4
+        paste: Q9
+      - copy: Q6
+        paste: U9
+      - copy: Q18
+        paste: N9
+      - copy: Q19
+        paste: R9
+      - copy: Q21
+        paste: V9
+  MousevsXIIS.multi.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B10
+      - copy: B8
+        paste: C10
+      - copy: B4
+        paste: D10
+      - copy: B5
+        paste: E10
+      - copy: B6
+        paste: F10
+  MousevsXIIS.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K10
+      - copy: Q4
+        paste: O10
+      - copy: Q6
+        paste: S10
+      - copy: Q18
+        paste: L10
+      - copy: Q19
+        paste: P10
+      - copy: Q21
+        paste: T10
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M10
+      - copy: Q4
+        paste: Q10
+      - copy: Q6
+        paste: U10
+      - copy: Q18
+        paste: N10
+      - copy: Q19
+        paste: R10
+      - copy: Q21
+        paste: V10
+  MousevsSpretus_Ei.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B11
+      - copy: B8
+        paste: C11
+      - copy: B4
+        paste: D11
+      - copy: B5
+        paste: E11
+      - copy: B6
+        paste: F11
+  MousevsSpretus_Ei.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K11
+      - copy: Q4
+        paste: O11
+      - copy: Q6
+        paste: S11
+      - copy: Q18
+        paste: L11
+      - copy: Q19
+        paste: P11
+      - copy: Q21
+        paste: T11
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M11
+      - copy: Q4
+        paste: Q11
+      - copy: Q6
+        paste: U11
+      - copy: Q18
+        paste: N11
+      - copy: Q19
+        paste: R11
+      - copy: Q21
+        paste: V11
+  DsimvsDsec.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B12
+      - copy: B8
+        paste: C12
+      - copy: B4
+        paste: D12
+      - copy: B5
+        paste: E12
+      - copy: B6
+        paste: F12
+  DsimvsDsec.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K12
+      - copy: Q4
+        paste: O12
+      - copy: Q6
+        paste: S12
+      - copy: Q18
+        paste: L12
+      - copy: Q19
+        paste: P12
+      - copy: Q21
+        paste: T12
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M12
+      - copy: Q4
+        paste: Q12
+      - copy: Q6
+        paste: U12
+      - copy: Q18
+        paste: N12
+      - copy: Q19
+        paste: R12
+      - copy: Q21
+        paste: V12
+  DyakvsDere.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B13
+      - copy: B8
+        paste: C13
+      - copy: B4
+        paste: D13
+      - copy: B5
+        paste: E13
+      - copy: B6
+        paste: F13
+  DyakvsDere.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K13
+      - copy: Q4
+        paste: O13
+      - copy: Q6
+        paste: S13
+      - copy: Q18
+        paste: L13
+      - copy: Q19
+        paste: P13
+      - copy: Q21
+        paste: T13
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M13
+      - copy: Q4
+        paste: Q13
+      - copy: Q6
+        paste: U13
+      - copy: Q18
+        paste: N13
+      - copy: Q19
+        paste: R13
+      - copy: Q21
+        paste: V13
+  NipvsXXIV.multi.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B14
+      - copy: B8
+        paste: C14
+      - copy: B4
+        paste: D14
+      - copy: B5
+        paste: E14
+      - copy: B6
+        paste: F14
+  NipvsXXIV.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K14
+      - copy: Q4
+        paste: O14
+      - copy: Q6
+        paste: S14
+      - copy: Q18
+        paste: L14
+      - copy: Q19
+        paste: P14
+      - copy: Q21
+        paste: T14
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M14
+      - copy: Q4
+        paste: Q14
+      - copy: Q6
+        paste: U14
+      - copy: Q18
+        paste: N14
+      - copy: Q19
+        paste: R14
+      - copy: Q21
+        paste: V14
+  Nipvs9311.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B15
+      - copy: B8
+        paste: C15
+      - copy: B4
+        paste: D15
+      - copy: B5
+        paste: E15
+      - copy: B6
+        paste: F15
+  Nipvs9311.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K15
+      - copy: Q4
+        paste: O15
+      - copy: Q6
+        paste: S15
+      - copy: Q18
+        paste: L15
+      - copy: Q19
+        paste: P15
+      - copy: Q21
+        paste: T15
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M15
+      - copy: Q4
+        paste: Q15
+      - copy: Q6
+        paste: U15
+      - copy: Q18
+        paste: N15
+      - copy: Q19
+        paste: R15
+      - copy: Q21
+        paste: V15
+  AthvsLyrata.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B16
+      - copy: B8
+        paste: C16
+      - copy: B4
+        paste: D16
+      - copy: B5
+        paste: E16
+      - copy: B6
+        paste: F16
+  AthvsLyrata.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K16
+      - copy: Q4
+        paste: O16
+      - copy: Q6
+        paste: S16
+      - copy: Q18
+        paste: L16
+      - copy: Q19
+        paste: P16
+      - copy: Q21
+        paste: T16
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M16
+      - copy: Q4
+        paste: Q16
+      - copy: Q6
+        paste: U16
+      - copy: Q18
+        paste: N16
+      - copy: Q19
+        paste: R16
+      - copy: Q21
+        paste: V16
+  S288CvsSpar.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B17
+      - copy: B8
+        paste: C17
+      - copy: B4
+        paste: D17
+      - copy: B5
+        paste: E17
+      - copy: B6
+        paste: F17
+  S288CvsSpar.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K17
+      - copy: Q4
+        paste: O17
+      - copy: Q6
+        paste: S17
+      - copy: Q18
+        paste: L17
+      - copy: Q19
+        paste: P17
+      - copy: Q21
+        paste: T17
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M17
+      - copy: Q4
+        paste: Q17
+      - copy: Q6
+        paste: U17
+      - copy: Q18
+        paste: N17
+      - copy: Q19
+        paste: R17
+      - copy: Q21
+        paste: V17
+  AfumvsNfis.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B18
+      - copy: B8
+        paste: C18
+      - copy: B4
+        paste: D18
+      - copy: B5
+        paste: E18
+      - copy: B6
+        paste: F18
+  AfumvsNfis.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K18
+      - copy: Q4
+        paste: O18
+      - copy: Q6
+        paste: S18
+      - copy: Q18
+        paste: L18
+      - copy: Q19
+        paste: P18
+      - copy: Q21
+        paste: T18
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M18
+      - copy: Q4
+        paste: Q18
+      - copy: Q6
+        paste: U18
+      - copy: Q18
+        paste: N18
+      - copy: Q19
+        paste: R18
+      - copy: Q21
+        paste: V18
+  AoryvsAfla.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B19
+      - copy: B8
+        paste: C19
+      - copy: B4
+        paste: D19
+      - copy: B5
+        paste: E19
+      - copy: B6
+        paste: F19
+  AoryvsAfla.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K19
+      - copy: Q4
+        paste: O19
+      - copy: Q6
+        paste: S19
+      - copy: Q18
+        paste: L19
+      - copy: Q19
+        paste: P19
+      - copy: Q21
+        paste: T19
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M19
+      - copy: Q4
+        paste: Q19
+      - copy: Q6
+        paste: U19
+      - copy: Q18
+        paste: N19
+      - copy: Q19
+        paste: R19
+      - copy: Q21
+        paste: V19

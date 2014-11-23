@@ -1,0 +1,1838 @@
+---
+autofit: A:J
+texts:
+  - text: "Species"
+    pos: A2:A3
+    merge: 1
+  - text: "No. of Strains"
+    pos: B2:B3
+    merge: 1
+  - text: "GC-content"
+    pos: C2:C3
+    merge: 1
+  - text: "Aligned length (Mb)"
+    pos: D2:D3
+    merge: 1
+  - text: "Indels Per 100 bp"
+    pos: E2:E3
+    merge: 1
+  - text: "SNPs Per 100 bp"
+    pos: F2:F3
+    merge: 1
+  - text: "Correlation coefficients (r) between"
+    pos: G2:J2
+    merge: 1
+  - text: "GC & Pi"
+    pos: G3
+  - text: "GC & Indel"
+    pos: H3
+  - text: "CV & Pi"
+    pos: I3
+  - text: "CV & Indel"
+    pos: J3
+  - text: "r_squared"
+    pos: K2:N2
+    merge: 1
+  - text: "GC & Pi"
+    pos: K3
+  - text: "GC & Indel"
+    pos: L3
+  - text: "CV & Pi"
+    pos: M3
+  - text: "CV & Indel"
+    pos: N3
+  - text: "p_value"
+    pos: O2:R2
+    merge: 1
+  - text: "GC & Pi"
+    pos: O3
+  - text: "GC & Indel"
+    pos: P3
+  - text: "CV & Pi"
+    pos: Q3
+  - text: "CV & Indel"
+    pos: R3
+  - text: "slope"
+    pos: S2:V2
+    merge: 1
+  - text: "GC & Pi"
+    pos: S3
+  - text: "GC & Indel"
+    pos: T3
+  - text: "CV & Pi"
+    pos: U3
+  - text: "CV & Indel"
+    pos: V3
+  - text: =CONCATENATE(IF(S4<0,"-",""),ROUND(SQRT(K4),3),IF(O4<0.01,"**",IF(O4<0.05,"*","")))
+    pos: G4
+  - text: Acinetobacter baumannii
+    pos: A4
+  - text: Actinobacillus pleuropneumoniae
+    pos: A5
+  - text: Bacillus cereus
+    pos: A6
+  - text: Bifidobacterium longum
+    pos: A7
+  - text: Burkholderia cenocepacia
+    pos: A8
+  - text: Campylobacter jejuni
+    pos: A9
+  - text: Clostridium botulinum
+    pos: A10
+  - text: Escherichia coli
+    pos: A11
+  - text: Haemophilus influenzae
+    pos: A12
+  - text: Helicobacter pylori
+    pos: A13
+  - text: Lactococcus lactis
+    pos: A14
+  - text: Legionella pneumophila
+    pos: A15
+  - text: Listeria monocytogenes
+    pos: A16
+  - text: Neisseria meningitidis
+    pos: A17
+  - text: Prochlorococcus marinus
+    pos: A18
+  - text: Pseudomonas aeruginosa
+    pos: A19
+  - text: Pseudomonas putida
+    pos: A20
+  - text: Rhodopseudomonas palustris
+    pos: A21
+  - text: Salmonella enterica
+    pos: A22
+  - text: Shewanella baltica
+    pos: A23
+  - text: Staphylococcus aureus
+    pos: A24
+  - text: Streptococcus equi
+    pos: A25
+  - text: Streptococcus pneumoniae
+    pos: A26
+  - text: Streptococcus pyogenes
+    pos: A27
+  - text: Streptococcus suis
+    pos: A28
+  - text: Streptococcus thermophilus
+    pos: A29
+  - text: Xylella fastidiosa
+    pos: A30
+  - text: Methanococcus maripaludis
+    pos: A31
+  - text: Sulfolobus islandicus
+    pos: A32
+  - text: FILTERED
+    pos: A33
+  - text: Bacillus anthracis
+    pos: A34
+  - text: Burkholderia mallei
+    pos: A35
+  - text: Burkholderia pseudomallei
+    pos: A36
+  - text: Chlamydia trachomatis
+    pos: A37
+  - text: Coxiella burnetii
+    pos: A38
+  - text: Francisella tularensis
+    pos: A39
+  - text: Mycobacterium tuberculosis
+    pos: A40
+  - text: Streptococcus agalactiae
+    pos: A41
+  - text: Vibrio cholerae
+    pos: A42
+  - text: Xanthomonas campestris
+    pos: A43
+  - text: Xanthomonas oryzae
+    pos: A44
+  - text: Yersinia pestis
+    pos: A45
+  - text: Yersinia pseudotuberculosis
+    pos: A46
+borders:
+  - range: A2:J2
+    top: 1
+  - range: A3:J3
+    bottom: 1
+  - range: G2:J2
+    bottom: 1
+ranges:
+  Acinetobacter_baumannii.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B4
+      - copy: B8
+        paste: C4
+      - copy: B4
+        paste: D4
+      - copy: B5
+        paste: E4
+      - copy: B6
+        paste: F4
+  Acinetobacter_baumannii.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K4
+      - copy: Q4
+        paste: O4
+      - copy: Q6
+        paste: S4
+      - copy: Q18
+        paste: L4
+      - copy: Q19
+        paste: P4
+      - copy: Q21
+        paste: T4
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M4
+      - copy: Q4
+        paste: Q4
+      - copy: Q6
+        paste: U4
+      - copy: Q18
+        paste: N4
+      - copy: Q19
+        paste: R4
+      - copy: Q21
+        paste: V4
+  Actinobacillus_pleuropneumoniae.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B5
+      - copy: B8
+        paste: C5
+      - copy: B4
+        paste: D5
+      - copy: B5
+        paste: E5
+      - copy: B6
+        paste: F5
+  Actinobacillus_pleuropneumoniae.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K5
+      - copy: Q4
+        paste: O5
+      - copy: Q6
+        paste: S5
+      - copy: Q18
+        paste: L5
+      - copy: Q19
+        paste: P5
+      - copy: Q21
+        paste: T5
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M5
+      - copy: Q4
+        paste: Q5
+      - copy: Q6
+        paste: U5
+      - copy: Q18
+        paste: N5
+      - copy: Q19
+        paste: R5
+      - copy: Q21
+        paste: V5
+  Bacillus_cereus.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B6
+      - copy: B8
+        paste: C6
+      - copy: B4
+        paste: D6
+      - copy: B5
+        paste: E6
+      - copy: B6
+        paste: F6
+  Bacillus_cereus.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K6
+      - copy: Q4
+        paste: O6
+      - copy: Q6
+        paste: S6
+      - copy: Q18
+        paste: L6
+      - copy: Q19
+        paste: P6
+      - copy: Q21
+        paste: T6
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M6
+      - copy: Q4
+        paste: Q6
+      - copy: Q6
+        paste: U6
+      - copy: Q18
+        paste: N6
+      - copy: Q19
+        paste: R6
+      - copy: Q21
+        paste: V6
+  Bifidobacterium_longum.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B7
+      - copy: B8
+        paste: C7
+      - copy: B4
+        paste: D7
+      - copy: B5
+        paste: E7
+      - copy: B6
+        paste: F7
+  Bifidobacterium_longum.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K7
+      - copy: Q4
+        paste: O7
+      - copy: Q6
+        paste: S7
+      - copy: Q18
+        paste: L7
+      - copy: Q19
+        paste: P7
+      - copy: Q21
+        paste: T7
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M7
+      - copy: Q4
+        paste: Q7
+      - copy: Q6
+        paste: U7
+      - copy: Q18
+        paste: N7
+      - copy: Q19
+        paste: R7
+      - copy: Q21
+        paste: V7
+  Burkholderia_cenocepacia.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B8
+      - copy: B8
+        paste: C8
+      - copy: B4
+        paste: D8
+      - copy: B5
+        paste: E8
+      - copy: B6
+        paste: F8
+  Burkholderia_cenocepacia.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K8
+      - copy: Q4
+        paste: O8
+      - copy: Q6
+        paste: S8
+      - copy: Q18
+        paste: L8
+      - copy: Q19
+        paste: P8
+      - copy: Q21
+        paste: T8
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M8
+      - copy: Q4
+        paste: Q8
+      - copy: Q6
+        paste: U8
+      - copy: Q18
+        paste: N8
+      - copy: Q19
+        paste: R8
+      - copy: Q21
+        paste: V8
+  Campylobacter_jejuni.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B9
+      - copy: B8
+        paste: C9
+      - copy: B4
+        paste: D9
+      - copy: B5
+        paste: E9
+      - copy: B6
+        paste: F9
+  Campylobacter_jejuni.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K9
+      - copy: Q4
+        paste: O9
+      - copy: Q6
+        paste: S9
+      - copy: Q18
+        paste: L9
+      - copy: Q19
+        paste: P9
+      - copy: Q21
+        paste: T9
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M9
+      - copy: Q4
+        paste: Q9
+      - copy: Q6
+        paste: U9
+      - copy: Q18
+        paste: N9
+      - copy: Q19
+        paste: R9
+      - copy: Q21
+        paste: V9
+  Clostridium_botulinum.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B10
+      - copy: B8
+        paste: C10
+      - copy: B4
+        paste: D10
+      - copy: B5
+        paste: E10
+      - copy: B6
+        paste: F10
+  Clostridium_botulinum.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K10
+      - copy: Q4
+        paste: O10
+      - copy: Q6
+        paste: S10
+      - copy: Q18
+        paste: L10
+      - copy: Q19
+        paste: P10
+      - copy: Q21
+        paste: T10
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M10
+      - copy: Q4
+        paste: Q10
+      - copy: Q6
+        paste: U10
+      - copy: Q18
+        paste: N10
+      - copy: Q19
+        paste: R10
+      - copy: Q21
+        paste: V10
+  Escherichia_coli.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B11
+      - copy: B8
+        paste: C11
+      - copy: B4
+        paste: D11
+      - copy: B5
+        paste: E11
+      - copy: B6
+        paste: F11
+  Escherichia_coli.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K11
+      - copy: Q4
+        paste: O11
+      - copy: Q6
+        paste: S11
+      - copy: Q18
+        paste: L11
+      - copy: Q19
+        paste: P11
+      - copy: Q21
+        paste: T11
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M11
+      - copy: Q4
+        paste: Q11
+      - copy: Q6
+        paste: U11
+      - copy: Q18
+        paste: N11
+      - copy: Q19
+        paste: R11
+      - copy: Q21
+        paste: V11
+  Haemophilus_influenzae.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B12
+      - copy: B8
+        paste: C12
+      - copy: B4
+        paste: D12
+      - copy: B5
+        paste: E12
+      - copy: B6
+        paste: F12
+  Haemophilus_influenzae.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K12
+      - copy: Q4
+        paste: O12
+      - copy: Q6
+        paste: S12
+      - copy: Q18
+        paste: L12
+      - copy: Q19
+        paste: P12
+      - copy: Q21
+        paste: T12
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M12
+      - copy: Q4
+        paste: Q12
+      - copy: Q6
+        paste: U12
+      - copy: Q18
+        paste: N12
+      - copy: Q19
+        paste: R12
+      - copy: Q21
+        paste: V12
+  Helicobacter_pylori.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B13
+      - copy: B8
+        paste: C13
+      - copy: B4
+        paste: D13
+      - copy: B5
+        paste: E13
+      - copy: B6
+        paste: F13
+  Helicobacter_pylori.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K13
+      - copy: Q4
+        paste: O13
+      - copy: Q6
+        paste: S13
+      - copy: Q18
+        paste: L13
+      - copy: Q19
+        paste: P13
+      - copy: Q21
+        paste: T13
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M13
+      - copy: Q4
+        paste: Q13
+      - copy: Q6
+        paste: U13
+      - copy: Q18
+        paste: N13
+      - copy: Q19
+        paste: R13
+      - copy: Q21
+        paste: V13
+  Lactococcus_lactis.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B14
+      - copy: B8
+        paste: C14
+      - copy: B4
+        paste: D14
+      - copy: B5
+        paste: E14
+      - copy: B6
+        paste: F14
+  Lactococcus_lactis.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K14
+      - copy: Q4
+        paste: O14
+      - copy: Q6
+        paste: S14
+      - copy: Q18
+        paste: L14
+      - copy: Q19
+        paste: P14
+      - copy: Q21
+        paste: T14
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M14
+      - copy: Q4
+        paste: Q14
+      - copy: Q6
+        paste: U14
+      - copy: Q18
+        paste: N14
+      - copy: Q19
+        paste: R14
+      - copy: Q21
+        paste: V14
+  Legionella_pneumophila.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B15
+      - copy: B8
+        paste: C15
+      - copy: B4
+        paste: D15
+      - copy: B5
+        paste: E15
+      - copy: B6
+        paste: F15
+  Legionella_pneumophila.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K15
+      - copy: Q4
+        paste: O15
+      - copy: Q6
+        paste: S15
+      - copy: Q18
+        paste: L15
+      - copy: Q19
+        paste: P15
+      - copy: Q21
+        paste: T15
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M15
+      - copy: Q4
+        paste: Q15
+      - copy: Q6
+        paste: U15
+      - copy: Q18
+        paste: N15
+      - copy: Q19
+        paste: R15
+      - copy: Q21
+        paste: V15
+  Listeria_monocytogenes.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B16
+      - copy: B8
+        paste: C16
+      - copy: B4
+        paste: D16
+      - copy: B5
+        paste: E16
+      - copy: B6
+        paste: F16
+  Listeria_monocytogenes.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K16
+      - copy: Q4
+        paste: O16
+      - copy: Q6
+        paste: S16
+      - copy: Q18
+        paste: L16
+      - copy: Q19
+        paste: P16
+      - copy: Q21
+        paste: T16
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M16
+      - copy: Q4
+        paste: Q16
+      - copy: Q6
+        paste: U16
+      - copy: Q18
+        paste: N16
+      - copy: Q19
+        paste: R16
+      - copy: Q21
+        paste: V16
+  Neisseria_meningitidis.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B17
+      - copy: B8
+        paste: C17
+      - copy: B4
+        paste: D17
+      - copy: B5
+        paste: E17
+      - copy: B6
+        paste: F17
+  Neisseria_meningitidis.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K17
+      - copy: Q4
+        paste: O17
+      - copy: Q6
+        paste: S17
+      - copy: Q18
+        paste: L17
+      - copy: Q19
+        paste: P17
+      - copy: Q21
+        paste: T17
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M17
+      - copy: Q4
+        paste: Q17
+      - copy: Q6
+        paste: U17
+      - copy: Q18
+        paste: N17
+      - copy: Q19
+        paste: R17
+      - copy: Q21
+        paste: V17
+  Prochlorococcus_marinus.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B18
+      - copy: B8
+        paste: C18
+      - copy: B4
+        paste: D18
+      - copy: B5
+        paste: E18
+      - copy: B6
+        paste: F18
+  Prochlorococcus_marinus.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K18
+      - copy: Q4
+        paste: O18
+      - copy: Q6
+        paste: S18
+      - copy: Q18
+        paste: L18
+      - copy: Q19
+        paste: P18
+      - copy: Q21
+        paste: T18
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M18
+      - copy: Q4
+        paste: Q18
+      - copy: Q6
+        paste: U18
+      - copy: Q18
+        paste: N18
+      - copy: Q19
+        paste: R18
+      - copy: Q21
+        paste: V18
+  Pseudomonas_aeruginosa.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B19
+      - copy: B8
+        paste: C19
+      - copy: B4
+        paste: D19
+      - copy: B5
+        paste: E19
+      - copy: B6
+        paste: F19
+  Pseudomonas_aeruginosa.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K19
+      - copy: Q4
+        paste: O19
+      - copy: Q6
+        paste: S19
+      - copy: Q18
+        paste: L19
+      - copy: Q19
+        paste: P19
+      - copy: Q21
+        paste: T19
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M19
+      - copy: Q4
+        paste: Q19
+      - copy: Q6
+        paste: U19
+      - copy: Q18
+        paste: N19
+      - copy: Q19
+        paste: R19
+      - copy: Q21
+        paste: V19
+  Pseudomonas_putida.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B20
+      - copy: B8
+        paste: C20
+      - copy: B4
+        paste: D20
+      - copy: B5
+        paste: E20
+      - copy: B6
+        paste: F20
+  Pseudomonas_putida.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K20
+      - copy: Q4
+        paste: O20
+      - copy: Q6
+        paste: S20
+      - copy: Q18
+        paste: L20
+      - copy: Q19
+        paste: P20
+      - copy: Q21
+        paste: T20
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M20
+      - copy: Q4
+        paste: Q20
+      - copy: Q6
+        paste: U20
+      - copy: Q18
+        paste: N20
+      - copy: Q19
+        paste: R20
+      - copy: Q21
+        paste: V20
+  Rhodopseudomonas_palustris.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B21
+      - copy: B8
+        paste: C21
+      - copy: B4
+        paste: D21
+      - copy: B5
+        paste: E21
+      - copy: B6
+        paste: F21
+  Rhodopseudomonas_palustris.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K21
+      - copy: Q4
+        paste: O21
+      - copy: Q6
+        paste: S21
+      - copy: Q18
+        paste: L21
+      - copy: Q19
+        paste: P21
+      - copy: Q21
+        paste: T21
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M21
+      - copy: Q4
+        paste: Q21
+      - copy: Q6
+        paste: U21
+      - copy: Q18
+        paste: N21
+      - copy: Q19
+        paste: R21
+      - copy: Q21
+        paste: V21
+  Salmonella_enterica.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B22
+      - copy: B8
+        paste: C22
+      - copy: B4
+        paste: D22
+      - copy: B5
+        paste: E22
+      - copy: B6
+        paste: F22
+  Salmonella_enterica.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K22
+      - copy: Q4
+        paste: O22
+      - copy: Q6
+        paste: S22
+      - copy: Q18
+        paste: L22
+      - copy: Q19
+        paste: P22
+      - copy: Q21
+        paste: T22
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M22
+      - copy: Q4
+        paste: Q22
+      - copy: Q6
+        paste: U22
+      - copy: Q18
+        paste: N22
+      - copy: Q19
+        paste: R22
+      - copy: Q21
+        paste: V22
+  Shewanella_baltica.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B23
+      - copy: B8
+        paste: C23
+      - copy: B4
+        paste: D23
+      - copy: B5
+        paste: E23
+      - copy: B6
+        paste: F23
+  Shewanella_baltica.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K23
+      - copy: Q4
+        paste: O23
+      - copy: Q6
+        paste: S23
+      - copy: Q18
+        paste: L23
+      - copy: Q19
+        paste: P23
+      - copy: Q21
+        paste: T23
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M23
+      - copy: Q4
+        paste: Q23
+      - copy: Q6
+        paste: U23
+      - copy: Q18
+        paste: N23
+      - copy: Q19
+        paste: R23
+      - copy: Q21
+        paste: V23
+  Staphylococcus_aureus.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B24
+      - copy: B8
+        paste: C24
+      - copy: B4
+        paste: D24
+      - copy: B5
+        paste: E24
+      - copy: B6
+        paste: F24
+  Staphylococcus_aureus.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K24
+      - copy: Q4
+        paste: O24
+      - copy: Q6
+        paste: S24
+      - copy: Q18
+        paste: L24
+      - copy: Q19
+        paste: P24
+      - copy: Q21
+        paste: T24
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M24
+      - copy: Q4
+        paste: Q24
+      - copy: Q6
+        paste: U24
+      - copy: Q18
+        paste: N24
+      - copy: Q19
+        paste: R24
+      - copy: Q21
+        paste: V24
+  Streptococcus_equi.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B25
+      - copy: B8
+        paste: C25
+      - copy: B4
+        paste: D25
+      - copy: B5
+        paste: E25
+      - copy: B6
+        paste: F25
+  Streptococcus_equi.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K25
+      - copy: Q4
+        paste: O25
+      - copy: Q6
+        paste: S25
+      - copy: Q18
+        paste: L25
+      - copy: Q19
+        paste: P25
+      - copy: Q21
+        paste: T25
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M25
+      - copy: Q4
+        paste: Q25
+      - copy: Q6
+        paste: U25
+      - copy: Q18
+        paste: N25
+      - copy: Q19
+        paste: R25
+      - copy: Q21
+        paste: V25
+  Streptococcus_pneumoniae.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B26
+      - copy: B8
+        paste: C26
+      - copy: B4
+        paste: D26
+      - copy: B5
+        paste: E26
+      - copy: B6
+        paste: F26
+  Streptococcus_pneumoniae.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K26
+      - copy: Q4
+        paste: O26
+      - copy: Q6
+        paste: S26
+      - copy: Q18
+        paste: L26
+      - copy: Q19
+        paste: P26
+      - copy: Q21
+        paste: T26
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M26
+      - copy: Q4
+        paste: Q26
+      - copy: Q6
+        paste: U26
+      - copy: Q18
+        paste: N26
+      - copy: Q19
+        paste: R26
+      - copy: Q21
+        paste: V26
+  Streptococcus_pyogenes.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B27
+      - copy: B8
+        paste: C27
+      - copy: B4
+        paste: D27
+      - copy: B5
+        paste: E27
+      - copy: B6
+        paste: F27
+  Streptococcus_pyogenes.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K27
+      - copy: Q4
+        paste: O27
+      - copy: Q6
+        paste: S27
+      - copy: Q18
+        paste: L27
+      - copy: Q19
+        paste: P27
+      - copy: Q21
+        paste: T27
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M27
+      - copy: Q4
+        paste: Q27
+      - copy: Q6
+        paste: U27
+      - copy: Q18
+        paste: N27
+      - copy: Q19
+        paste: R27
+      - copy: Q21
+        paste: V27
+  Streptococcus_suis.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B28
+      - copy: B8
+        paste: C28
+      - copy: B4
+        paste: D28
+      - copy: B5
+        paste: E28
+      - copy: B6
+        paste: F28
+  Streptococcus_suis.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K28
+      - copy: Q4
+        paste: O28
+      - copy: Q6
+        paste: S28
+      - copy: Q18
+        paste: L28
+      - copy: Q19
+        paste: P28
+      - copy: Q21
+        paste: T28
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M28
+      - copy: Q4
+        paste: Q28
+      - copy: Q6
+        paste: U28
+      - copy: Q18
+        paste: N28
+      - copy: Q19
+        paste: R28
+      - copy: Q21
+        paste: V28
+  Streptococcus_thermophilus.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B29
+      - copy: B8
+        paste: C29
+      - copy: B4
+        paste: D29
+      - copy: B5
+        paste: E29
+      - copy: B6
+        paste: F29
+  Streptococcus_thermophilus.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K29
+      - copy: Q4
+        paste: O29
+      - copy: Q6
+        paste: S29
+      - copy: Q18
+        paste: L29
+      - copy: Q19
+        paste: P29
+      - copy: Q21
+        paste: T29
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M29
+      - copy: Q4
+        paste: Q29
+      - copy: Q6
+        paste: U29
+      - copy: Q18
+        paste: N29
+      - copy: Q19
+        paste: R29
+      - copy: Q21
+        paste: V29
+  Xylella_fastidiosa.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B30
+      - copy: B8
+        paste: C30
+      - copy: B4
+        paste: D30
+      - copy: B5
+        paste: E30
+      - copy: B6
+        paste: F30
+  Xylella_fastidiosa.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K30
+      - copy: Q4
+        paste: O30
+      - copy: Q6
+        paste: S30
+      - copy: Q18
+        paste: L30
+      - copy: Q19
+        paste: P30
+      - copy: Q21
+        paste: T30
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M30
+      - copy: Q4
+        paste: Q30
+      - copy: Q6
+        paste: U30
+      - copy: Q18
+        paste: N30
+      - copy: Q19
+        paste: R30
+      - copy: Q21
+        paste: V30
+  Methanococcus_maripaludis.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B31
+      - copy: B8
+        paste: C31
+      - copy: B4
+        paste: D31
+      - copy: B5
+        paste: E31
+      - copy: B6
+        paste: F31
+  Methanococcus_maripaludis.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K31
+      - copy: Q4
+        paste: O31
+      - copy: Q6
+        paste: S31
+      - copy: Q18
+        paste: L31
+      - copy: Q19
+        paste: P31
+      - copy: Q21
+        paste: T31
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M31
+      - copy: Q4
+        paste: Q31
+      - copy: Q6
+        paste: U31
+      - copy: Q18
+        paste: N31
+      - copy: Q19
+        paste: R31
+      - copy: Q21
+        paste: V31
+  Sulfolobus_islandicus.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B32
+      - copy: B8
+        paste: C32
+      - copy: B4
+        paste: D32
+      - copy: B5
+        paste: E32
+      - copy: B6
+        paste: F32
+  Sulfolobus_islandicus.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K32
+      - copy: Q4
+        paste: O32
+      - copy: Q6
+        paste: S32
+      - copy: Q18
+        paste: L32
+      - copy: Q19
+        paste: P32
+      - copy: Q21
+        paste: T32
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M32
+      - copy: Q4
+        paste: Q32
+      - copy: Q6
+        paste: U32
+      - copy: Q18
+        paste: N32
+      - copy: Q19
+        paste: R32
+      - copy: Q21
+        paste: V32
+  FILTERED.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B33
+      - copy: B8
+        paste: C33
+      - copy: B4
+        paste: D33
+      - copy: B5
+        paste: E33
+      - copy: B6
+        paste: F33
+  FILTERED.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K33
+      - copy: Q4
+        paste: O33
+      - copy: Q6
+        paste: S33
+      - copy: Q18
+        paste: L33
+      - copy: Q19
+        paste: P33
+      - copy: Q21
+        paste: T33
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M33
+      - copy: Q4
+        paste: Q33
+      - copy: Q6
+        paste: U33
+      - copy: Q18
+        paste: N33
+      - copy: Q19
+        paste: R33
+      - copy: Q21
+        paste: V33
+  Bacillus_anthracis.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B34
+      - copy: B8
+        paste: C34
+      - copy: B4
+        paste: D34
+      - copy: B5
+        paste: E34
+      - copy: B6
+        paste: F34
+  Bacillus_anthracis.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K34
+      - copy: Q4
+        paste: O34
+      - copy: Q6
+        paste: S34
+      - copy: Q18
+        paste: L34
+      - copy: Q19
+        paste: P34
+      - copy: Q21
+        paste: T34
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M34
+      - copy: Q4
+        paste: Q34
+      - copy: Q6
+        paste: U34
+      - copy: Q18
+        paste: N34
+      - copy: Q19
+        paste: R34
+      - copy: Q21
+        paste: V34
+  Burkholderia_mallei.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B35
+      - copy: B8
+        paste: C35
+      - copy: B4
+        paste: D35
+      - copy: B5
+        paste: E35
+      - copy: B6
+        paste: F35
+  Burkholderia_mallei.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K35
+      - copy: Q4
+        paste: O35
+      - copy: Q6
+        paste: S35
+      - copy: Q18
+        paste: L35
+      - copy: Q19
+        paste: P35
+      - copy: Q21
+        paste: T35
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M35
+      - copy: Q4
+        paste: Q35
+      - copy: Q6
+        paste: U35
+      - copy: Q18
+        paste: N35
+      - copy: Q19
+        paste: R35
+      - copy: Q21
+        paste: V35
+  Burkholderia_pseudomallei.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B36
+      - copy: B8
+        paste: C36
+      - copy: B4
+        paste: D36
+      - copy: B5
+        paste: E36
+      - copy: B6
+        paste: F36
+  Burkholderia_pseudomallei.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K36
+      - copy: Q4
+        paste: O36
+      - copy: Q6
+        paste: S36
+      - copy: Q18
+        paste: L36
+      - copy: Q19
+        paste: P36
+      - copy: Q21
+        paste: T36
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M36
+      - copy: Q4
+        paste: Q36
+      - copy: Q6
+        paste: U36
+      - copy: Q18
+        paste: N36
+      - copy: Q19
+        paste: R36
+      - copy: Q21
+        paste: V36
+  Chlamydia_trachomatis.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B37
+      - copy: B8
+        paste: C37
+      - copy: B4
+        paste: D37
+      - copy: B5
+        paste: E37
+      - copy: B6
+        paste: F37
+  Chlamydia_trachomatis.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K37
+      - copy: Q4
+        paste: O37
+      - copy: Q6
+        paste: S37
+      - copy: Q18
+        paste: L37
+      - copy: Q19
+        paste: P37
+      - copy: Q21
+        paste: T37
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M37
+      - copy: Q4
+        paste: Q37
+      - copy: Q6
+        paste: U37
+      - copy: Q18
+        paste: N37
+      - copy: Q19
+        paste: R37
+      - copy: Q21
+        paste: V37
+  Coxiella_burnetii.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B38
+      - copy: B8
+        paste: C38
+      - copy: B4
+        paste: D38
+      - copy: B5
+        paste: E38
+      - copy: B6
+        paste: F38
+  Coxiella_burnetii.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K38
+      - copy: Q4
+        paste: O38
+      - copy: Q6
+        paste: S38
+      - copy: Q18
+        paste: L38
+      - copy: Q19
+        paste: P38
+      - copy: Q21
+        paste: T38
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M38
+      - copy: Q4
+        paste: Q38
+      - copy: Q6
+        paste: U38
+      - copy: Q18
+        paste: N38
+      - copy: Q19
+        paste: R38
+      - copy: Q21
+        paste: V38
+  Francisella_tularensis.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B39
+      - copy: B8
+        paste: C39
+      - copy: B4
+        paste: D39
+      - copy: B5
+        paste: E39
+      - copy: B6
+        paste: F39
+  Francisella_tularensis.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K39
+      - copy: Q4
+        paste: O39
+      - copy: Q6
+        paste: S39
+      - copy: Q18
+        paste: L39
+      - copy: Q19
+        paste: P39
+      - copy: Q21
+        paste: T39
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M39
+      - copy: Q4
+        paste: Q39
+      - copy: Q6
+        paste: U39
+      - copy: Q18
+        paste: N39
+      - copy: Q19
+        paste: R39
+      - copy: Q21
+        paste: V39
+  Mycobacterium_tuberculosis.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B40
+      - copy: B8
+        paste: C40
+      - copy: B4
+        paste: D40
+      - copy: B5
+        paste: E40
+      - copy: B6
+        paste: F40
+  Mycobacterium_tuberculosis.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K40
+      - copy: Q4
+        paste: O40
+      - copy: Q6
+        paste: S40
+      - copy: Q18
+        paste: L40
+      - copy: Q19
+        paste: P40
+      - copy: Q21
+        paste: T40
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M40
+      - copy: Q4
+        paste: Q40
+      - copy: Q6
+        paste: U40
+      - copy: Q18
+        paste: N40
+      - copy: Q19
+        paste: R40
+      - copy: Q21
+        paste: V40
+  Streptococcus_agalactiae.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B41
+      - copy: B8
+        paste: C41
+      - copy: B4
+        paste: D41
+      - copy: B5
+        paste: E41
+      - copy: B6
+        paste: F41
+  Streptococcus_agalactiae.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K41
+      - copy: Q4
+        paste: O41
+      - copy: Q6
+        paste: S41
+      - copy: Q18
+        paste: L41
+      - copy: Q19
+        paste: P41
+      - copy: Q21
+        paste: T41
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M41
+      - copy: Q4
+        paste: Q41
+      - copy: Q6
+        paste: U41
+      - copy: Q18
+        paste: N41
+      - copy: Q19
+        paste: R41
+      - copy: Q21
+        paste: V41
+  Vibrio_cholerae.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B42
+      - copy: B8
+        paste: C42
+      - copy: B4
+        paste: D42
+      - copy: B5
+        paste: E42
+      - copy: B6
+        paste: F42
+  Vibrio_cholerae.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K42
+      - copy: Q4
+        paste: O42
+      - copy: Q6
+        paste: S42
+      - copy: Q18
+        paste: L42
+      - copy: Q19
+        paste: P42
+      - copy: Q21
+        paste: T42
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M42
+      - copy: Q4
+        paste: Q42
+      - copy: Q6
+        paste: U42
+      - copy: Q18
+        paste: N42
+      - copy: Q19
+        paste: R42
+      - copy: Q21
+        paste: V42
+  Xanthomonas_campestris.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B43
+      - copy: B8
+        paste: C43
+      - copy: B4
+        paste: D43
+      - copy: B5
+        paste: E43
+      - copy: B6
+        paste: F43
+  Xanthomonas_campestris.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K43
+      - copy: Q4
+        paste: O43
+      - copy: Q6
+        paste: S43
+      - copy: Q18
+        paste: L43
+      - copy: Q19
+        paste: P43
+      - copy: Q21
+        paste: T43
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M43
+      - copy: Q4
+        paste: Q43
+      - copy: Q6
+        paste: U43
+      - copy: Q18
+        paste: N43
+      - copy: Q19
+        paste: R43
+      - copy: Q21
+        paste: V43
+  Xanthomonas_oryzae.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B44
+      - copy: B8
+        paste: C44
+      - copy: B4
+        paste: D44
+      - copy: B5
+        paste: E44
+      - copy: B6
+        paste: F44
+  Xanthomonas_oryzae.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K44
+      - copy: Q4
+        paste: O44
+      - copy: Q6
+        paste: S44
+      - copy: Q18
+        paste: L44
+      - copy: Q19
+        paste: P44
+      - copy: Q21
+        paste: T44
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M44
+      - copy: Q4
+        paste: Q44
+      - copy: Q6
+        paste: U44
+      - copy: Q18
+        paste: N44
+      - copy: Q19
+        paste: R44
+      - copy: Q21
+        paste: V44
+  Yersinia_pestis.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B45
+      - copy: B8
+        paste: C45
+      - copy: B4
+        paste: D45
+      - copy: B5
+        paste: E45
+      - copy: B6
+        paste: F45
+  Yersinia_pestis.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K45
+      - copy: Q4
+        paste: O45
+      - copy: Q6
+        paste: S45
+      - copy: Q18
+        paste: L45
+      - copy: Q19
+        paste: P45
+      - copy: Q21
+        paste: T45
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M45
+      - copy: Q4
+        paste: Q45
+      - copy: Q6
+        paste: U45
+      - copy: Q18
+        paste: N45
+      - copy: Q19
+        paste: R45
+      - copy: Q21
+        paste: V45
+  Yersinia_pseudotuberculosis.common.chart.xlsx:
+    basic:
+      - copy: B2
+        paste: B46
+      - copy: B8
+        paste: C46
+      - copy: B4
+        paste: D46
+      - copy: B5
+        paste: E46
+      - copy: B6
+        paste: F46
+  Yersinia_pseudotuberculosis.gc.chart.xlsx:
+    segment_gc_indel_3:
+      - copy: Q3
+        paste: K46
+      - copy: Q4
+        paste: O46
+      - copy: Q6
+        paste: S46
+      - copy: Q18
+        paste: L46
+      - copy: Q19
+        paste: P46
+      - copy: Q21
+        paste: T46
+    segment_cv_indel_3:
+      - copy: Q3
+        paste: M46
+      - copy: Q4
+        paste: Q46
+      - copy: Q6
+        paste: U46
+      - copy: Q18
+        paste: N46
+      - copy: Q19
+        paste: R46
+      - copy: Q21
+        paste: V46

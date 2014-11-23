@@ -1,0 +1,227 @@
+---
+charts:
+  Human_BED_Histone.type.mg.chart.xlsx:
+    ofg_type_H2AZ:
+      1:
+        - 0
+        - 0
+    ofg_type_H3K04ME1:
+      1:
+        - 1
+        - 0
+    ofg_type_H3K04ME2:
+      1:
+        - 2
+        - 0
+    ofg_type_H3K04ME3:
+      1:
+        - 3
+        - 0
+    ofg_type_H3K09AC:
+      1:
+        - 0
+        - 1
+    ofg_type_H3K09ACb:
+      1:
+        - 1
+        - 1
+    ofg_type_H3K09ME3:
+      1:
+        - 2
+        - 1
+    ofg_type_H3K27AC:
+      1:
+        - 3
+        - 1
+    ofg_type_H3K27ME3:
+      1:
+        - 0
+        - 2
+    ofg_type_H3K36ME3:
+      1:
+        - 1
+        - 2
+    ofg_type_H3K36ME3b:
+      1:
+        - 2
+        - 2
+    ofg_type_H3K79ME2:
+      1:
+        - 3
+        - 2
+    ofg_type_H4K20ME1:
+      1:
+        - 0
+        - 3
+texts:
+  - text: H2AZ
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - -0.05
+  - text: H3K04ME1
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - -0.05
+  - text: H3K04ME2
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - -0.05
+  - text: H3K04ME3
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - -0.05
+  - text: H3K09AC
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 0.95
+  - text: H3K09ACb
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 0.95
+  - text: H3K09ME3
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 0.95
+  - text: H3K27AC
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 0.95
+  - text: H3K27ME3
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 1.95
+  - text: H3K36ME3
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 1.95
+  - text: H3K36ME3b
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 1.95
+  - text: H3K79ME2
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 1.95
+  - text: H4K20ME1
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 2.95
+ranges:
+  Human_BED_Histone.type.mg.chart.xlsx:
+    ofg_type_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - -0.05
+    ofg_type_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - -0.05
+    ofg_type_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - -0.05
+    ofg_type_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - -0.05
+    ofg_type_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 0.95
+    ofg_type_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 0.95
+    ofg_type_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 0.95
+    ofg_type_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 0.95
+    ofg_type_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 1.95
+    ofg_type_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 1.95
+    ofg_type_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 1.95
+    ofg_type_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 1.95
+    ofg_type_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 2.95

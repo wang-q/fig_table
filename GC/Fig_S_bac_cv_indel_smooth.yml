@@ -1,0 +1,1180 @@
+---
+files:
+  - name: Acetobacter_pasteurianus.window_gc.png
+    pos:
+      - 0
+      - 0
+  - name: Acinetobacter_baumannii.window_gc.png
+    pos:
+      - 1
+      - 0
+  - name: Actinobacillus_pleuropneumoniae.window_gc.png
+    pos:
+      - 2
+      - 0
+  - name: Aggregatibacter_actinomycetemcomitans.window_gc.png
+    pos:
+      - 3
+      - 0
+  - name: Alteromonas_macleodii.window_gc.png
+    pos:
+      - 4
+      - 0
+  - name: Arcobacter_butzleri.window_gc.png
+    pos:
+      - 5
+      - 0
+  - name: Bacillus_amyloliquefaciens.window_gc.png
+    pos:
+      - 6
+      - 0
+  - name: Bacillus_cereus.window_gc.png
+    pos:
+      - 7
+      - 0
+  - name: Bacillus_subtilis.window_gc.png
+    pos:
+      - 0
+      - 1
+  - name: Bacillus_thuringiensis.window_gc.png
+    pos:
+      - 1
+      - 1
+  - name: Bacteroides_fragilis.window_gc.png
+    pos:
+      - 2
+      - 1
+  - name: Bifidobacterium_animalis.window_gc.png
+    pos:
+      - 3
+      - 1
+  - name: Bifidobacterium_bifidum.window_gc.png
+    pos:
+      - 4
+      - 1
+  - name: Bifidobacterium_longum.window_gc.png
+    pos:
+      - 5
+      - 1
+  - name: Borrelia_burgdorferi.window_gc.png
+    pos:
+      - 6
+      - 1
+  - name: Burkholderia_cenocepacia.window_gc.png
+    pos:
+      - 7
+      - 1
+  - name: Campylobacter_jejuni.window_gc.png
+    pos:
+      - 0
+      - 2
+  - name: Chlamydia_pneumoniae.window_gc.png
+    pos:
+      - 1
+      - 2
+  - name: Chlamydia_psittaci.window_gc.png
+    pos:
+      - 2
+      - 2
+  - name: Chlamydia_trachomatis.window_gc.png
+    pos:
+      - 3
+      - 2
+  - name: Clostridium_botulinum.window_gc.png
+    pos:
+      - 4
+      - 2
+  - name: Clostridium_perfringens.window_gc.png
+    pos:
+      - 5
+      - 2
+  - name: Corynebacterium_diphtheriae.window_gc.png
+    pos:
+      - 6
+      - 2
+  - name: Corynebacterium_glutamicum.window_gc.png
+    pos:
+      - 7
+      - 2
+  - name: Corynebacterium_pseudotuberculosis.window_gc.png
+    pos:
+      - 0
+      - 3
+  - name: Corynebacterium_ulcerans.window_gc.png
+    pos:
+      - 1
+      - 3
+  - name: Coxiella_burnetii.window_gc.png
+    pos:
+      - 2
+      - 3
+  - name: Cronobacter_sakazakii.window_gc.png
+    pos:
+      - 3
+      - 3
+  - name: Dehalococcoides_mccartyi.window_gc.png
+    pos:
+      - 4
+      - 3
+  - name: Desulfovibrio_vulgaris.window_gc.png
+    pos:
+      - 5
+      - 3
+  - name: Dickeya_dadantii.window_gc.png
+    pos:
+      - 6
+      - 3
+  - name: Edwardsiella_tarda.window_gc.png
+    pos:
+      - 7
+      - 3
+  - name: Enterobacter_cloacae.window_gc.png
+    pos:
+      - 0
+      - 4
+  - name: Enterococcus_faecalis.window_gc.png
+    pos:
+      - 1
+      - 4
+  - name: Enterococcus_faecium.window_gc.png
+    pos:
+      - 2
+      - 4
+  - name: Escherichia_coli.window_gc.png
+    pos:
+      - 3
+      - 4
+  - name: Francisella_novicida.window_gc.png
+    pos:
+      - 4
+      - 4
+  - name: Francisella_tularensis.window_gc.png
+    pos:
+      - 5
+      - 4
+  - name: Gardnerella_vaginalis.window_gc.png
+    pos:
+      - 6
+      - 4
+  - name: Haemophilus_influenzae.window_gc.png
+    pos:
+      - 7
+      - 4
+  - name: Helicobacter_pylori.window_gc.png
+    pos:
+      - 0
+      - 5
+  - name: Klebsiella_pneumoniae.window_gc.png
+    pos:
+      - 1
+      - 5
+  - name: Lactobacillus_acidophilus.window_gc.png
+    pos:
+      - 2
+      - 5
+  - name: Lactobacillus_casei.window_gc.png
+    pos:
+      - 3
+      - 5
+  - name: Lactobacillus_delbrueckii.window_gc.png
+    pos:
+      - 4
+      - 5
+  - name: Lactobacillus_fermentum.window_gc.png
+    pos:
+      - 5
+      - 5
+  - name: Lactobacillus_helveticus.window_gc.png
+    pos:
+      - 6
+      - 5
+  - name: Lactobacillus_johnsonii.window_gc.png
+    pos:
+      - 7
+      - 5
+  - name: Lactobacillus_plantarum.window_gc.png
+    pos:
+      - 0
+      - 6
+  - name: Lactobacillus_reuteri.window_gc.png
+    pos:
+      - 1
+      - 6
+  - name: Lactobacillus_rhamnosus.window_gc.png
+    pos:
+      - 2
+      - 6
+  - name: Lactococcus_lactis.window_gc.png
+    pos:
+      - 3
+      - 6
+  - name: Legionella_pneumophila.window_gc.png
+    pos:
+      - 4
+      - 6
+  - name: Leptospira_interrogans.window_gc.png
+    pos:
+      - 5
+      - 6
+  - name: Listeria_monocytogenes.window_gc.png
+    pos:
+      - 6
+      - 6
+  - name: Methanococcus_maripaludis.window_gc.png
+    pos:
+      - 7
+      - 6
+  - name: Mycobacterium_abscessus.window_gc.png
+    pos:
+      - 0
+      - 7
+  - name: Mycobacterium_canettii.window_gc.png
+    pos:
+      - 1
+      - 7
+  - name: Mycobacterium_intracellulare.window_gc.png
+    pos:
+      - 2
+      - 7
+  - name: Mycoplasma_bovis.window_gc.png
+    pos:
+      - 3
+      - 7
+  - name: Mycoplasma_gallisepticum.window_gc.png
+    pos:
+      - 4
+      - 7
+  - name: Mycoplasma_hyopneumoniae.window_gc.png
+    pos:
+      - 5
+      - 7
+  - name: Neisseria_gonorrhoeae.window_gc.png
+    pos:
+      - 6
+      - 7
+  - name: Neisseria_meningitidis.window_gc.png
+    pos:
+      - 7
+      - 7
+  - name: Paenibacillus_mucilaginosus.window_gc.png
+    pos:
+      - 0
+      - 8
+  - name: Paenibacillus_polymyxa.window_gc.png
+    pos:
+      - 1
+      - 8
+  - name: Pantoea_ananatis.window_gc.png
+    pos:
+      - 2
+      - 8
+  - name: Pasteurella_multocida.window_gc.png
+    pos:
+      - 3
+      - 8
+  - name: Porphyromonas_gingivalis.window_gc.png
+    pos:
+      - 4
+      - 8
+  - name: Prochlorococcus_marinus.window_gc.png
+    pos:
+      - 5
+      - 8
+  - name: Propionibacterium_acnes.window_gc.png
+    pos:
+      - 6
+      - 8
+  - name: Pseudomonas_aeruginosa.window_gc.png
+    pos:
+      - 7
+      - 8
+  - name: Pseudomonas_fluorescens.window_gc.png
+    pos:
+      - 0
+      - 9
+  - name: Pseudomonas_putida.window_gc.png
+    pos:
+      - 1
+      - 9
+  - name: Pseudomonas_stutzeri.window_gc.png
+    pos:
+      - 2
+      - 9
+  - name: Ralstonia_solanacearum.window_gc.png
+    pos:
+      - 3
+      - 9
+  - name: Rhizobium_etli.window_gc.png
+    pos:
+      - 4
+      - 9
+  - name: Rhizobium_leguminosarum.window_gc.png
+    pos:
+      - 5
+      - 9
+  - name: Rhodopseudomonas_palustris.window_gc.png
+    pos:
+      - 6
+      - 9
+  - name: Riemerella_anatipestifer.window_gc.png
+    pos:
+      - 7
+      - 9
+  - name: Salmonella_enterica.window_gc.png
+    pos:
+      - 0
+      - 10
+  - name: Serratia_plymuthica.window_gc.png
+    pos:
+      - 1
+      - 10
+  - name: Shewanella_baltica.window_gc.png
+    pos:
+      - 2
+      - 10
+  - name: Sinorhizobium_meliloti.window_gc.png
+    pos:
+      - 3
+      - 10
+  - name: Staphylococcus_aureus.window_gc.png
+    pos:
+      - 4
+      - 10
+  - name: Stenotrophomonas_maltophilia.window_gc.png
+    pos:
+      - 5
+      - 10
+  - name: Streptococcus_agalactiae.window_gc.png
+    pos:
+      - 6
+      - 10
+  - name: Streptococcus_dysgalactiae.window_gc.png
+    pos:
+      - 7
+      - 10
+  - name: Streptococcus_equi.window_gc.png
+    pos:
+      - 0
+      - 11
+  - name: Streptococcus_gallolyticus.window_gc.png
+    pos:
+      - 1
+      - 11
+  - name: Streptococcus_intermedius.window_gc.png
+    pos:
+      - 2
+      - 11
+  - name: Streptococcus_mutans.window_gc.png
+    pos:
+      - 3
+      - 11
+  - name: Streptococcus_pneumoniae.window_gc.png
+    pos:
+      - 4
+      - 11
+  - name: Streptococcus_pyogenes.window_gc.png
+    pos:
+      - 5
+      - 11
+  - name: Streptococcus_salivarius.window_gc.png
+    pos:
+      - 6
+      - 11
+  - name: Streptococcus_suis.window_gc.png
+    pos:
+      - 7
+      - 11
+  - name: Streptococcus_thermophilus.window_gc.png
+    pos:
+      - 0
+      - 12
+  - name: Sulfolobus_islandicus.window_gc.png
+    pos:
+      - 1
+      - 12
+  - name: Variovorax_paradoxus.window_gc.png
+    pos:
+      - 2
+      - 12
+  - name: Vibrio_cholerae.window_gc.png
+    pos:
+      - 3
+      - 12
+  - name: Vibrio_vulnificus.window_gc.png
+    pos:
+      - 4
+      - 12
+  - name: Xanthomonas_campestris.window_gc.png
+    pos:
+      - 5
+      - 12
+  - name: Xanthomonas_oryzae.window_gc.png
+    pos:
+      - 6
+      - 12
+  - name: Xylella_fastidiosa.window_gc.png
+    pos:
+      - 7
+      - 12
+  - name: Yersinia_enterocolitica.window_gc.png
+    pos:
+      - 0
+      - 13
+  - name: Yersinia_pseudotuberculosis.window_gc.png
+    pos:
+      - 1
+      - 13
+  - name: Zymomonas_mobilis.window_gc.png
+    pos:
+      - 2
+      - 13
+texts:
+  - text: Acetobacter pasteurianus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - -0.05
+  - text: Acinetobacter baumannii
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - -0.05
+  - text: Actinobacillus pleuropneumoniae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - -0.05
+  - text: Aggregatibacter actinomycetemcomitans
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - -0.05
+  - text: Alteromonas macleodii
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 4
+      - -0.05
+  - text: Arcobacter butzleri
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 5
+      - -0.05
+  - text: Bacillus amyloliquefaciens
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 6
+      - -0.05
+  - text: Bacillus cereus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 7
+      - -0.05
+  - text: Bacillus subtilis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 0.95
+  - text: Bacillus thuringiensis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 0.95
+  - text: Bacteroides fragilis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 0.95
+  - text: Bifidobacterium animalis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 0.95
+  - text: Bifidobacterium bifidum
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 4
+      - 0.95
+  - text: Bifidobacterium longum
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 5
+      - 0.95
+  - text: Borrelia burgdorferi
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 6
+      - 0.95
+  - text: Burkholderia cenocepacia
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 7
+      - 0.95
+  - text: Campylobacter jejuni
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 1.95
+  - text: Chlamydia pneumoniae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 1.95
+  - text: Chlamydia psittaci
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 1.95
+  - text: Chlamydia trachomatis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 1.95
+  - text: Clostridium botulinum
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 4
+      - 1.95
+  - text: Clostridium perfringens
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 5
+      - 1.95
+  - text: Corynebacterium diphtheriae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 6
+      - 1.95
+  - text: Corynebacterium glutamicum
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 7
+      - 1.95
+  - text: Corynebacterium pseudotuberculosis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 2.95
+  - text: Corynebacterium ulcerans
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 2.95
+  - text: Coxiella burnetii
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 2.95
+  - text: Cronobacter sakazakii
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 2.95
+  - text: Dehalococcoides mccartyi
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 4
+      - 2.95
+  - text: Desulfovibrio vulgaris
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 5
+      - 2.95
+  - text: Dickeya dadantii
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 6
+      - 2.95
+  - text: Edwardsiella tarda
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 7
+      - 2.95
+  - text: Enterobacter cloacae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 3.95
+  - text: Enterococcus faecalis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 3.95
+  - text: Enterococcus faecium
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 3.95
+  - text: Escherichia coli
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 3.95
+  - text: Francisella novicida
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 4
+      - 3.95
+  - text: Francisella tularensis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 5
+      - 3.95
+  - text: Gardnerella vaginalis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 6
+      - 3.95
+  - text: Haemophilus influenzae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 7
+      - 3.95
+  - text: Helicobacter pylori
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 4.95
+  - text: Klebsiella pneumoniae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 4.95
+  - text: Lactobacillus acidophilus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 4.95
+  - text: Lactobacillus casei
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 4.95
+  - text: Lactobacillus delbrueckii
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 4
+      - 4.95
+  - text: Lactobacillus fermentum
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 5
+      - 4.95
+  - text: Lactobacillus helveticus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 6
+      - 4.95
+  - text: Lactobacillus johnsonii
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 7
+      - 4.95
+  - text: Lactobacillus plantarum
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 5.95
+  - text: Lactobacillus reuteri
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 5.95
+  - text: Lactobacillus rhamnosus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 5.95
+  - text: Lactococcus lactis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 5.95
+  - text: Legionella pneumophila
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 4
+      - 5.95
+  - text: Leptospira interrogans
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 5
+      - 5.95
+  - text: Listeria monocytogenes
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 6
+      - 5.95
+  - text: Methanococcus maripaludis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 7
+      - 5.95
+  - text: Mycobacterium abscessus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 6.95
+  - text: Mycobacterium canettii
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 6.95
+  - text: Mycobacterium intracellulare
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 6.95
+  - text: Mycoplasma bovis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 6.95
+  - text: Mycoplasma gallisepticum
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 4
+      - 6.95
+  - text: Mycoplasma hyopneumoniae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 5
+      - 6.95
+  - text: Neisseria gonorrhoeae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 6
+      - 6.95
+  - text: Neisseria meningitidis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 7
+      - 6.95
+  - text: Paenibacillus mucilaginosus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 7.95
+  - text: Paenibacillus polymyxa
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 7.95
+  - text: Pantoea ananatis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 7.95
+  - text: Pasteurella multocida
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 7.95
+  - text: Porphyromonas gingivalis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 4
+      - 7.95
+  - text: Prochlorococcus marinus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 5
+      - 7.95
+  - text: Propionibacterium acnes
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 6
+      - 7.95
+  - text: Pseudomonas aeruginosa
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 7
+      - 7.95
+  - text: Pseudomonas fluorescens
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 8.95
+  - text: Pseudomonas putida
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 8.95
+  - text: Pseudomonas stutzeri
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 8.95
+  - text: Ralstonia solanacearum
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 8.95
+  - text: Rhizobium etli
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 4
+      - 8.95
+  - text: Rhizobium leguminosarum
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 5
+      - 8.95
+  - text: Rhodopseudomonas palustris
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 6
+      - 8.95
+  - text: Riemerella anatipestifer
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 7
+      - 8.95
+  - text: Salmonella enterica
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 9.95
+  - text: Serratia plymuthica
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 9.95
+  - text: Shewanella baltica
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 9.95
+  - text: Sinorhizobium meliloti
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 9.95
+  - text: Staphylococcus aureus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 4
+      - 9.95
+  - text: Stenotrophomonas maltophilia
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 5
+      - 9.95
+  - text: Streptococcus agalactiae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 6
+      - 9.95
+  - text: Streptococcus dysgalactiae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 7
+      - 9.95
+  - text: Streptococcus equi
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 10.95
+  - text: Streptococcus gallolyticus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 10.95
+  - text: Streptococcus intermedius
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 10.95
+  - text: Streptococcus mutans
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 10.95
+  - text: Streptococcus pneumoniae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 4
+      - 10.95
+  - text: Streptococcus pyogenes
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 5
+      - 10.95
+  - text: Streptococcus salivarius
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 6
+      - 10.95
+  - text: Streptococcus suis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 7
+      - 10.95
+  - text: Streptococcus thermophilus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 11.95
+  - text: Sulfolobus islandicus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 11.95
+  - text: Variovorax paradoxus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 11.95
+  - text: Vibrio cholerae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 11.95
+  - text: Vibrio vulnificus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 4
+      - 11.95
+  - text: Xanthomonas campestris
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 5
+      - 11.95
+  - text: Xanthomonas oryzae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 6
+      - 11.95
+  - text: Xylella fastidiosa
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 7
+      - 11.95
+  - text: Yersinia enterocolitica
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 12.95
+  - text: Yersinia pseudotuberculosis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 12.95
+  - text: Zymomonas mobilis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 12.95

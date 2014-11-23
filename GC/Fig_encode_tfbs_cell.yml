@@ -1,0 +1,210 @@
+---
+charts:
+  Humanvsself_BED_cells_TFBS_SPP.cell.ofg.chart.xlsx:
+    ofg_tag_A549:
+      1:
+        - 0
+        - 0
+    ofg_tag_GLIOBLA:
+      1:
+        - 1
+        - 0
+    ofg_tag_GM12878:
+      1:
+        - 2
+        - 0
+    ofg_tag_GM12891:
+      1:
+        - 3
+        - 0
+    ofg_tag_GM12892:
+      1:
+        - 0
+        - 1
+    ofg_tag_H1HESC:
+      1:
+        - 1
+        - 1
+    ofg_tag_HELAS3:
+      1:
+        - 2
+        - 1
+    ofg_tag_HEPG2:
+      1:
+        - 3
+        - 1
+    ofg_tag_HUVEC:
+      1:
+        - 0
+        - 2
+    ofg_tag_K562:
+      1:
+        - 1
+        - 2
+    ofg_tag_NHA:
+      1:
+        - 2
+        - 2
+    ofg_tag_NHEK:
+      1:
+        - 3
+        - 2
+texts:
+  - text: A549
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - -0.05
+  - text: GLIOBLA
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - -0.05
+  - text: GM12878
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - -0.05
+  - text: GM12891
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - -0.05
+  - text: GM12892
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 0.95
+  - text: H1HESC
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 0.95
+  - text: HELAS3
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 0.95
+  - text: HEPG2
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 0.95
+  - text: HUVEC
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 1.95
+  - text: K562
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 1.95
+  - text: NHA
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 1.95
+  - text: NHEK
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 1.95
+ranges:
+  Humanvsself_BED_cells_TFBS_SPP.cell.ofg.chart.xlsx:
+    ofg_tag_A549:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - -0.05
+    ofg_tag_GLIOBLA:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - -0.05
+    ofg_tag_GM12878:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - -0.05
+    ofg_tag_GM12891:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - -0.05
+    ofg_tag_GM12892:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 0.95
+    ofg_tag_H1HESC:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 0.95
+    ofg_tag_HELAS3:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 0.95
+    ofg_tag_HEPG2:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 0.95
+    ofg_tag_HUVEC:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 1.95
+    ofg_tag_K562:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 1.95
+    ofg_tag_NHA:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 1.95
+    ofg_tag_NHEK:
+      - copy: L2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 1.95

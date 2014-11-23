@@ -1,0 +1,445 @@
+---
+charts:
+  Acinetobacter_baumannii.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 0
+        - 0
+  Actinobacillus_pleuropneumoniae.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 1
+        - 0
+  Bacillus_cereus.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 2
+        - 0
+  Bifidobacterium_longum.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 3
+        - 0
+  Burkholderia_cenocepacia.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 0
+        - 1
+  Burkholderia_pseudomallei.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 1
+        - 1
+  Campylobacter_jejuni.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 2
+        - 1
+  Chlamydia_trachomatis.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 3
+        - 1
+  Clostridium_botulinum.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 0
+        - 2
+  Coxiella_burnetii.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 1
+        - 2
+  Escherichia_coli.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 2
+        - 2
+  Francisella_tularensis.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 3
+        - 2
+  Haemophilus_influenzae.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 0
+        - 3
+  Helicobacter_pylori.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 1
+        - 3
+  Lactococcus_lactis.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 2
+        - 3
+  Legionella_pneumophila.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 3
+        - 3
+  Listeria_monocytogenes.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 0
+        - 4
+  Methanococcus_maripaludis.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 1
+        - 4
+  Neisseria_meningitidis.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 2
+        - 4
+  Prochlorococcus_marinus.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 3
+        - 4
+  Pseudomonas_putida.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 0
+        - 5
+  Rhodopseudomonas_palustris.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 1
+        - 5
+  Salmonella_enterica.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 2
+        - 5
+  Shewanella_baltica.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 3
+        - 5
+  Staphylococcus_aureus.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 0
+        - 6
+  Streptococcus_equi.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 1
+        - 6
+  Streptococcus_pneumoniae.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 2
+        - 6
+  Streptococcus_pyogenes.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 3
+        - 6
+  Streptococcus_suis.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 0
+        - 7
+  Streptococcus_thermophilus.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 1
+        - 7
+  Sulfolobus_islandicus.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 2
+        - 7
+  Xylella_fastidiosa.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 3
+        - 7
+  Yersinia_pestis.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 0
+        - 8
+  Yersinia_pseudotuberculosis.multi.chart.xls:
+    combined_pigccv:
+      4:
+        - 1
+        - 8
+texts:
+  - text: Acinetobacter baumannii
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 0
+      - -0.05
+  - text: Actinobacillus pleuropneumoniae
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 1
+      - -0.05
+  - text: Bacillus cereus
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 2
+      - -0.05
+  - text: Bifidobacterium longum
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 3
+      - -0.05
+  - text: Burkholderia cenocepacia
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 0
+      - 0.95
+  - text: Burkholderia pseudomallei
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 1
+      - 0.95
+  - text: Campylobacter jejuni
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 2
+      - 0.95
+  - text: Chlamydia trachomatis
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 3
+      - 0.95
+  - text: Clostridium botulinum
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 0
+      - 1.95
+  - text: Coxiella burnetii
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 1
+      - 1.95
+  - text: Escherichia coli
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 2
+      - 1.95
+  - text: Francisella tularensis
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 3
+      - 1.95
+  - text: Haemophilus influenzae
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 0
+      - 2.95
+  - text: Helicobacter pylori
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 1
+      - 2.95
+  - text: Lactococcus lactis
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 2
+      - 2.95
+  - text: Legionella pneumophila
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 3
+      - 2.95
+  - text: Listeria monocytogenes
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 0
+      - 3.95
+  - text: Methanococcus maripaludis
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 1
+      - 3.95
+  - text: Neisseria meningitidis
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 2
+      - 3.95
+  - text: Prochlorococcus marinus
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 3
+      - 3.95
+  - text: Pseudomonas putida
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 0
+      - 4.95
+  - text: Rhodopseudomonas palustris
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 1
+      - 4.95
+  - text: Salmonella enterica
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 2
+      - 4.95
+  - text: Shewanella baltica
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 3
+      - 4.95
+  - text: Staphylococcus aureus
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 0
+      - 5.95
+  - text: Streptococcus equi
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 1
+      - 5.95
+  - text: Streptococcus pneumoniae
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 2
+      - 5.95
+  - text: Streptococcus pyogenes
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 3
+      - 5.95
+  - text: Streptococcus suis
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 0
+      - 6.95
+  - text: Streptococcus thermophilus
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 1
+      - 6.95
+  - text: Sulfolobus islandicus
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 2
+      - 6.95
+  - text: Xylella fastidiosa
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 3
+      - 6.95
+  - text: Yersinia pestis
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 0
+      - 7.95
+  - text: Yersinia pseudotuberculosis
+    size: 8
+    bold: 1
+    italic: 1
+    rotate: 0
+    pos:
+      - 1
+      - 7.95

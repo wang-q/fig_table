@@ -1,0 +1,72 @@
+---
+charts:
+  HumanvsCGOR.multi.chart.xlsx:
+    combined_pigccv:
+      4:
+        - 0
+        - 0
+  DmelvsXXII.multi.chart.xlsx:
+    combined_pigccv:
+      4:
+        - 1
+        - 0
+  AthvsXIX.multi.chart.xlsx:
+    combined_pigccv:
+      4:
+        - 0
+        - 1
+  S288CvsVIII_WGS.multi.chart.xlsx:
+    combined_pigccv:
+      4:
+        - 1
+        - 1
+texts:
+  - text: a
+    size: 12
+    bold: 1
+    pos:
+      - 0
+      - -0.05
+  - text: b
+    size: 12
+    bold: 1
+    pos:
+      - 1
+      - -0.05
+  - text: c
+    size: 12
+    bold: 1
+    pos:
+      - 0
+      - 0.95
+  - text: d
+    size: 12
+    bold: 1
+    pos:
+      - 1
+      - 0.95
+  - text: Human, chimp, gorilla and orangutan
+    size: 7
+    bold: 1
+    pos:
+      - 0.1
+      - -0.05
+  - text: 22 Drosophila lines
+    size: 7
+    bold: 1
+    pos:
+      - 1.1
+      - -0.05
+  - text: 19 Arabidopsis lines
+    size: 7
+    bold: 1
+    pos:
+      - 0.1
+      - 0.95
+  - text: 8 yeast lines
+    size: 7
+    bold: 1
+    pos:
+      - 1.1
+      - 0.95
+

@@ -1,0 +1,57 @@
+---
+charts:
+  HumanvsCGOR_intron.gc.chart.xls:
+    segment_gc_indel_3:
+      1:
+        - 0
+        - 0
+      2:
+        - 1
+        - 0
+    segment_cv_indel_3:
+      1:
+        - 2
+        - 0
+      2:
+        - 3
+        - 0
+  HumanvsCGOR_non_repeat.gc.chart.xls:
+    segment_gc_indel_3:
+      1:
+        - 0
+        - 1
+      2:
+        - 1
+        - 1
+    segment_cv_indel_3:
+      1:
+        - 2
+        - 1
+      2:
+        - 3
+        - 1
+texts:
+  - text: a
+    size: 12
+    bold: 1
+    pos:
+      - 0
+      - -0.05
+  - text: b
+    size: 12
+    bold: 1
+    pos:
+      - 0
+      - 0.95
+  - text: Introns in human, chimp, gorilla and orangutan
+    size: 7
+    bold: 1
+    pos:
+      - 0.1
+      - -0.05
+  - text: Non-repeat regions in human, chimp, gorilla and orangutan
+    size: 7
+    bold: 1
+    pos:
+      - 0.1
+      - 0.95

@@ -1,0 +1,1287 @@
+---
+charts:
+  Acetobacter_pasteurianus.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 0
+  Acinetobacter_baumannii.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 0
+  Actinobacillus_pleuropneumoniae.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 0
+  Aggregatibacter_actinomycetemcomitans.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 0
+  Alteromonas_macleodii.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 1
+  Arcobacter_butzleri.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 1
+  Bacillus_amyloliquefaciens.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 1
+  Bacillus_cereus.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 1
+  Bacillus_subtilis.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 2
+  Bacillus_thuringiensis.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 2
+  Bacteroides_fragilis.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 2
+  Bifidobacterium_animalis.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 2
+  Bifidobacterium_bifidum.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 3
+  Bifidobacterium_longum.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 3
+  Borrelia_burgdorferi.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 3
+  Burkholderia_cenocepacia.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 3
+  Campylobacter_jejuni.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 4
+  Chlamydia_pneumoniae.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 4
+  Chlamydia_psittaci.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 4
+  Chlamydia_trachomatis.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 4
+  Clostridium_botulinum.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 5
+  Clostridium_perfringens.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 5
+  Corynebacterium_diphtheriae.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 5
+  Corynebacterium_glutamicum.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 5
+  Corynebacterium_pseudotuberculosis.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 6
+  Corynebacterium_ulcerans.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 6
+  Coxiella_burnetii.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 6
+  Cronobacter_sakazakii.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 6
+  Dehalococcoides_mccartyi.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 7
+  Desulfovibrio_vulgaris.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 7
+  Dickeya_dadantii.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 7
+  Edwardsiella_tarda.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 7
+  Enterobacter_cloacae.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 8
+  Enterococcus_faecalis.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 8
+  Enterococcus_faecium.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 8
+  Escherichia_coli.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 8
+  Francisella_novicida.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 9
+  Francisella_tularensis.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 9
+  Gardnerella_vaginalis.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 9
+  Haemophilus_influenzae.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 9
+  Helicobacter_pylori.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 10
+  Klebsiella_pneumoniae.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 10
+  Lactobacillus_acidophilus.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 10
+  Lactobacillus_casei.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 10
+  Lactobacillus_delbrueckii.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 11
+  Lactobacillus_fermentum.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 11
+  Lactobacillus_helveticus.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 11
+  Lactobacillus_johnsonii.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 11
+  Lactobacillus_plantarum.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 12
+  Lactobacillus_reuteri.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 12
+  Lactobacillus_rhamnosus.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 12
+  Lactococcus_lactis.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 12
+  Legionella_pneumophila.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 13
+  Leptospira_interrogans.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 13
+  Listeria_monocytogenes.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 13
+  Methanococcus_maripaludis.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 13
+  Mycobacterium_abscessus.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 14
+  Mycobacterium_canettii.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 14
+  Mycobacterium_intracellulare.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 14
+  Mycoplasma_bovis.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 14
+  Mycoplasma_gallisepticum.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 15
+  Mycoplasma_hyopneumoniae.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 15
+  Neisseria_gonorrhoeae.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 15
+  Neisseria_meningitidis.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 15
+  Paenibacillus_mucilaginosus.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 16
+  Paenibacillus_polymyxa.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 16
+  Pantoea_ananatis.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 16
+  Pasteurella_multocida.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 16
+  Porphyromonas_gingivalis.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 17
+  Prochlorococcus_marinus.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 17
+  Propionibacterium_acnes.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 17
+  Pseudomonas_aeruginosa.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 17
+  Pseudomonas_fluorescens.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 18
+  Pseudomonas_putida.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 18
+  Pseudomonas_stutzeri.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 18
+  Ralstonia_solanacearum.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 18
+  Rhizobium_etli.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 19
+  Rhizobium_leguminosarum.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 19
+  Rhodopseudomonas_palustris.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 19
+  Riemerella_anatipestifer.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 19
+  Salmonella_enterica.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 20
+  Serratia_plymuthica.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 20
+  Shewanella_baltica.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 20
+  Sinorhizobium_meliloti.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 20
+  Staphylococcus_aureus.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 21
+  Stenotrophomonas_maltophilia.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 21
+  Streptococcus_agalactiae.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 21
+  Streptococcus_dysgalactiae.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 21
+  Streptococcus_equi.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 22
+  Streptococcus_gallolyticus.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 22
+  Streptococcus_intermedius.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 22
+  Streptococcus_mutans.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 22
+  Streptococcus_pneumoniae.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 23
+  Streptococcus_pyogenes.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 23
+  Streptococcus_salivarius.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 23
+  Streptococcus_suis.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 23
+  Streptococcus_thermophilus.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 24
+  Sulfolobus_islandicus.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 24
+  Variovorax_paradoxus.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 24
+  Vibrio_cholerae.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 24
+  Vibrio_vulnificus.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 25
+  Xanthomonas_campestris.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 25
+  Xanthomonas_oryzae.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 25
+  Xylella_fastidiosa.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 3
+        - 25
+  Yersinia_enterocolitica.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 0
+        - 26
+  Yersinia_pseudotuberculosis.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 1
+        - 26
+  Zymomonas_mobilis.common.chart.xlsx:
+    d1_comb_pi_gc_cv:
+      4:
+        - 2
+        - 26
+texts:
+  - text: Acetobacter pasteurianus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - -0.05
+  - text: Acinetobacter baumannii
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - -0.05
+  - text: Actinobacillus pleuropneumoniae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - -0.05
+  - text: Aggregatibacter actinomycetemcomitans
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - -0.05
+  - text: Alteromonas macleodii
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 0.95
+  - text: Arcobacter butzleri
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 0.95
+  - text: Bacillus amyloliquefaciens
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 0.95
+  - text: Bacillus cereus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 0.95
+  - text: Bacillus subtilis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 1.95
+  - text: Bacillus thuringiensis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 1.95
+  - text: Bacteroides fragilis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 1.95
+  - text: Bifidobacterium animalis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 1.95
+  - text: Bifidobacterium bifidum
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 2.95
+  - text: Bifidobacterium longum
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 2.95
+  - text: Borrelia burgdorferi
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 2.95
+  - text: Burkholderia cenocepacia
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 2.95
+  - text: Campylobacter jejuni
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 3.95
+  - text: Chlamydia pneumoniae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 3.95
+  - text: Chlamydia psittaci
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 3.95
+  - text: Chlamydia trachomatis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 3.95
+  - text: Clostridium botulinum
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 4.95
+  - text: Clostridium perfringens
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 4.95
+  - text: Corynebacterium diphtheriae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 4.95
+  - text: Corynebacterium glutamicum
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 4.95
+  - text: Corynebacterium pseudotuberculosis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 5.95
+  - text: Corynebacterium ulcerans
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 5.95
+  - text: Coxiella burnetii
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 5.95
+  - text: Cronobacter sakazakii
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 5.95
+  - text: Dehalococcoides mccartyi
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 6.95
+  - text: Desulfovibrio vulgaris
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 6.95
+  - text: Dickeya dadantii
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 6.95
+  - text: Edwardsiella tarda
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 6.95
+  - text: Enterobacter cloacae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 7.95
+  - text: Enterococcus faecalis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 7.95
+  - text: Enterococcus faecium
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 7.95
+  - text: Escherichia coli
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 7.95
+  - text: Francisella novicida
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 8.95
+  - text: Francisella tularensis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 8.95
+  - text: Gardnerella vaginalis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 8.95
+  - text: Haemophilus influenzae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 8.95
+  - text: Helicobacter pylori
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 9.95
+  - text: Klebsiella pneumoniae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 9.95
+  - text: Lactobacillus acidophilus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 9.95
+  - text: Lactobacillus casei
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 9.95
+  - text: Lactobacillus delbrueckii
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 10.95
+  - text: Lactobacillus fermentum
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 10.95
+  - text: Lactobacillus helveticus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 10.95
+  - text: Lactobacillus johnsonii
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 10.95
+  - text: Lactobacillus plantarum
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 11.95
+  - text: Lactobacillus reuteri
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 11.95
+  - text: Lactobacillus rhamnosus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 11.95
+  - text: Lactococcus lactis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 11.95
+  - text: Legionella pneumophila
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 12.95
+  - text: Leptospira interrogans
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 12.95
+  - text: Listeria monocytogenes
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 12.95
+  - text: Methanococcus maripaludis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 12.95
+  - text: Mycobacterium abscessus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 13.95
+  - text: Mycobacterium canettii
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 13.95
+  - text: Mycobacterium intracellulare
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 13.95
+  - text: Mycoplasma bovis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 13.95
+  - text: Mycoplasma gallisepticum
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 14.95
+  - text: Mycoplasma hyopneumoniae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 14.95
+  - text: Neisseria gonorrhoeae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 14.95
+  - text: Neisseria meningitidis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 14.95
+  - text: Paenibacillus mucilaginosus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 15.95
+  - text: Paenibacillus polymyxa
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 15.95
+  - text: Pantoea ananatis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 15.95
+  - text: Pasteurella multocida
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 15.95
+  - text: Porphyromonas gingivalis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 16.95
+  - text: Prochlorococcus marinus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 16.95
+  - text: Propionibacterium acnes
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 16.95
+  - text: Pseudomonas aeruginosa
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 16.95
+  - text: Pseudomonas fluorescens
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 17.95
+  - text: Pseudomonas putida
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 17.95
+  - text: Pseudomonas stutzeri
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 17.95
+  - text: Ralstonia solanacearum
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 17.95
+  - text: Rhizobium etli
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 18.95
+  - text: Rhizobium leguminosarum
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 18.95
+  - text: Rhodopseudomonas palustris
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 18.95
+  - text: Riemerella anatipestifer
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 18.95
+  - text: Salmonella enterica
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 19.95
+  - text: Serratia plymuthica
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 19.95
+  - text: Shewanella baltica
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 19.95
+  - text: Sinorhizobium meliloti
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 19.95
+  - text: Staphylococcus aureus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 20.95
+  - text: Stenotrophomonas maltophilia
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 20.95
+  - text: Streptococcus agalactiae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 20.95
+  - text: Streptococcus dysgalactiae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 20.95
+  - text: Streptococcus equi
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 21.95
+  - text: Streptococcus gallolyticus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 21.95
+  - text: Streptococcus intermedius
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 21.95
+  - text: Streptococcus mutans
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 21.95
+  - text: Streptococcus pneumoniae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 22.95
+  - text: Streptococcus pyogenes
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 22.95
+  - text: Streptococcus salivarius
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 22.95
+  - text: Streptococcus suis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 22.95
+  - text: Streptococcus thermophilus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 23.95
+  - text: Sulfolobus islandicus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 23.95
+  - text: Variovorax paradoxus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 23.95
+  - text: Vibrio cholerae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 23.95
+  - text: Vibrio vulnificus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 24.95
+  - text: Xanthomonas campestris
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 24.95
+  - text: Xanthomonas oryzae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 24.95
+  - text: Xylella fastidiosa
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 3
+      - 24.95
+  - text: Yersinia enterocolitica
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 25.95
+  - text: Yersinia pseudotuberculosis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 1
+      - 25.95
+  - text: Zymomonas mobilis
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 2
+      - 25.95

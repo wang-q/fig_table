@@ -1,0 +1,104 @@
+---
+charts:
+  HumanvsCGOR.multi.chart.xlsx:
+    combined_pigccv:
+      4:
+        - 0
+        - 0
+  HumanvsCGOR.gc.chart.xlsx:
+    segment_cv_indel_3:
+      2:
+        - 1
+        - 0
+  DmelvsXXII.multi.chart.xlsx:
+    combined_pigccv:
+      4:
+        - 0
+        - 1
+  DmelvsXXII.gc.chart.xlsx:
+    segment_cv_indel_3:
+      2:
+        - 1
+        - 1
+  AthvsXIX.multi.chart.xlsx:
+    combined_pigccv:
+      4:
+        - 0
+        - 2
+  AthvsXIX.gc.chart.xlsx:
+    segment_cv_indel_3:
+      2:
+        - 1
+        - 2
+  S288CvsVIII_WGS.multi.chart.xlsx:
+    combined_pigccv:
+      4:
+        - 0
+        - 3
+  S288CvsVIII_WGS.gc.chart.xlsx:
+    segment_cv_indel_3:
+      2:
+        - 1
+        - 3
+texts:
+  - text: a
+    size: 12
+    bold: 1
+    pos:
+      - 0
+      - -0.05
+  - text: b
+    size: 12
+    bold: 1
+    pos:
+      - 1
+      - -0.05
+  - text: Human, chimp, gorilla and orangutan
+    size: 6
+    bold: 1
+    pos:
+      - 0.1
+      - -0.05
+  - text: Human, chimp, gorilla and orangutan
+    size: 6
+    bold: 1
+    pos:
+      - 1.1
+      - -0.05
+  - text: 22 Drosophila lines
+    size: 6
+    bold: 1
+    pos:
+      - 0.1
+      - 0.95
+  - text: 22 Drosophila lines
+    size: 6
+    bold: 1
+    pos:
+      - 1.1
+      - 0.95
+  - text: 19 Arabidopsis lines
+    size: 6
+    bold: 1
+    pos:
+      - 0.1
+      - 1.95
+  - text: 19 Arabidopsis lines
+    size: 6
+    bold: 1
+    pos:
+      - 1.1
+      - 1.95
+  - text: 8 yeast lines
+    size: 6
+    bold: 1
+    pos:
+      - 0.1
+      - 2.95
+  - text: 8 yeast lines
+    size: 6
+    bold: 1
+    pos:
+      - 1.1
+      - 2.95
+

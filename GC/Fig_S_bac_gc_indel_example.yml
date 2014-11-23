@@ -1,0 +1,115 @@
+---
+charts:
+  Borrelia_burgdorferi.gc.chart.xlsx:
+    segment_gc_indel_3:
+      2:
+        - 0
+        - 0
+    segment_cv_indel_3:
+      2:
+        - 1
+        - 0
+  Burkholderia_cenocepacia.gc.chart.xlsx:
+    segment_gc_indel_3:
+      2:
+        - 0
+        - 1
+    segment_cv_indel_3:
+      2:
+        - 1
+        - 1
+  Chlamydia_pneumoniae.gc.chart.xlsx:
+    segment_gc_indel_3:
+      2:
+        - 0
+        - 2
+    segment_cv_indel_3:
+      2:
+        - 1
+        - 2
+  Lactobacillus_fermentum.gc.chart.xlsx:
+    segment_gc_indel_3:
+      2:
+        - 0
+        - 3
+    segment_cv_indel_3:
+      2:
+        - 1
+        - 3
+  Salmonella_enterica.gc.chart.xlsx:
+    segment_gc_indel_3:
+      2:
+        - 0
+        - 4
+    segment_cv_indel_3:
+      2:
+        - 1
+        - 4
+  Streptococcus_dysgalactiae.gc.chart.xlsx:
+    segment_gc_indel_3:
+      2:
+        - 0
+        - 5
+    segment_cv_indel_3:
+      2:
+        - 1
+        - 5
+  Variovorax_paradoxus.gc.chart.xlsx:
+    segment_gc_indel_3:
+      2:
+        - 0
+        - 6
+    segment_cv_indel_3:
+      2:
+        - 1
+        - 6
+texts:
+  - text: Borrelia burgdorferi
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - -0.05
+  - text: Burkholderia cenocepacia
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 0.95
+  - text: Chlamydia pneumoniae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 1.95
+  - text: Lactobacillus fermentum
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 2.95
+  - text: Salmonella enterica
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 3.95
+  - text: Streptococcus dysgalactiae
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 4.95
+  - text: Variovorax paradoxus
+    size: 8
+    bold: 1
+    italic: 1
+    pos:
+      - 0
+      - 5.95

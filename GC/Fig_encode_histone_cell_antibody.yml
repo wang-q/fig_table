@@ -1,0 +1,6789 @@
+---
+charts:
+  Human_BED_Histone.tt.mg.chart.xlsx:
+    ofg_tt_AG04449-H2AZ:
+      1:
+        - 0
+        - 0
+    ofg_tt_AG04449-H3K04ME1:
+      1:
+        - 1
+        - 0
+    ofg_tt_AG04449-H3K04ME2:
+      1:
+        - 2
+        - 0
+    ofg_tt_AG04449-H3K04ME3:
+      1:
+        - 3
+        - 0
+    ofg_tt_AG04449-H3K09AC:
+      1:
+        - 4
+        - 0
+    ofg_tt_AG04449-H3K09ACb:
+      1:
+        - 5
+        - 0
+    ofg_tt_AG04449-H3K09ME3:
+      1:
+        - 6
+        - 0
+    ofg_tt_AG04449-H3K27AC:
+      1:
+        - 7
+        - 0
+    ofg_tt_AG04449-H3K27ME3:
+      1:
+        - 8
+        - 0
+    ofg_tt_AG04449-H3K36ME3:
+      1:
+        - 9
+        - 0
+    ofg_tt_AG04449-H3K36ME3b:
+      1:
+        - 10
+        - 0
+    ofg_tt_AG04449-H3K79ME2:
+      1:
+        - 11
+        - 0
+    ofg_tt_AG04449-H4K20ME1:
+      1:
+        - 12
+        - 0
+    ofg_tt_AG04450-H2AZ:
+      1:
+        - 0
+        - 1
+    ofg_tt_AG04450-H3K04ME1:
+      1:
+        - 1
+        - 1
+    ofg_tt_AG04450-H3K04ME2:
+      1:
+        - 2
+        - 1
+    ofg_tt_AG04450-H3K04ME3:
+      1:
+        - 3
+        - 1
+    ofg_tt_AG04450-H3K09AC:
+      1:
+        - 4
+        - 1
+    ofg_tt_AG04450-H3K09ACb:
+      1:
+        - 5
+        - 1
+    ofg_tt_AG04450-H3K09ME3:
+      1:
+        - 6
+        - 1
+    ofg_tt_AG04450-H3K27AC:
+      1:
+        - 7
+        - 1
+    ofg_tt_AG04450-H3K27ME3:
+      1:
+        - 8
+        - 1
+    ofg_tt_AG04450-H3K36ME3:
+      1:
+        - 9
+        - 1
+    ofg_tt_AG04450-H3K36ME3b:
+      1:
+        - 10
+        - 1
+    ofg_tt_AG04450-H3K79ME2:
+      1:
+        - 11
+        - 1
+    ofg_tt_AG04450-H4K20ME1:
+      1:
+        - 12
+        - 1
+    ofg_tt_AG09309-H2AZ:
+      1:
+        - 0
+        - 2
+    ofg_tt_AG09309-H3K04ME1:
+      1:
+        - 1
+        - 2
+    ofg_tt_AG09309-H3K04ME2:
+      1:
+        - 2
+        - 2
+    ofg_tt_AG09309-H3K04ME3:
+      1:
+        - 3
+        - 2
+    ofg_tt_AG09309-H3K09AC:
+      1:
+        - 4
+        - 2
+    ofg_tt_AG09309-H3K09ACb:
+      1:
+        - 5
+        - 2
+    ofg_tt_AG09309-H3K09ME3:
+      1:
+        - 6
+        - 2
+    ofg_tt_AG09309-H3K27AC:
+      1:
+        - 7
+        - 2
+    ofg_tt_AG09309-H3K27ME3:
+      1:
+        - 8
+        - 2
+    ofg_tt_AG09309-H3K36ME3:
+      1:
+        - 9
+        - 2
+    ofg_tt_AG09309-H3K36ME3b:
+      1:
+        - 10
+        - 2
+    ofg_tt_AG09309-H3K79ME2:
+      1:
+        - 11
+        - 2
+    ofg_tt_AG09309-H4K20ME1:
+      1:
+        - 12
+        - 2
+    ofg_tt_AG09319-H2AZ:
+      1:
+        - 0
+        - 3
+    ofg_tt_AG09319-H3K04ME1:
+      1:
+        - 1
+        - 3
+    ofg_tt_AG09319-H3K04ME2:
+      1:
+        - 2
+        - 3
+    ofg_tt_AG09319-H3K04ME3:
+      1:
+        - 3
+        - 3
+    ofg_tt_AG09319-H3K09AC:
+      1:
+        - 4
+        - 3
+    ofg_tt_AG09319-H3K09ACb:
+      1:
+        - 5
+        - 3
+    ofg_tt_AG09319-H3K09ME3:
+      1:
+        - 6
+        - 3
+    ofg_tt_AG09319-H3K27AC:
+      1:
+        - 7
+        - 3
+    ofg_tt_AG09319-H3K27ME3:
+      1:
+        - 8
+        - 3
+    ofg_tt_AG09319-H3K36ME3:
+      1:
+        - 9
+        - 3
+    ofg_tt_AG09319-H3K36ME3b:
+      1:
+        - 10
+        - 3
+    ofg_tt_AG09319-H3K79ME2:
+      1:
+        - 11
+        - 3
+    ofg_tt_AG09319-H4K20ME1:
+      1:
+        - 12
+        - 3
+    ofg_tt_AG10803-H2AZ:
+      1:
+        - 0
+        - 4
+    ofg_tt_AG10803-H3K04ME1:
+      1:
+        - 1
+        - 4
+    ofg_tt_AG10803-H3K04ME2:
+      1:
+        - 2
+        - 4
+    ofg_tt_AG10803-H3K04ME3:
+      1:
+        - 3
+        - 4
+    ofg_tt_AG10803-H3K09AC:
+      1:
+        - 4
+        - 4
+    ofg_tt_AG10803-H3K09ACb:
+      1:
+        - 5
+        - 4
+    ofg_tt_AG10803-H3K09ME3:
+      1:
+        - 6
+        - 4
+    ofg_tt_AG10803-H3K27AC:
+      1:
+        - 7
+        - 4
+    ofg_tt_AG10803-H3K27ME3:
+      1:
+        - 8
+        - 4
+    ofg_tt_AG10803-H3K36ME3:
+      1:
+        - 9
+        - 4
+    ofg_tt_AG10803-H3K36ME3b:
+      1:
+        - 10
+        - 4
+    ofg_tt_AG10803-H3K79ME2:
+      1:
+        - 11
+        - 4
+    ofg_tt_AG10803-H4K20ME1:
+      1:
+        - 12
+        - 4
+    ofg_tt_AOAF-H2AZ:
+      1:
+        - 0
+        - 5
+    ofg_tt_AOAF-H3K04ME1:
+      1:
+        - 1
+        - 5
+    ofg_tt_AOAF-H3K04ME2:
+      1:
+        - 2
+        - 5
+    ofg_tt_AOAF-H3K04ME3:
+      1:
+        - 3
+        - 5
+    ofg_tt_AOAF-H3K09AC:
+      1:
+        - 4
+        - 5
+    ofg_tt_AOAF-H3K09ACb:
+      1:
+        - 5
+        - 5
+    ofg_tt_AOAF-H3K09ME3:
+      1:
+        - 6
+        - 5
+    ofg_tt_AOAF-H3K27AC:
+      1:
+        - 7
+        - 5
+    ofg_tt_AOAF-H3K27ME3:
+      1:
+        - 8
+        - 5
+    ofg_tt_AOAF-H3K36ME3:
+      1:
+        - 9
+        - 5
+    ofg_tt_AOAF-H3K36ME3b:
+      1:
+        - 10
+        - 5
+    ofg_tt_AOAF-H3K79ME2:
+      1:
+        - 11
+        - 5
+    ofg_tt_AOAF-H4K20ME1:
+      1:
+        - 12
+        - 5
+    ofg_tt_BJ-H2AZ:
+      1:
+        - 0
+        - 6
+    ofg_tt_BJ-H3K04ME1:
+      1:
+        - 1
+        - 6
+    ofg_tt_BJ-H3K04ME2:
+      1:
+        - 2
+        - 6
+    ofg_tt_BJ-H3K04ME3:
+      1:
+        - 3
+        - 6
+    ofg_tt_BJ-H3K09AC:
+      1:
+        - 4
+        - 6
+    ofg_tt_BJ-H3K09ACb:
+      1:
+        - 5
+        - 6
+    ofg_tt_BJ-H3K09ME3:
+      1:
+        - 6
+        - 6
+    ofg_tt_BJ-H3K27AC:
+      1:
+        - 7
+        - 6
+    ofg_tt_BJ-H3K27ME3:
+      1:
+        - 8
+        - 6
+    ofg_tt_BJ-H3K36ME3:
+      1:
+        - 9
+        - 6
+    ofg_tt_BJ-H3K36ME3b:
+      1:
+        - 10
+        - 6
+    ofg_tt_BJ-H3K79ME2:
+      1:
+        - 11
+        - 6
+    ofg_tt_BJ-H4K20ME1:
+      1:
+        - 12
+        - 6
+    ofg_tt_CACO2-H2AZ:
+      1:
+        - 0
+        - 7
+    ofg_tt_CACO2-H3K04ME1:
+      1:
+        - 1
+        - 7
+    ofg_tt_CACO2-H3K04ME2:
+      1:
+        - 2
+        - 7
+    ofg_tt_CACO2-H3K04ME3:
+      1:
+        - 3
+        - 7
+    ofg_tt_CACO2-H3K09AC:
+      1:
+        - 4
+        - 7
+    ofg_tt_CACO2-H3K09ACb:
+      1:
+        - 5
+        - 7
+    ofg_tt_CACO2-H3K09ME3:
+      1:
+        - 6
+        - 7
+    ofg_tt_CACO2-H3K27AC:
+      1:
+        - 7
+        - 7
+    ofg_tt_CACO2-H3K27ME3:
+      1:
+        - 8
+        - 7
+    ofg_tt_CACO2-H3K36ME3:
+      1:
+        - 9
+        - 7
+    ofg_tt_CACO2-H3K36ME3b:
+      1:
+        - 10
+        - 7
+    ofg_tt_CACO2-H3K79ME2:
+      1:
+        - 11
+        - 7
+    ofg_tt_CACO2-H4K20ME1:
+      1:
+        - 12
+        - 7
+    ofg_tt_GM06990-H2AZ:
+      1:
+        - 0
+        - 8
+    ofg_tt_GM06990-H3K04ME1:
+      1:
+        - 1
+        - 8
+    ofg_tt_GM06990-H3K04ME2:
+      1:
+        - 2
+        - 8
+    ofg_tt_GM06990-H3K04ME3:
+      1:
+        - 3
+        - 8
+    ofg_tt_GM06990-H3K09AC:
+      1:
+        - 4
+        - 8
+    ofg_tt_GM06990-H3K09ACb:
+      1:
+        - 5
+        - 8
+    ofg_tt_GM06990-H3K09ME3:
+      1:
+        - 6
+        - 8
+    ofg_tt_GM06990-H3K27AC:
+      1:
+        - 7
+        - 8
+    ofg_tt_GM06990-H3K27ME3:
+      1:
+        - 8
+        - 8
+    ofg_tt_GM06990-H3K36ME3:
+      1:
+        - 9
+        - 8
+    ofg_tt_GM06990-H3K36ME3b:
+      1:
+        - 10
+        - 8
+    ofg_tt_GM06990-H3K79ME2:
+      1:
+        - 11
+        - 8
+    ofg_tt_GM06990-H4K20ME1:
+      1:
+        - 12
+        - 8
+    ofg_tt_GM12878-H2AZ:
+      1:
+        - 0
+        - 9
+    ofg_tt_GM12878-H3K04ME1:
+      1:
+        - 1
+        - 9
+    ofg_tt_GM12878-H3K04ME2:
+      1:
+        - 2
+        - 9
+    ofg_tt_GM12878-H3K04ME3:
+      1:
+        - 3
+        - 9
+    ofg_tt_GM12878-H3K09AC:
+      1:
+        - 4
+        - 9
+    ofg_tt_GM12878-H3K09ACb:
+      1:
+        - 5
+        - 9
+    ofg_tt_GM12878-H3K09ME3:
+      1:
+        - 6
+        - 9
+    ofg_tt_GM12878-H3K27AC:
+      1:
+        - 7
+        - 9
+    ofg_tt_GM12878-H3K27ME3:
+      1:
+        - 8
+        - 9
+    ofg_tt_GM12878-H3K36ME3:
+      1:
+        - 9
+        - 9
+    ofg_tt_GM12878-H3K36ME3b:
+      1:
+        - 10
+        - 9
+    ofg_tt_GM12878-H3K79ME2:
+      1:
+        - 11
+        - 9
+    ofg_tt_GM12878-H4K20ME1:
+      1:
+        - 12
+        - 9
+    ofg_tt_H1HESC-H2AZ:
+      1:
+        - 0
+        - 10
+    ofg_tt_H1HESC-H3K04ME1:
+      1:
+        - 1
+        - 10
+    ofg_tt_H1HESC-H3K04ME2:
+      1:
+        - 2
+        - 10
+    ofg_tt_H1HESC-H3K04ME3:
+      1:
+        - 3
+        - 10
+    ofg_tt_H1HESC-H3K09AC:
+      1:
+        - 4
+        - 10
+    ofg_tt_H1HESC-H3K09ACb:
+      1:
+        - 5
+        - 10
+    ofg_tt_H1HESC-H3K09ME3:
+      1:
+        - 6
+        - 10
+    ofg_tt_H1HESC-H3K27AC:
+      1:
+        - 7
+        - 10
+    ofg_tt_H1HESC-H3K27ME3:
+      1:
+        - 8
+        - 10
+    ofg_tt_H1HESC-H3K36ME3:
+      1:
+        - 9
+        - 10
+    ofg_tt_H1HESC-H3K36ME3b:
+      1:
+        - 10
+        - 10
+    ofg_tt_H1HESC-H3K79ME2:
+      1:
+        - 11
+        - 10
+    ofg_tt_H1HESC-H4K20ME1:
+      1:
+        - 12
+        - 10
+    ofg_tt_H7ES-H2AZ:
+      1:
+        - 0
+        - 11
+    ofg_tt_H7ES-H3K04ME1:
+      1:
+        - 1
+        - 11
+    ofg_tt_H7ES-H3K04ME2:
+      1:
+        - 2
+        - 11
+    ofg_tt_H7ES-H3K04ME3:
+      1:
+        - 3
+        - 11
+    ofg_tt_H7ES-H3K09AC:
+      1:
+        - 4
+        - 11
+    ofg_tt_H7ES-H3K09ACb:
+      1:
+        - 5
+        - 11
+    ofg_tt_H7ES-H3K09ME3:
+      1:
+        - 6
+        - 11
+    ofg_tt_H7ES-H3K27AC:
+      1:
+        - 7
+        - 11
+    ofg_tt_H7ES-H3K27ME3:
+      1:
+        - 8
+        - 11
+    ofg_tt_H7ES-H3K36ME3:
+      1:
+        - 9
+        - 11
+    ofg_tt_H7ES-H3K36ME3b:
+      1:
+        - 10
+        - 11
+    ofg_tt_H7ES-H3K79ME2:
+      1:
+        - 11
+        - 11
+    ofg_tt_H7ES-H4K20ME1:
+      1:
+        - 12
+        - 11
+    ofg_tt_HASP-H2AZ:
+      1:
+        - 0
+        - 12
+    ofg_tt_HASP-H3K04ME1:
+      1:
+        - 1
+        - 12
+    ofg_tt_HASP-H3K04ME2:
+      1:
+        - 2
+        - 12
+    ofg_tt_HASP-H3K04ME3:
+      1:
+        - 3
+        - 12
+    ofg_tt_HASP-H3K09AC:
+      1:
+        - 4
+        - 12
+    ofg_tt_HASP-H3K09ACb:
+      1:
+        - 5
+        - 12
+    ofg_tt_HASP-H3K09ME3:
+      1:
+        - 6
+        - 12
+    ofg_tt_HASP-H3K27AC:
+      1:
+        - 7
+        - 12
+    ofg_tt_HASP-H3K27ME3:
+      1:
+        - 8
+        - 12
+    ofg_tt_HASP-H3K36ME3:
+      1:
+        - 9
+        - 12
+    ofg_tt_HASP-H3K36ME3b:
+      1:
+        - 10
+        - 12
+    ofg_tt_HASP-H3K79ME2:
+      1:
+        - 11
+        - 12
+    ofg_tt_HASP-H4K20ME1:
+      1:
+        - 12
+        - 12
+    ofg_tt_HBMEC-H2AZ:
+      1:
+        - 0
+        - 13
+    ofg_tt_HBMEC-H3K04ME1:
+      1:
+        - 1
+        - 13
+    ofg_tt_HBMEC-H3K04ME2:
+      1:
+        - 2
+        - 13
+    ofg_tt_HBMEC-H3K04ME3:
+      1:
+        - 3
+        - 13
+    ofg_tt_HBMEC-H3K09AC:
+      1:
+        - 4
+        - 13
+    ofg_tt_HBMEC-H3K09ACb:
+      1:
+        - 5
+        - 13
+    ofg_tt_HBMEC-H3K09ME3:
+      1:
+        - 6
+        - 13
+    ofg_tt_HBMEC-H3K27AC:
+      1:
+        - 7
+        - 13
+    ofg_tt_HBMEC-H3K27ME3:
+      1:
+        - 8
+        - 13
+    ofg_tt_HBMEC-H3K36ME3:
+      1:
+        - 9
+        - 13
+    ofg_tt_HBMEC-H3K36ME3b:
+      1:
+        - 10
+        - 13
+    ofg_tt_HBMEC-H3K79ME2:
+      1:
+        - 11
+        - 13
+    ofg_tt_HBMEC-H4K20ME1:
+      1:
+        - 12
+        - 13
+    ofg_tt_HCF-H2AZ:
+      1:
+        - 0
+        - 14
+    ofg_tt_HCF-H3K04ME1:
+      1:
+        - 1
+        - 14
+    ofg_tt_HCF-H3K04ME2:
+      1:
+        - 2
+        - 14
+    ofg_tt_HCF-H3K04ME3:
+      1:
+        - 3
+        - 14
+    ofg_tt_HCF-H3K09AC:
+      1:
+        - 4
+        - 14
+    ofg_tt_HCF-H3K09ACb:
+      1:
+        - 5
+        - 14
+    ofg_tt_HCF-H3K09ME3:
+      1:
+        - 6
+        - 14
+    ofg_tt_HCF-H3K27AC:
+      1:
+        - 7
+        - 14
+    ofg_tt_HCF-H3K27ME3:
+      1:
+        - 8
+        - 14
+    ofg_tt_HCF-H3K36ME3:
+      1:
+        - 9
+        - 14
+    ofg_tt_HCF-H3K36ME3b:
+      1:
+        - 10
+        - 14
+    ofg_tt_HCF-H3K79ME2:
+      1:
+        - 11
+        - 14
+    ofg_tt_HCF-H4K20ME1:
+      1:
+        - 12
+        - 14
+    ofg_tt_HCM-H2AZ:
+      1:
+        - 0
+        - 15
+    ofg_tt_HCM-H3K04ME1:
+      1:
+        - 1
+        - 15
+    ofg_tt_HCM-H3K04ME2:
+      1:
+        - 2
+        - 15
+    ofg_tt_HCM-H3K04ME3:
+      1:
+        - 3
+        - 15
+    ofg_tt_HCM-H3K09AC:
+      1:
+        - 4
+        - 15
+    ofg_tt_HCM-H3K09ACb:
+      1:
+        - 5
+        - 15
+    ofg_tt_HCM-H3K09ME3:
+      1:
+        - 6
+        - 15
+    ofg_tt_HCM-H3K27AC:
+      1:
+        - 7
+        - 15
+    ofg_tt_HCM-H3K27ME3:
+      1:
+        - 8
+        - 15
+    ofg_tt_HCM-H3K36ME3:
+      1:
+        - 9
+        - 15
+    ofg_tt_HCM-H3K36ME3b:
+      1:
+        - 10
+        - 15
+    ofg_tt_HCM-H3K79ME2:
+      1:
+        - 11
+        - 15
+    ofg_tt_HCM-H4K20ME1:
+      1:
+        - 12
+        - 15
+    ofg_tt_HCPE-H2AZ:
+      1:
+        - 0
+        - 16
+    ofg_tt_HCPE-H3K04ME1:
+      1:
+        - 1
+        - 16
+    ofg_tt_HCPE-H3K04ME2:
+      1:
+        - 2
+        - 16
+    ofg_tt_HCPE-H3K04ME3:
+      1:
+        - 3
+        - 16
+    ofg_tt_HCPE-H3K09AC:
+      1:
+        - 4
+        - 16
+    ofg_tt_HCPE-H3K09ACb:
+      1:
+        - 5
+        - 16
+    ofg_tt_HCPE-H3K09ME3:
+      1:
+        - 6
+        - 16
+    ofg_tt_HCPE-H3K27AC:
+      1:
+        - 7
+        - 16
+    ofg_tt_HCPE-H3K27ME3:
+      1:
+        - 8
+        - 16
+    ofg_tt_HCPE-H3K36ME3:
+      1:
+        - 9
+        - 16
+    ofg_tt_HCPE-H3K36ME3b:
+      1:
+        - 10
+        - 16
+    ofg_tt_HCPE-H3K79ME2:
+      1:
+        - 11
+        - 16
+    ofg_tt_HCPE-H4K20ME1:
+      1:
+        - 12
+        - 16
+    ofg_tt_HCT116-H2AZ:
+      1:
+        - 0
+        - 17
+    ofg_tt_HCT116-H3K04ME1:
+      1:
+        - 1
+        - 17
+    ofg_tt_HCT116-H3K04ME2:
+      1:
+        - 2
+        - 17
+    ofg_tt_HCT116-H3K04ME3:
+      1:
+        - 3
+        - 17
+    ofg_tt_HCT116-H3K09AC:
+      1:
+        - 4
+        - 17
+    ofg_tt_HCT116-H3K09ACb:
+      1:
+        - 5
+        - 17
+    ofg_tt_HCT116-H3K09ME3:
+      1:
+        - 6
+        - 17
+    ofg_tt_HCT116-H3K27AC:
+      1:
+        - 7
+        - 17
+    ofg_tt_HCT116-H3K27ME3:
+      1:
+        - 8
+        - 17
+    ofg_tt_HCT116-H3K36ME3:
+      1:
+        - 9
+        - 17
+    ofg_tt_HCT116-H3K36ME3b:
+      1:
+        - 10
+        - 17
+    ofg_tt_HCT116-H3K79ME2:
+      1:
+        - 11
+        - 17
+    ofg_tt_HCT116-H4K20ME1:
+      1:
+        - 12
+        - 17
+    ofg_tt_HEE-H2AZ:
+      1:
+        - 0
+        - 18
+    ofg_tt_HEE-H3K04ME1:
+      1:
+        - 1
+        - 18
+    ofg_tt_HEE-H3K04ME2:
+      1:
+        - 2
+        - 18
+    ofg_tt_HEE-H3K04ME3:
+      1:
+        - 3
+        - 18
+    ofg_tt_HEE-H3K09AC:
+      1:
+        - 4
+        - 18
+    ofg_tt_HEE-H3K09ACb:
+      1:
+        - 5
+        - 18
+    ofg_tt_HEE-H3K09ME3:
+      1:
+        - 6
+        - 18
+    ofg_tt_HEE-H3K27AC:
+      1:
+        - 7
+        - 18
+    ofg_tt_HEE-H3K27ME3:
+      1:
+        - 8
+        - 18
+    ofg_tt_HEE-H3K36ME3:
+      1:
+        - 9
+        - 18
+    ofg_tt_HEE-H3K36ME3b:
+      1:
+        - 10
+        - 18
+    ofg_tt_HEE-H3K79ME2:
+      1:
+        - 11
+        - 18
+    ofg_tt_HEE-H4K20ME1:
+      1:
+        - 12
+        - 18
+    ofg_tt_HEK293-H2AZ:
+      1:
+        - 0
+        - 19
+    ofg_tt_HEK293-H3K04ME1:
+      1:
+        - 1
+        - 19
+    ofg_tt_HEK293-H3K04ME2:
+      1:
+        - 2
+        - 19
+    ofg_tt_HEK293-H3K04ME3:
+      1:
+        - 3
+        - 19
+    ofg_tt_HEK293-H3K09AC:
+      1:
+        - 4
+        - 19
+    ofg_tt_HEK293-H3K09ACb:
+      1:
+        - 5
+        - 19
+    ofg_tt_HEK293-H3K09ME3:
+      1:
+        - 6
+        - 19
+    ofg_tt_HEK293-H3K27AC:
+      1:
+        - 7
+        - 19
+    ofg_tt_HEK293-H3K27ME3:
+      1:
+        - 8
+        - 19
+    ofg_tt_HEK293-H3K36ME3:
+      1:
+        - 9
+        - 19
+    ofg_tt_HEK293-H3K36ME3b:
+      1:
+        - 10
+        - 19
+    ofg_tt_HEK293-H3K79ME2:
+      1:
+        - 11
+        - 19
+    ofg_tt_HEK293-H4K20ME1:
+      1:
+        - 12
+        - 19
+    ofg_tt_HELAS3-H2AZ:
+      1:
+        - 0
+        - 20
+    ofg_tt_HELAS3-H3K04ME1:
+      1:
+        - 1
+        - 20
+    ofg_tt_HELAS3-H3K04ME2:
+      1:
+        - 2
+        - 20
+    ofg_tt_HELAS3-H3K04ME3:
+      1:
+        - 3
+        - 20
+    ofg_tt_HELAS3-H3K09AC:
+      1:
+        - 4
+        - 20
+    ofg_tt_HELAS3-H3K09ACb:
+      1:
+        - 5
+        - 20
+    ofg_tt_HELAS3-H3K09ME3:
+      1:
+        - 6
+        - 20
+    ofg_tt_HELAS3-H3K27AC:
+      1:
+        - 7
+        - 20
+    ofg_tt_HELAS3-H3K27ME3:
+      1:
+        - 8
+        - 20
+    ofg_tt_HELAS3-H3K36ME3:
+      1:
+        - 9
+        - 20
+    ofg_tt_HELAS3-H3K36ME3b:
+      1:
+        - 10
+        - 20
+    ofg_tt_HELAS3-H3K79ME2:
+      1:
+        - 11
+        - 20
+    ofg_tt_HELAS3-H4K20ME1:
+      1:
+        - 12
+        - 20
+    ofg_tt_HEPG2-H2AZ:
+      1:
+        - 0
+        - 21
+    ofg_tt_HEPG2-H3K04ME1:
+      1:
+        - 1
+        - 21
+    ofg_tt_HEPG2-H3K04ME2:
+      1:
+        - 2
+        - 21
+    ofg_tt_HEPG2-H3K04ME3:
+      1:
+        - 3
+        - 21
+    ofg_tt_HEPG2-H3K09AC:
+      1:
+        - 4
+        - 21
+    ofg_tt_HEPG2-H3K09ACb:
+      1:
+        - 5
+        - 21
+    ofg_tt_HEPG2-H3K09ME3:
+      1:
+        - 6
+        - 21
+    ofg_tt_HEPG2-H3K27AC:
+      1:
+        - 7
+        - 21
+    ofg_tt_HEPG2-H3K27ME3:
+      1:
+        - 8
+        - 21
+    ofg_tt_HEPG2-H3K36ME3:
+      1:
+        - 9
+        - 21
+    ofg_tt_HEPG2-H3K36ME3b:
+      1:
+        - 10
+        - 21
+    ofg_tt_HEPG2-H3K79ME2:
+      1:
+        - 11
+        - 21
+    ofg_tt_HEPG2-H4K20ME1:
+      1:
+        - 12
+        - 21
+    ofg_tt_HL60-H2AZ:
+      1:
+        - 0
+        - 22
+    ofg_tt_HL60-H3K04ME1:
+      1:
+        - 1
+        - 22
+    ofg_tt_HL60-H3K04ME2:
+      1:
+        - 2
+        - 22
+    ofg_tt_HL60-H3K04ME3:
+      1:
+        - 3
+        - 22
+    ofg_tt_HL60-H3K09AC:
+      1:
+        - 4
+        - 22
+    ofg_tt_HL60-H3K09ACb:
+      1:
+        - 5
+        - 22
+    ofg_tt_HL60-H3K09ME3:
+      1:
+        - 6
+        - 22
+    ofg_tt_HL60-H3K27AC:
+      1:
+        - 7
+        - 22
+    ofg_tt_HL60-H3K27ME3:
+      1:
+        - 8
+        - 22
+    ofg_tt_HL60-H3K36ME3:
+      1:
+        - 9
+        - 22
+    ofg_tt_HL60-H3K36ME3b:
+      1:
+        - 10
+        - 22
+    ofg_tt_HL60-H3K79ME2:
+      1:
+        - 11
+        - 22
+    ofg_tt_HL60-H4K20ME1:
+      1:
+        - 12
+        - 22
+    ofg_tt_HMEC-H2AZ:
+      1:
+        - 0
+        - 23
+    ofg_tt_HMEC-H3K04ME1:
+      1:
+        - 1
+        - 23
+    ofg_tt_HMEC-H3K04ME2:
+      1:
+        - 2
+        - 23
+    ofg_tt_HMEC-H3K04ME3:
+      1:
+        - 3
+        - 23
+    ofg_tt_HMEC-H3K09AC:
+      1:
+        - 4
+        - 23
+    ofg_tt_HMEC-H3K09ACb:
+      1:
+        - 5
+        - 23
+    ofg_tt_HMEC-H3K09ME3:
+      1:
+        - 6
+        - 23
+    ofg_tt_HMEC-H3K27AC:
+      1:
+        - 7
+        - 23
+    ofg_tt_HMEC-H3K27ME3:
+      1:
+        - 8
+        - 23
+    ofg_tt_HMEC-H3K36ME3:
+      1:
+        - 9
+        - 23
+    ofg_tt_HMEC-H3K36ME3b:
+      1:
+        - 10
+        - 23
+    ofg_tt_HMEC-H3K79ME2:
+      1:
+        - 11
+        - 23
+    ofg_tt_HMEC-H4K20ME1:
+      1:
+        - 12
+        - 23
+    ofg_tt_HMF-H2AZ:
+      1:
+        - 0
+        - 24
+    ofg_tt_HMF-H3K04ME1:
+      1:
+        - 1
+        - 24
+    ofg_tt_HMF-H3K04ME2:
+      1:
+        - 2
+        - 24
+    ofg_tt_HMF-H3K04ME3:
+      1:
+        - 3
+        - 24
+    ofg_tt_HMF-H3K09AC:
+      1:
+        - 4
+        - 24
+    ofg_tt_HMF-H3K09ACb:
+      1:
+        - 5
+        - 24
+    ofg_tt_HMF-H3K09ME3:
+      1:
+        - 6
+        - 24
+    ofg_tt_HMF-H3K27AC:
+      1:
+        - 7
+        - 24
+    ofg_tt_HMF-H3K27ME3:
+      1:
+        - 8
+        - 24
+    ofg_tt_HMF-H3K36ME3:
+      1:
+        - 9
+        - 24
+    ofg_tt_HMF-H3K36ME3b:
+      1:
+        - 10
+        - 24
+    ofg_tt_HMF-H3K79ME2:
+      1:
+        - 11
+        - 24
+    ofg_tt_HMF-H4K20ME1:
+      1:
+        - 12
+        - 24
+    ofg_tt_HPAF-H2AZ:
+      1:
+        - 0
+        - 25
+    ofg_tt_HPAF-H3K04ME1:
+      1:
+        - 1
+        - 25
+    ofg_tt_HPAF-H3K04ME2:
+      1:
+        - 2
+        - 25
+    ofg_tt_HPAF-H3K04ME3:
+      1:
+        - 3
+        - 25
+    ofg_tt_HPAF-H3K09AC:
+      1:
+        - 4
+        - 25
+    ofg_tt_HPAF-H3K09ACb:
+      1:
+        - 5
+        - 25
+    ofg_tt_HPAF-H3K09ME3:
+      1:
+        - 6
+        - 25
+    ofg_tt_HPAF-H3K27AC:
+      1:
+        - 7
+        - 25
+    ofg_tt_HPAF-H3K27ME3:
+      1:
+        - 8
+        - 25
+    ofg_tt_HPAF-H3K36ME3:
+      1:
+        - 9
+        - 25
+    ofg_tt_HPAF-H3K36ME3b:
+      1:
+        - 10
+        - 25
+    ofg_tt_HPAF-H3K79ME2:
+      1:
+        - 11
+        - 25
+    ofg_tt_HPAF-H4K20ME1:
+      1:
+        - 12
+        - 25
+    ofg_tt_HPF-H2AZ:
+      1:
+        - 0
+        - 26
+    ofg_tt_HPF-H3K04ME1:
+      1:
+        - 1
+        - 26
+    ofg_tt_HPF-H3K04ME2:
+      1:
+        - 2
+        - 26
+    ofg_tt_HPF-H3K04ME3:
+      1:
+        - 3
+        - 26
+    ofg_tt_HPF-H3K09AC:
+      1:
+        - 4
+        - 26
+    ofg_tt_HPF-H3K09ACb:
+      1:
+        - 5
+        - 26
+    ofg_tt_HPF-H3K09ME3:
+      1:
+        - 6
+        - 26
+    ofg_tt_HPF-H3K27AC:
+      1:
+        - 7
+        - 26
+    ofg_tt_HPF-H3K27ME3:
+      1:
+        - 8
+        - 26
+    ofg_tt_HPF-H3K36ME3:
+      1:
+        - 9
+        - 26
+    ofg_tt_HPF-H3K36ME3b:
+      1:
+        - 10
+        - 26
+    ofg_tt_HPF-H3K79ME2:
+      1:
+        - 11
+        - 26
+    ofg_tt_HPF-H4K20ME1:
+      1:
+        - 12
+        - 26
+    ofg_tt_HRE-H2AZ:
+      1:
+        - 0
+        - 27
+    ofg_tt_HRE-H3K04ME1:
+      1:
+        - 1
+        - 27
+    ofg_tt_HRE-H3K04ME2:
+      1:
+        - 2
+        - 27
+    ofg_tt_HRE-H3K04ME3:
+      1:
+        - 3
+        - 27
+    ofg_tt_HRE-H3K09AC:
+      1:
+        - 4
+        - 27
+    ofg_tt_HRE-H3K09ACb:
+      1:
+        - 5
+        - 27
+    ofg_tt_HRE-H3K09ME3:
+      1:
+        - 6
+        - 27
+    ofg_tt_HRE-H3K27AC:
+      1:
+        - 7
+        - 27
+    ofg_tt_HRE-H3K27ME3:
+      1:
+        - 8
+        - 27
+    ofg_tt_HRE-H3K36ME3:
+      1:
+        - 9
+        - 27
+    ofg_tt_HRE-H3K36ME3b:
+      1:
+        - 10
+        - 27
+    ofg_tt_HRE-H3K79ME2:
+      1:
+        - 11
+        - 27
+    ofg_tt_HRE-H4K20ME1:
+      1:
+        - 12
+        - 27
+    ofg_tt_HRPE-H2AZ:
+      1:
+        - 0
+        - 28
+    ofg_tt_HRPE-H3K04ME1:
+      1:
+        - 1
+        - 28
+    ofg_tt_HRPE-H3K04ME2:
+      1:
+        - 2
+        - 28
+    ofg_tt_HRPE-H3K04ME3:
+      1:
+        - 3
+        - 28
+    ofg_tt_HRPE-H3K09AC:
+      1:
+        - 4
+        - 28
+    ofg_tt_HRPE-H3K09ACb:
+      1:
+        - 5
+        - 28
+    ofg_tt_HRPE-H3K09ME3:
+      1:
+        - 6
+        - 28
+    ofg_tt_HRPE-H3K27AC:
+      1:
+        - 7
+        - 28
+    ofg_tt_HRPE-H3K27ME3:
+      1:
+        - 8
+        - 28
+    ofg_tt_HRPE-H3K36ME3:
+      1:
+        - 9
+        - 28
+    ofg_tt_HRPE-H3K36ME3b:
+      1:
+        - 10
+        - 28
+    ofg_tt_HRPE-H3K79ME2:
+      1:
+        - 11
+        - 28
+    ofg_tt_HRPE-H4K20ME1:
+      1:
+        - 12
+        - 28
+    ofg_tt_HSMM-H2AZ:
+      1:
+        - 0
+        - 29
+    ofg_tt_HSMM-H3K04ME1:
+      1:
+        - 1
+        - 29
+    ofg_tt_HSMM-H3K04ME2:
+      1:
+        - 2
+        - 29
+    ofg_tt_HSMM-H3K04ME3:
+      1:
+        - 3
+        - 29
+    ofg_tt_HSMM-H3K09AC:
+      1:
+        - 4
+        - 29
+    ofg_tt_HSMM-H3K09ACb:
+      1:
+        - 5
+        - 29
+    ofg_tt_HSMM-H3K09ME3:
+      1:
+        - 6
+        - 29
+    ofg_tt_HSMM-H3K27AC:
+      1:
+        - 7
+        - 29
+    ofg_tt_HSMM-H3K27ME3:
+      1:
+        - 8
+        - 29
+    ofg_tt_HSMM-H3K36ME3:
+      1:
+        - 9
+        - 29
+    ofg_tt_HSMM-H3K36ME3b:
+      1:
+        - 10
+        - 29
+    ofg_tt_HSMM-H3K79ME2:
+      1:
+        - 11
+        - 29
+    ofg_tt_HSMM-H4K20ME1:
+      1:
+        - 12
+        - 29
+    ofg_tt_HSMMt-H2AZ:
+      1:
+        - 0
+        - 30
+    ofg_tt_HSMMt-H3K04ME1:
+      1:
+        - 1
+        - 30
+    ofg_tt_HSMMt-H3K04ME2:
+      1:
+        - 2
+        - 30
+    ofg_tt_HSMMt-H3K04ME3:
+      1:
+        - 3
+        - 30
+    ofg_tt_HSMMt-H3K09AC:
+      1:
+        - 4
+        - 30
+    ofg_tt_HSMMt-H3K09ACb:
+      1:
+        - 5
+        - 30
+    ofg_tt_HSMMt-H3K09ME3:
+      1:
+        - 6
+        - 30
+    ofg_tt_HSMMt-H3K27AC:
+      1:
+        - 7
+        - 30
+    ofg_tt_HSMMt-H3K27ME3:
+      1:
+        - 8
+        - 30
+    ofg_tt_HSMMt-H3K36ME3:
+      1:
+        - 9
+        - 30
+    ofg_tt_HSMMt-H3K36ME3b:
+      1:
+        - 10
+        - 30
+    ofg_tt_HSMMt-H3K79ME2:
+      1:
+        - 11
+        - 30
+    ofg_tt_HSMMt-H4K20ME1:
+      1:
+        - 12
+        - 30
+    ofg_tt_HUVEC-H2AZ:
+      1:
+        - 0
+        - 31
+    ofg_tt_HUVEC-H3K04ME1:
+      1:
+        - 1
+        - 31
+    ofg_tt_HUVEC-H3K04ME2:
+      1:
+        - 2
+        - 31
+    ofg_tt_HUVEC-H3K04ME3:
+      1:
+        - 3
+        - 31
+    ofg_tt_HUVEC-H3K09AC:
+      1:
+        - 4
+        - 31
+    ofg_tt_HUVEC-H3K09ACb:
+      1:
+        - 5
+        - 31
+    ofg_tt_HUVEC-H3K09ME3:
+      1:
+        - 6
+        - 31
+    ofg_tt_HUVEC-H3K27AC:
+      1:
+        - 7
+        - 31
+    ofg_tt_HUVEC-H3K27ME3:
+      1:
+        - 8
+        - 31
+    ofg_tt_HUVEC-H3K36ME3:
+      1:
+        - 9
+        - 31
+    ofg_tt_HUVEC-H3K36ME3b:
+      1:
+        - 10
+        - 31
+    ofg_tt_HUVEC-H3K79ME2:
+      1:
+        - 11
+        - 31
+    ofg_tt_HUVEC-H4K20ME1:
+      1:
+        - 12
+        - 31
+    ofg_tt_HVMF-H2AZ:
+      1:
+        - 0
+        - 32
+    ofg_tt_HVMF-H3K04ME1:
+      1:
+        - 1
+        - 32
+    ofg_tt_HVMF-H3K04ME2:
+      1:
+        - 2
+        - 32
+    ofg_tt_HVMF-H3K04ME3:
+      1:
+        - 3
+        - 32
+    ofg_tt_HVMF-H3K09AC:
+      1:
+        - 4
+        - 32
+    ofg_tt_HVMF-H3K09ACb:
+      1:
+        - 5
+        - 32
+    ofg_tt_HVMF-H3K09ME3:
+      1:
+        - 6
+        - 32
+    ofg_tt_HVMF-H3K27AC:
+      1:
+        - 7
+        - 32
+    ofg_tt_HVMF-H3K27ME3:
+      1:
+        - 8
+        - 32
+    ofg_tt_HVMF-H3K36ME3:
+      1:
+        - 9
+        - 32
+    ofg_tt_HVMF-H3K36ME3b:
+      1:
+        - 10
+        - 32
+    ofg_tt_HVMF-H3K79ME2:
+      1:
+        - 11
+        - 32
+    ofg_tt_HVMF-H4K20ME1:
+      1:
+        - 12
+        - 32
+    ofg_tt_JURKAT-H2AZ:
+      1:
+        - 0
+        - 33
+    ofg_tt_JURKAT-H3K04ME1:
+      1:
+        - 1
+        - 33
+    ofg_tt_JURKAT-H3K04ME2:
+      1:
+        - 2
+        - 33
+    ofg_tt_JURKAT-H3K04ME3:
+      1:
+        - 3
+        - 33
+    ofg_tt_JURKAT-H3K09AC:
+      1:
+        - 4
+        - 33
+    ofg_tt_JURKAT-H3K09ACb:
+      1:
+        - 5
+        - 33
+    ofg_tt_JURKAT-H3K09ME3:
+      1:
+        - 6
+        - 33
+    ofg_tt_JURKAT-H3K27AC:
+      1:
+        - 7
+        - 33
+    ofg_tt_JURKAT-H3K27ME3:
+      1:
+        - 8
+        - 33
+    ofg_tt_JURKAT-H3K36ME3:
+      1:
+        - 9
+        - 33
+    ofg_tt_JURKAT-H3K36ME3b:
+      1:
+        - 10
+        - 33
+    ofg_tt_JURKAT-H3K79ME2:
+      1:
+        - 11
+        - 33
+    ofg_tt_JURKAT-H4K20ME1:
+      1:
+        - 12
+        - 33
+    ofg_tt_K562-H2AZ:
+      1:
+        - 0
+        - 34
+    ofg_tt_K562-H3K04ME1:
+      1:
+        - 1
+        - 34
+    ofg_tt_K562-H3K04ME2:
+      1:
+        - 2
+        - 34
+    ofg_tt_K562-H3K04ME3:
+      1:
+        - 3
+        - 34
+    ofg_tt_K562-H3K09AC:
+      1:
+        - 4
+        - 34
+    ofg_tt_K562-H3K09ACb:
+      1:
+        - 5
+        - 34
+    ofg_tt_K562-H3K09ME3:
+      1:
+        - 6
+        - 34
+    ofg_tt_K562-H3K27AC:
+      1:
+        - 7
+        - 34
+    ofg_tt_K562-H3K27ME3:
+      1:
+        - 8
+        - 34
+    ofg_tt_K562-H3K36ME3:
+      1:
+        - 9
+        - 34
+    ofg_tt_K562-H3K36ME3b:
+      1:
+        - 10
+        - 34
+    ofg_tt_K562-H3K79ME2:
+      1:
+        - 11
+        - 34
+    ofg_tt_K562-H4K20ME1:
+      1:
+        - 12
+        - 34
+    ofg_tt_NHA-H2AZ:
+      1:
+        - 0
+        - 35
+    ofg_tt_NHA-H3K04ME1:
+      1:
+        - 1
+        - 35
+    ofg_tt_NHA-H3K04ME2:
+      1:
+        - 2
+        - 35
+    ofg_tt_NHA-H3K04ME3:
+      1:
+        - 3
+        - 35
+    ofg_tt_NHA-H3K09AC:
+      1:
+        - 4
+        - 35
+    ofg_tt_NHA-H3K09ACb:
+      1:
+        - 5
+        - 35
+    ofg_tt_NHA-H3K09ME3:
+      1:
+        - 6
+        - 35
+    ofg_tt_NHA-H3K27AC:
+      1:
+        - 7
+        - 35
+    ofg_tt_NHA-H3K27ME3:
+      1:
+        - 8
+        - 35
+    ofg_tt_NHA-H3K36ME3:
+      1:
+        - 9
+        - 35
+    ofg_tt_NHA-H3K36ME3b:
+      1:
+        - 10
+        - 35
+    ofg_tt_NHA-H3K79ME2:
+      1:
+        - 11
+        - 35
+    ofg_tt_NHA-H4K20ME1:
+      1:
+        - 12
+        - 35
+    ofg_tt_NHDFAD-H2AZ:
+      1:
+        - 0
+        - 36
+    ofg_tt_NHDFAD-H3K04ME1:
+      1:
+        - 1
+        - 36
+    ofg_tt_NHDFAD-H3K04ME2:
+      1:
+        - 2
+        - 36
+    ofg_tt_NHDFAD-H3K04ME3:
+      1:
+        - 3
+        - 36
+    ofg_tt_NHDFAD-H3K09AC:
+      1:
+        - 4
+        - 36
+    ofg_tt_NHDFAD-H3K09ACb:
+      1:
+        - 5
+        - 36
+    ofg_tt_NHDFAD-H3K09ME3:
+      1:
+        - 6
+        - 36
+    ofg_tt_NHDFAD-H3K27AC:
+      1:
+        - 7
+        - 36
+    ofg_tt_NHDFAD-H3K27ME3:
+      1:
+        - 8
+        - 36
+    ofg_tt_NHDFAD-H3K36ME3:
+      1:
+        - 9
+        - 36
+    ofg_tt_NHDFAD-H3K36ME3b:
+      1:
+        - 10
+        - 36
+    ofg_tt_NHDFAD-H3K79ME2:
+      1:
+        - 11
+        - 36
+    ofg_tt_NHDFAD-H4K20ME1:
+      1:
+        - 12
+        - 36
+    ofg_tt_NHDFNEO-H2AZ:
+      1:
+        - 0
+        - 37
+    ofg_tt_NHDFNEO-H3K04ME1:
+      1:
+        - 1
+        - 37
+    ofg_tt_NHDFNEO-H3K04ME2:
+      1:
+        - 2
+        - 37
+    ofg_tt_NHDFNEO-H3K04ME3:
+      1:
+        - 3
+        - 37
+    ofg_tt_NHDFNEO-H3K09AC:
+      1:
+        - 4
+        - 37
+    ofg_tt_NHDFNEO-H3K09ACb:
+      1:
+        - 5
+        - 37
+    ofg_tt_NHDFNEO-H3K09ME3:
+      1:
+        - 6
+        - 37
+    ofg_tt_NHDFNEO-H3K27AC:
+      1:
+        - 7
+        - 37
+    ofg_tt_NHDFNEO-H3K27ME3:
+      1:
+        - 8
+        - 37
+    ofg_tt_NHDFNEO-H3K36ME3:
+      1:
+        - 9
+        - 37
+    ofg_tt_NHDFNEO-H3K36ME3b:
+      1:
+        - 10
+        - 37
+    ofg_tt_NHDFNEO-H3K79ME2:
+      1:
+        - 11
+        - 37
+    ofg_tt_NHDFNEO-H4K20ME1:
+      1:
+        - 12
+        - 37
+    ofg_tt_NHEK-H2AZ:
+      1:
+        - 0
+        - 38
+    ofg_tt_NHEK-H3K04ME1:
+      1:
+        - 1
+        - 38
+    ofg_tt_NHEK-H3K04ME2:
+      1:
+        - 2
+        - 38
+    ofg_tt_NHEK-H3K04ME3:
+      1:
+        - 3
+        - 38
+    ofg_tt_NHEK-H3K09AC:
+      1:
+        - 4
+        - 38
+    ofg_tt_NHEK-H3K09ACb:
+      1:
+        - 5
+        - 38
+    ofg_tt_NHEK-H3K09ME3:
+      1:
+        - 6
+        - 38
+    ofg_tt_NHEK-H3K27AC:
+      1:
+        - 7
+        - 38
+    ofg_tt_NHEK-H3K27ME3:
+      1:
+        - 8
+        - 38
+    ofg_tt_NHEK-H3K36ME3:
+      1:
+        - 9
+        - 38
+    ofg_tt_NHEK-H3K36ME3b:
+      1:
+        - 10
+        - 38
+    ofg_tt_NHEK-H3K79ME2:
+      1:
+        - 11
+        - 38
+    ofg_tt_NHEK-H4K20ME1:
+      1:
+        - 12
+        - 38
+    ofg_tt_NHLF-H2AZ:
+      1:
+        - 0
+        - 39
+    ofg_tt_NHLF-H3K04ME1:
+      1:
+        - 1
+        - 39
+    ofg_tt_NHLF-H3K04ME2:
+      1:
+        - 2
+        - 39
+    ofg_tt_NHLF-H3K04ME3:
+      1:
+        - 3
+        - 39
+    ofg_tt_NHLF-H3K09AC:
+      1:
+        - 4
+        - 39
+    ofg_tt_NHLF-H3K09ACb:
+      1:
+        - 5
+        - 39
+    ofg_tt_NHLF-H3K09ME3:
+      1:
+        - 6
+        - 39
+    ofg_tt_NHLF-H3K27AC:
+      1:
+        - 7
+        - 39
+    ofg_tt_NHLF-H3K27ME3:
+      1:
+        - 8
+        - 39
+    ofg_tt_NHLF-H3K36ME3:
+      1:
+        - 9
+        - 39
+    ofg_tt_NHLF-H3K36ME3b:
+      1:
+        - 10
+        - 39
+    ofg_tt_NHLF-H3K79ME2:
+      1:
+        - 11
+        - 39
+    ofg_tt_NHLF-H4K20ME1:
+      1:
+        - 12
+        - 39
+    ofg_tt_NT2D1-H2AZ:
+      1:
+        - 0
+        - 40
+    ofg_tt_NT2D1-H3K04ME1:
+      1:
+        - 1
+        - 40
+    ofg_tt_NT2D1-H3K04ME2:
+      1:
+        - 2
+        - 40
+    ofg_tt_NT2D1-H3K04ME3:
+      1:
+        - 3
+        - 40
+    ofg_tt_NT2D1-H3K09AC:
+      1:
+        - 4
+        - 40
+    ofg_tt_NT2D1-H3K09ACb:
+      1:
+        - 5
+        - 40
+    ofg_tt_NT2D1-H3K09ME3:
+      1:
+        - 6
+        - 40
+    ofg_tt_NT2D1-H3K27AC:
+      1:
+        - 7
+        - 40
+    ofg_tt_NT2D1-H3K27ME3:
+      1:
+        - 8
+        - 40
+    ofg_tt_NT2D1-H3K36ME3:
+      1:
+        - 9
+        - 40
+    ofg_tt_NT2D1-H3K36ME3b:
+      1:
+        - 10
+        - 40
+    ofg_tt_NT2D1-H3K79ME2:
+      1:
+        - 11
+        - 40
+    ofg_tt_NT2D1-H4K20ME1:
+      1:
+        - 12
+        - 40
+    ofg_tt_OSTEO-H2AZ:
+      1:
+        - 0
+        - 41
+    ofg_tt_OSTEO-H3K04ME1:
+      1:
+        - 1
+        - 41
+    ofg_tt_OSTEO-H3K04ME2:
+      1:
+        - 2
+        - 41
+    ofg_tt_OSTEO-H3K04ME3:
+      1:
+        - 3
+        - 41
+    ofg_tt_OSTEO-H3K09AC:
+      1:
+        - 4
+        - 41
+    ofg_tt_OSTEO-H3K09ACb:
+      1:
+        - 5
+        - 41
+    ofg_tt_OSTEO-H3K09ME3:
+      1:
+        - 6
+        - 41
+    ofg_tt_OSTEO-H3K27AC:
+      1:
+        - 7
+        - 41
+    ofg_tt_OSTEO-H3K27ME3:
+      1:
+        - 8
+        - 41
+    ofg_tt_OSTEO-H3K36ME3:
+      1:
+        - 9
+        - 41
+    ofg_tt_OSTEO-H3K36ME3b:
+      1:
+        - 10
+        - 41
+    ofg_tt_OSTEO-H3K79ME2:
+      1:
+        - 11
+        - 41
+    ofg_tt_OSTEO-H4K20ME1:
+      1:
+        - 12
+        - 41
+    ofg_tt_SAEC-H2AZ:
+      1:
+        - 0
+        - 42
+    ofg_tt_SAEC-H3K04ME1:
+      1:
+        - 1
+        - 42
+    ofg_tt_SAEC-H3K04ME2:
+      1:
+        - 2
+        - 42
+    ofg_tt_SAEC-H3K04ME3:
+      1:
+        - 3
+        - 42
+    ofg_tt_SAEC-H3K09AC:
+      1:
+        - 4
+        - 42
+    ofg_tt_SAEC-H3K09ACb:
+      1:
+        - 5
+        - 42
+    ofg_tt_SAEC-H3K09ME3:
+      1:
+        - 6
+        - 42
+    ofg_tt_SAEC-H3K27AC:
+      1:
+        - 7
+        - 42
+    ofg_tt_SAEC-H3K27ME3:
+      1:
+        - 8
+        - 42
+    ofg_tt_SAEC-H3K36ME3:
+      1:
+        - 9
+        - 42
+    ofg_tt_SAEC-H3K36ME3b:
+      1:
+        - 10
+        - 42
+    ofg_tt_SAEC-H3K79ME2:
+      1:
+        - 11
+        - 42
+    ofg_tt_SAEC-H4K20ME1:
+      1:
+        - 12
+        - 42
+    ofg_tt_SKNSHRA-H2AZ:
+      1:
+        - 0
+        - 43
+    ofg_tt_SKNSHRA-H3K04ME1:
+      1:
+        - 1
+        - 43
+    ofg_tt_SKNSHRA-H3K04ME2:
+      1:
+        - 2
+        - 43
+    ofg_tt_SKNSHRA-H3K04ME3:
+      1:
+        - 3
+        - 43
+    ofg_tt_SKNSHRA-H3K09AC:
+      1:
+        - 4
+        - 43
+    ofg_tt_SKNSHRA-H3K09ACb:
+      1:
+        - 5
+        - 43
+    ofg_tt_SKNSHRA-H3K09ME3:
+      1:
+        - 6
+        - 43
+    ofg_tt_SKNSHRA-H3K27AC:
+      1:
+        - 7
+        - 43
+    ofg_tt_SKNSHRA-H3K27ME3:
+      1:
+        - 8
+        - 43
+    ofg_tt_SKNSHRA-H3K36ME3:
+      1:
+        - 9
+        - 43
+    ofg_tt_SKNSHRA-H3K36ME3b:
+      1:
+        - 10
+        - 43
+    ofg_tt_SKNSHRA-H3K79ME2:
+      1:
+        - 11
+        - 43
+    ofg_tt_SKNSHRA-H4K20ME1:
+      1:
+        - 12
+        - 43
+    ofg_tt_U2OS-H2AZ:
+      1:
+        - 0
+        - 44
+    ofg_tt_U2OS-H3K04ME1:
+      1:
+        - 1
+        - 44
+    ofg_tt_U2OS-H3K04ME2:
+      1:
+        - 2
+        - 44
+    ofg_tt_U2OS-H3K04ME3:
+      1:
+        - 3
+        - 44
+    ofg_tt_U2OS-H3K09AC:
+      1:
+        - 4
+        - 44
+    ofg_tt_U2OS-H3K09ACb:
+      1:
+        - 5
+        - 44
+    ofg_tt_U2OS-H3K09ME3:
+      1:
+        - 6
+        - 44
+    ofg_tt_U2OS-H3K27AC:
+      1:
+        - 7
+        - 44
+    ofg_tt_U2OS-H3K27ME3:
+      1:
+        - 8
+        - 44
+    ofg_tt_U2OS-H3K36ME3:
+      1:
+        - 9
+        - 44
+    ofg_tt_U2OS-H3K36ME3b:
+      1:
+        - 10
+        - 44
+    ofg_tt_U2OS-H3K79ME2:
+      1:
+        - 11
+        - 44
+    ofg_tt_U2OS-H4K20ME1:
+      1:
+        - 12
+        - 44
+texts:
+  - text: AG04449
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 0.5
+  - text: AG04450
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 1.5
+  - text: AG09309
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 2.5
+  - text: AG09319
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 3.5
+  - text: AG10803
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 4.5
+  - text: AOAF
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 5.5
+  - text: BJ
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 6.5
+  - text: CACO2
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 7.5
+  - text: GM06990
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 8.5
+  - text: GM12878
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 9.5
+  - text: H1HESC
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 10.5
+  - text: H7ES
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 11.5
+  - text: HASP
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 12.5
+  - text: HBMEC
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 13.5
+  - text: HCF
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 14.5
+  - text: HCM
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 15.5
+  - text: HCPE
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 16.5
+  - text: HCT116
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 17.5
+  - text: HEE
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 18.5
+  - text: HEK293
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 19.5
+  - text: HELAS3
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 20.5
+  - text: HEPG2
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 21.5
+  - text: HL60
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 22.5
+  - text: HMEC
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 23.5
+  - text: HMF
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 24.5
+  - text: HPAF
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 25.5
+  - text: HPF
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 26.5
+  - text: HRE
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 27.5
+  - text: HRPE
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 28.5
+  - text: HSMM
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 29.5
+  - text: HSMMt
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 30.5
+  - text: HUVEC
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 31.5
+  - text: HVMF
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 32.5
+  - text: JURKAT
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 33.5
+  - text: K562
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 34.5
+  - text: NHA
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 35.5
+  - text: NHDFAD
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 36.5
+  - text: NHDFNEO
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 37.5
+  - text: NHEK
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 38.5
+  - text: NHLF
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 39.5
+  - text: NT2D1
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 40.5
+  - text: OSTEO
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 41.5
+  - text: SAEC
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 42.5
+  - text: SKNSHRA
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 43.5
+  - text: U2OS
+    size: 8
+    bold: 1
+    pos:
+      - -0.3
+      - 44.5
+  - text: H2AZ
+    size: 8
+    bold: 1
+    pos:
+      - 0.3
+      - -0.1
+  - text: H3K04ME1
+    size: 8
+    bold: 1
+    pos:
+      - 1.3
+      - -0.1
+  - text: H3K04ME2
+    size: 8
+    bold: 1
+    pos:
+      - 2.3
+      - -0.1
+  - text: H3K04ME3
+    size: 8
+    bold: 1
+    pos:
+      - 3.3
+      - -0.1
+  - text: H3K09AC
+    size: 8
+    bold: 1
+    pos:
+      - 4.3
+      - -0.1
+  - text: H3K09ACb
+    size: 8
+    bold: 1
+    pos:
+      - 5.3
+      - -0.1
+  - text: H3K09ME3
+    size: 8
+    bold: 1
+    pos:
+      - 6.3
+      - -0.1
+  - text: H3K27AC
+    size: 8
+    bold: 1
+    pos:
+      - 7.3
+      - -0.1
+  - text: H3K27ME3
+    size: 8
+    bold: 1
+    pos:
+      - 8.3
+      - -0.1
+  - text: H3K36ME3
+    size: 8
+    bold: 1
+    pos:
+      - 9.3
+      - -0.1
+  - text: H3K36ME3b
+    size: 8
+    bold: 1
+    pos:
+      - 10.3
+      - -0.1
+  - text: H3K79ME2
+    size: 8
+    bold: 1
+    pos:
+      - 11.3
+      - -0.1
+  - text: H4K20ME1
+    size: 8
+    bold: 1
+    pos:
+      - 12.3
+      - -0.1
+ranges:
+  Human_BED_Histone.tt.mg.chart.xlsx:
+    ofg_tt_AG04449_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - -0.05
+    ofg_tt_AG04449_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - -0.05
+    ofg_tt_AG04449_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - -0.05
+    ofg_tt_AG04449_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - -0.05
+    ofg_tt_AG04449_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - -0.05
+    ofg_tt_AG04449_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - -0.05
+    ofg_tt_AG04449_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - -0.05
+    ofg_tt_AG04449_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - -0.05
+    ofg_tt_AG04449_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - -0.05
+    ofg_tt_AG04449_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - -0.05
+    ofg_tt_AG04449_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - -0.05
+    ofg_tt_AG04449_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - -0.05
+    ofg_tt_AG04449_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - -0.05
+    ofg_tt_AG04450_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 0.95
+    ofg_tt_AG04450_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 0.95
+    ofg_tt_AG04450_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 0.95
+    ofg_tt_AG04450_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 0.95
+    ofg_tt_AG04450_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 0.95
+    ofg_tt_AG04450_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 0.95
+    ofg_tt_AG04450_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 0.95
+    ofg_tt_AG04450_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 0.95
+    ofg_tt_AG04450_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 0.95
+    ofg_tt_AG04450_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 0.95
+    ofg_tt_AG04450_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 0.95
+    ofg_tt_AG04450_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 0.95
+    ofg_tt_AG04450_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 0.95
+    ofg_tt_AG09309_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 1.95
+    ofg_tt_AG09309_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 1.95
+    ofg_tt_AG09309_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 1.95
+    ofg_tt_AG09309_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 1.95
+    ofg_tt_AG09309_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 1.95
+    ofg_tt_AG09309_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 1.95
+    ofg_tt_AG09309_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 1.95
+    ofg_tt_AG09309_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 1.95
+    ofg_tt_AG09309_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 1.95
+    ofg_tt_AG09309_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 1.95
+    ofg_tt_AG09309_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 1.95
+    ofg_tt_AG09309_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 1.95
+    ofg_tt_AG09309_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 1.95
+    ofg_tt_AG09319_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 2.95
+    ofg_tt_AG09319_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 2.95
+    ofg_tt_AG09319_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 2.95
+    ofg_tt_AG09319_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 2.95
+    ofg_tt_AG09319_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 2.95
+    ofg_tt_AG09319_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 2.95
+    ofg_tt_AG09319_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 2.95
+    ofg_tt_AG09319_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 2.95
+    ofg_tt_AG09319_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 2.95
+    ofg_tt_AG09319_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 2.95
+    ofg_tt_AG09319_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 2.95
+    ofg_tt_AG09319_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 2.95
+    ofg_tt_AG09319_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 2.95
+    ofg_tt_AG10803_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 3.95
+    ofg_tt_AG10803_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 3.95
+    ofg_tt_AG10803_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 3.95
+    ofg_tt_AG10803_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 3.95
+    ofg_tt_AG10803_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 3.95
+    ofg_tt_AG10803_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 3.95
+    ofg_tt_AG10803_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 3.95
+    ofg_tt_AG10803_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 3.95
+    ofg_tt_AG10803_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 3.95
+    ofg_tt_AG10803_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 3.95
+    ofg_tt_AG10803_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 3.95
+    ofg_tt_AG10803_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 3.95
+    ofg_tt_AG10803_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 3.95
+    ofg_tt_AOAF_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 4.95
+    ofg_tt_AOAF_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 4.95
+    ofg_tt_AOAF_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 4.95
+    ofg_tt_AOAF_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 4.95
+    ofg_tt_AOAF_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 4.95
+    ofg_tt_AOAF_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 4.95
+    ofg_tt_AOAF_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 4.95
+    ofg_tt_AOAF_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 4.95
+    ofg_tt_AOAF_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 4.95
+    ofg_tt_AOAF_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 4.95
+    ofg_tt_AOAF_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 4.95
+    ofg_tt_AOAF_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 4.95
+    ofg_tt_AOAF_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 4.95
+    ofg_tt_BJ_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 5.95
+    ofg_tt_BJ_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 5.95
+    ofg_tt_BJ_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 5.95
+    ofg_tt_BJ_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 5.95
+    ofg_tt_BJ_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 5.95
+    ofg_tt_BJ_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 5.95
+    ofg_tt_BJ_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 5.95
+    ofg_tt_BJ_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 5.95
+    ofg_tt_BJ_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 5.95
+    ofg_tt_BJ_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 5.95
+    ofg_tt_BJ_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 5.95
+    ofg_tt_BJ_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 5.95
+    ofg_tt_BJ_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 5.95
+    ofg_tt_CACO2_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 6.95
+    ofg_tt_CACO2_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 6.95
+    ofg_tt_CACO2_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 6.95
+    ofg_tt_CACO2_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 6.95
+    ofg_tt_CACO2_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 6.95
+    ofg_tt_CACO2_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 6.95
+    ofg_tt_CACO2_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 6.95
+    ofg_tt_CACO2_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 6.95
+    ofg_tt_CACO2_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 6.95
+    ofg_tt_CACO2_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 6.95
+    ofg_tt_CACO2_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 6.95
+    ofg_tt_CACO2_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 6.95
+    ofg_tt_CACO2_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 6.95
+    ofg_tt_GM06990_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 7.95
+    ofg_tt_GM06990_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 7.95
+    ofg_tt_GM06990_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 7.95
+    ofg_tt_GM06990_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 7.95
+    ofg_tt_GM06990_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 7.95
+    ofg_tt_GM06990_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 7.95
+    ofg_tt_GM06990_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 7.95
+    ofg_tt_GM06990_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 7.95
+    ofg_tt_GM06990_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 7.95
+    ofg_tt_GM06990_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 7.95
+    ofg_tt_GM06990_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 7.95
+    ofg_tt_GM06990_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 7.95
+    ofg_tt_GM06990_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 7.95
+    ofg_tt_GM12878_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 8.95
+    ofg_tt_GM12878_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 8.95
+    ofg_tt_GM12878_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 8.95
+    ofg_tt_GM12878_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 8.95
+    ofg_tt_GM12878_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 8.95
+    ofg_tt_GM12878_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 8.95
+    ofg_tt_GM12878_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 8.95
+    ofg_tt_GM12878_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 8.95
+    ofg_tt_GM12878_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 8.95
+    ofg_tt_GM12878_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 8.95
+    ofg_tt_GM12878_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 8.95
+    ofg_tt_GM12878_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 8.95
+    ofg_tt_GM12878_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 8.95
+    ofg_tt_H1HESC_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 9.95
+    ofg_tt_H1HESC_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 9.95
+    ofg_tt_H1HESC_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 9.95
+    ofg_tt_H1HESC_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 9.95
+    ofg_tt_H1HESC_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 9.95
+    ofg_tt_H1HESC_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 9.95
+    ofg_tt_H1HESC_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 9.95
+    ofg_tt_H1HESC_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 9.95
+    ofg_tt_H1HESC_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 9.95
+    ofg_tt_H1HESC_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 9.95
+    ofg_tt_H1HESC_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 9.95
+    ofg_tt_H1HESC_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 9.95
+    ofg_tt_H1HESC_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 9.95
+    ofg_tt_H7ES_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 10.95
+    ofg_tt_H7ES_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 10.95
+    ofg_tt_H7ES_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 10.95
+    ofg_tt_H7ES_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 10.95
+    ofg_tt_H7ES_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 10.95
+    ofg_tt_H7ES_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 10.95
+    ofg_tt_H7ES_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 10.95
+    ofg_tt_H7ES_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 10.95
+    ofg_tt_H7ES_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 10.95
+    ofg_tt_H7ES_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 10.95
+    ofg_tt_H7ES_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 10.95
+    ofg_tt_H7ES_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 10.95
+    ofg_tt_H7ES_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 10.95
+    ofg_tt_HASP_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 11.95
+    ofg_tt_HASP_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 11.95
+    ofg_tt_HASP_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 11.95
+    ofg_tt_HASP_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 11.95
+    ofg_tt_HASP_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 11.95
+    ofg_tt_HASP_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 11.95
+    ofg_tt_HASP_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 11.95
+    ofg_tt_HASP_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 11.95
+    ofg_tt_HASP_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 11.95
+    ofg_tt_HASP_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 11.95
+    ofg_tt_HASP_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 11.95
+    ofg_tt_HASP_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 11.95
+    ofg_tt_HASP_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 11.95
+    ofg_tt_HBMEC_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 12.95
+    ofg_tt_HBMEC_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 12.95
+    ofg_tt_HBMEC_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 12.95
+    ofg_tt_HBMEC_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 12.95
+    ofg_tt_HBMEC_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 12.95
+    ofg_tt_HBMEC_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 12.95
+    ofg_tt_HBMEC_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 12.95
+    ofg_tt_HBMEC_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 12.95
+    ofg_tt_HBMEC_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 12.95
+    ofg_tt_HBMEC_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 12.95
+    ofg_tt_HBMEC_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 12.95
+    ofg_tt_HBMEC_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 12.95
+    ofg_tt_HBMEC_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 12.95
+    ofg_tt_HCF_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 13.95
+    ofg_tt_HCF_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 13.95
+    ofg_tt_HCF_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 13.95
+    ofg_tt_HCF_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 13.95
+    ofg_tt_HCF_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 13.95
+    ofg_tt_HCF_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 13.95
+    ofg_tt_HCF_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 13.95
+    ofg_tt_HCF_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 13.95
+    ofg_tt_HCF_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 13.95
+    ofg_tt_HCF_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 13.95
+    ofg_tt_HCF_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 13.95
+    ofg_tt_HCF_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 13.95
+    ofg_tt_HCF_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 13.95
+    ofg_tt_HCM_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 14.95
+    ofg_tt_HCM_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 14.95
+    ofg_tt_HCM_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 14.95
+    ofg_tt_HCM_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 14.95
+    ofg_tt_HCM_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 14.95
+    ofg_tt_HCM_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 14.95
+    ofg_tt_HCM_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 14.95
+    ofg_tt_HCM_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 14.95
+    ofg_tt_HCM_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 14.95
+    ofg_tt_HCM_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 14.95
+    ofg_tt_HCM_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 14.95
+    ofg_tt_HCM_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 14.95
+    ofg_tt_HCM_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 14.95
+    ofg_tt_HCPE_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 15.95
+    ofg_tt_HCPE_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 15.95
+    ofg_tt_HCPE_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 15.95
+    ofg_tt_HCPE_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 15.95
+    ofg_tt_HCPE_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 15.95
+    ofg_tt_HCPE_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 15.95
+    ofg_tt_HCPE_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 15.95
+    ofg_tt_HCPE_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 15.95
+    ofg_tt_HCPE_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 15.95
+    ofg_tt_HCPE_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 15.95
+    ofg_tt_HCPE_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 15.95
+    ofg_tt_HCPE_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 15.95
+    ofg_tt_HCPE_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 15.95
+    ofg_tt_HCT116_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 16.95
+    ofg_tt_HCT116_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 16.95
+    ofg_tt_HCT116_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 16.95
+    ofg_tt_HCT116_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 16.95
+    ofg_tt_HCT116_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 16.95
+    ofg_tt_HCT116_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 16.95
+    ofg_tt_HCT116_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 16.95
+    ofg_tt_HCT116_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 16.95
+    ofg_tt_HCT116_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 16.95
+    ofg_tt_HCT116_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 16.95
+    ofg_tt_HCT116_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 16.95
+    ofg_tt_HCT116_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 16.95
+    ofg_tt_HCT116_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 16.95
+    ofg_tt_HEE_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 17.95
+    ofg_tt_HEE_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 17.95
+    ofg_tt_HEE_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 17.95
+    ofg_tt_HEE_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 17.95
+    ofg_tt_HEE_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 17.95
+    ofg_tt_HEE_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 17.95
+    ofg_tt_HEE_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 17.95
+    ofg_tt_HEE_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 17.95
+    ofg_tt_HEE_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 17.95
+    ofg_tt_HEE_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 17.95
+    ofg_tt_HEE_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 17.95
+    ofg_tt_HEE_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 17.95
+    ofg_tt_HEE_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 17.95
+    ofg_tt_HEK293_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 18.95
+    ofg_tt_HEK293_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 18.95
+    ofg_tt_HEK293_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 18.95
+    ofg_tt_HEK293_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 18.95
+    ofg_tt_HEK293_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 18.95
+    ofg_tt_HEK293_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 18.95
+    ofg_tt_HEK293_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 18.95
+    ofg_tt_HEK293_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 18.95
+    ofg_tt_HEK293_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 18.95
+    ofg_tt_HEK293_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 18.95
+    ofg_tt_HEK293_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 18.95
+    ofg_tt_HEK293_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 18.95
+    ofg_tt_HEK293_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 18.95
+    ofg_tt_HELAS3_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 19.95
+    ofg_tt_HELAS3_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 19.95
+    ofg_tt_HELAS3_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 19.95
+    ofg_tt_HELAS3_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 19.95
+    ofg_tt_HELAS3_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 19.95
+    ofg_tt_HELAS3_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 19.95
+    ofg_tt_HELAS3_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 19.95
+    ofg_tt_HELAS3_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 19.95
+    ofg_tt_HELAS3_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 19.95
+    ofg_tt_HELAS3_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 19.95
+    ofg_tt_HELAS3_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 19.95
+    ofg_tt_HELAS3_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 19.95
+    ofg_tt_HELAS3_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 19.95
+    ofg_tt_HEPG2_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 20.95
+    ofg_tt_HEPG2_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 20.95
+    ofg_tt_HEPG2_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 20.95
+    ofg_tt_HEPG2_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 20.95
+    ofg_tt_HEPG2_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 20.95
+    ofg_tt_HEPG2_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 20.95
+    ofg_tt_HEPG2_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 20.95
+    ofg_tt_HEPG2_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 20.95
+    ofg_tt_HEPG2_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 20.95
+    ofg_tt_HEPG2_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 20.95
+    ofg_tt_HEPG2_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 20.95
+    ofg_tt_HEPG2_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 20.95
+    ofg_tt_HEPG2_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 20.95
+    ofg_tt_HL60_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 21.95
+    ofg_tt_HL60_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 21.95
+    ofg_tt_HL60_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 21.95
+    ofg_tt_HL60_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 21.95
+    ofg_tt_HL60_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 21.95
+    ofg_tt_HL60_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 21.95
+    ofg_tt_HL60_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 21.95
+    ofg_tt_HL60_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 21.95
+    ofg_tt_HL60_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 21.95
+    ofg_tt_HL60_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 21.95
+    ofg_tt_HL60_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 21.95
+    ofg_tt_HL60_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 21.95
+    ofg_tt_HL60_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 21.95
+    ofg_tt_HMEC_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 22.95
+    ofg_tt_HMEC_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 22.95
+    ofg_tt_HMEC_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 22.95
+    ofg_tt_HMEC_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 22.95
+    ofg_tt_HMEC_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 22.95
+    ofg_tt_HMEC_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 22.95
+    ofg_tt_HMEC_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 22.95
+    ofg_tt_HMEC_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 22.95
+    ofg_tt_HMEC_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 22.95
+    ofg_tt_HMEC_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 22.95
+    ofg_tt_HMEC_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 22.95
+    ofg_tt_HMEC_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 22.95
+    ofg_tt_HMEC_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 22.95
+    ofg_tt_HMF_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 23.95
+    ofg_tt_HMF_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 23.95
+    ofg_tt_HMF_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 23.95
+    ofg_tt_HMF_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 23.95
+    ofg_tt_HMF_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 23.95
+    ofg_tt_HMF_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 23.95
+    ofg_tt_HMF_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 23.95
+    ofg_tt_HMF_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 23.95
+    ofg_tt_HMF_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 23.95
+    ofg_tt_HMF_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 23.95
+    ofg_tt_HMF_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 23.95
+    ofg_tt_HMF_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 23.95
+    ofg_tt_HMF_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 23.95
+    ofg_tt_HPAF_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 24.95
+    ofg_tt_HPAF_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 24.95
+    ofg_tt_HPAF_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 24.95
+    ofg_tt_HPAF_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 24.95
+    ofg_tt_HPAF_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 24.95
+    ofg_tt_HPAF_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 24.95
+    ofg_tt_HPAF_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 24.95
+    ofg_tt_HPAF_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 24.95
+    ofg_tt_HPAF_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 24.95
+    ofg_tt_HPAF_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 24.95
+    ofg_tt_HPAF_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 24.95
+    ofg_tt_HPAF_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 24.95
+    ofg_tt_HPAF_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 24.95
+    ofg_tt_HPF_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 25.95
+    ofg_tt_HPF_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 25.95
+    ofg_tt_HPF_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 25.95
+    ofg_tt_HPF_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 25.95
+    ofg_tt_HPF_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 25.95
+    ofg_tt_HPF_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 25.95
+    ofg_tt_HPF_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 25.95
+    ofg_tt_HPF_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 25.95
+    ofg_tt_HPF_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 25.95
+    ofg_tt_HPF_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 25.95
+    ofg_tt_HPF_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 25.95
+    ofg_tt_HPF_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 25.95
+    ofg_tt_HPF_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 25.95
+    ofg_tt_HRE_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 26.95
+    ofg_tt_HRE_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 26.95
+    ofg_tt_HRE_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 26.95
+    ofg_tt_HRE_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 26.95
+    ofg_tt_HRE_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 26.95
+    ofg_tt_HRE_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 26.95
+    ofg_tt_HRE_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 26.95
+    ofg_tt_HRE_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 26.95
+    ofg_tt_HRE_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 26.95
+    ofg_tt_HRE_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 26.95
+    ofg_tt_HRE_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 26.95
+    ofg_tt_HRE_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 26.95
+    ofg_tt_HRE_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 26.95
+    ofg_tt_HRPE_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 27.95
+    ofg_tt_HRPE_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 27.95
+    ofg_tt_HRPE_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 27.95
+    ofg_tt_HRPE_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 27.95
+    ofg_tt_HRPE_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 27.95
+    ofg_tt_HRPE_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 27.95
+    ofg_tt_HRPE_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 27.95
+    ofg_tt_HRPE_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 27.95
+    ofg_tt_HRPE_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 27.95
+    ofg_tt_HRPE_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 27.95
+    ofg_tt_HRPE_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 27.95
+    ofg_tt_HRPE_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 27.95
+    ofg_tt_HRPE_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 27.95
+    ofg_tt_HSMM_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 28.95
+    ofg_tt_HSMM_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 28.95
+    ofg_tt_HSMM_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 28.95
+    ofg_tt_HSMM_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 28.95
+    ofg_tt_HSMM_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 28.95
+    ofg_tt_HSMM_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 28.95
+    ofg_tt_HSMM_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 28.95
+    ofg_tt_HSMM_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 28.95
+    ofg_tt_HSMM_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 28.95
+    ofg_tt_HSMM_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 28.95
+    ofg_tt_HSMM_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 28.95
+    ofg_tt_HSMM_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 28.95
+    ofg_tt_HSMM_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 28.95
+    ofg_tt_HSMMt_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 29.95
+    ofg_tt_HSMMt_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 29.95
+    ofg_tt_HSMMt_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 29.95
+    ofg_tt_HSMMt_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 29.95
+    ofg_tt_HSMMt_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 29.95
+    ofg_tt_HSMMt_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 29.95
+    ofg_tt_HSMMt_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 29.95
+    ofg_tt_HSMMt_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 29.95
+    ofg_tt_HSMMt_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 29.95
+    ofg_tt_HSMMt_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 29.95
+    ofg_tt_HSMMt_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 29.95
+    ofg_tt_HSMMt_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 29.95
+    ofg_tt_HSMMt_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 29.95
+    ofg_tt_HUVEC_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 30.95
+    ofg_tt_HUVEC_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 30.95
+    ofg_tt_HUVEC_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 30.95
+    ofg_tt_HUVEC_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 30.95
+    ofg_tt_HUVEC_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 30.95
+    ofg_tt_HUVEC_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 30.95
+    ofg_tt_HUVEC_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 30.95
+    ofg_tt_HUVEC_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 30.95
+    ofg_tt_HUVEC_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 30.95
+    ofg_tt_HUVEC_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 30.95
+    ofg_tt_HUVEC_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 30.95
+    ofg_tt_HUVEC_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 30.95
+    ofg_tt_HUVEC_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 30.95
+    ofg_tt_HVMF_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 31.95
+    ofg_tt_HVMF_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 31.95
+    ofg_tt_HVMF_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 31.95
+    ofg_tt_HVMF_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 31.95
+    ofg_tt_HVMF_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 31.95
+    ofg_tt_HVMF_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 31.95
+    ofg_tt_HVMF_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 31.95
+    ofg_tt_HVMF_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 31.95
+    ofg_tt_HVMF_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 31.95
+    ofg_tt_HVMF_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 31.95
+    ofg_tt_HVMF_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 31.95
+    ofg_tt_HVMF_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 31.95
+    ofg_tt_HVMF_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 31.95
+    ofg_tt_JURKAT_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 32.95
+    ofg_tt_JURKAT_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 32.95
+    ofg_tt_JURKAT_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 32.95
+    ofg_tt_JURKAT_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 32.95
+    ofg_tt_JURKAT_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 32.95
+    ofg_tt_JURKAT_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 32.95
+    ofg_tt_JURKAT_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 32.95
+    ofg_tt_JURKAT_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 32.95
+    ofg_tt_JURKAT_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 32.95
+    ofg_tt_JURKAT_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 32.95
+    ofg_tt_JURKAT_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 32.95
+    ofg_tt_JURKAT_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 32.95
+    ofg_tt_JURKAT_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 32.95
+    ofg_tt_K562_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 33.95
+    ofg_tt_K562_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 33.95
+    ofg_tt_K562_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 33.95
+    ofg_tt_K562_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 33.95
+    ofg_tt_K562_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 33.95
+    ofg_tt_K562_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 33.95
+    ofg_tt_K562_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 33.95
+    ofg_tt_K562_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 33.95
+    ofg_tt_K562_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 33.95
+    ofg_tt_K562_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 33.95
+    ofg_tt_K562_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 33.95
+    ofg_tt_K562_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 33.95
+    ofg_tt_K562_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 33.95
+    ofg_tt_NHA_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 34.95
+    ofg_tt_NHA_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 34.95
+    ofg_tt_NHA_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 34.95
+    ofg_tt_NHA_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 34.95
+    ofg_tt_NHA_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 34.95
+    ofg_tt_NHA_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 34.95
+    ofg_tt_NHA_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 34.95
+    ofg_tt_NHA_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 34.95
+    ofg_tt_NHA_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 34.95
+    ofg_tt_NHA_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 34.95
+    ofg_tt_NHA_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 34.95
+    ofg_tt_NHA_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 34.95
+    ofg_tt_NHA_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 34.95
+    ofg_tt_NHDFAD_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 35.95
+    ofg_tt_NHDFAD_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 35.95
+    ofg_tt_NHDFAD_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 35.95
+    ofg_tt_NHDFAD_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 35.95
+    ofg_tt_NHDFAD_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 35.95
+    ofg_tt_NHDFAD_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 35.95
+    ofg_tt_NHDFAD_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 35.95
+    ofg_tt_NHDFAD_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 35.95
+    ofg_tt_NHDFAD_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 35.95
+    ofg_tt_NHDFAD_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 35.95
+    ofg_tt_NHDFAD_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 35.95
+    ofg_tt_NHDFAD_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 35.95
+    ofg_tt_NHDFAD_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 35.95
+    ofg_tt_NHDFNEO_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 36.95
+    ofg_tt_NHDFNEO_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 36.95
+    ofg_tt_NHDFNEO_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 36.95
+    ofg_tt_NHDFNEO_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 36.95
+    ofg_tt_NHDFNEO_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 36.95
+    ofg_tt_NHDFNEO_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 36.95
+    ofg_tt_NHDFNEO_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 36.95
+    ofg_tt_NHDFNEO_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 36.95
+    ofg_tt_NHDFNEO_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 36.95
+    ofg_tt_NHDFNEO_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 36.95
+    ofg_tt_NHDFNEO_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 36.95
+    ofg_tt_NHDFNEO_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 36.95
+    ofg_tt_NHDFNEO_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 36.95
+    ofg_tt_NHEK_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 37.95
+    ofg_tt_NHEK_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 37.95
+    ofg_tt_NHEK_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 37.95
+    ofg_tt_NHEK_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 37.95
+    ofg_tt_NHEK_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 37.95
+    ofg_tt_NHEK_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 37.95
+    ofg_tt_NHEK_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 37.95
+    ofg_tt_NHEK_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 37.95
+    ofg_tt_NHEK_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 37.95
+    ofg_tt_NHEK_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 37.95
+    ofg_tt_NHEK_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 37.95
+    ofg_tt_NHEK_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 37.95
+    ofg_tt_NHEK_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 37.95
+    ofg_tt_NHLF_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 38.95
+    ofg_tt_NHLF_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 38.95
+    ofg_tt_NHLF_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 38.95
+    ofg_tt_NHLF_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 38.95
+    ofg_tt_NHLF_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 38.95
+    ofg_tt_NHLF_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 38.95
+    ofg_tt_NHLF_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 38.95
+    ofg_tt_NHLF_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 38.95
+    ofg_tt_NHLF_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 38.95
+    ofg_tt_NHLF_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 38.95
+    ofg_tt_NHLF_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 38.95
+    ofg_tt_NHLF_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 38.95
+    ofg_tt_NHLF_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 38.95
+    ofg_tt_NT2D1_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 39.95
+    ofg_tt_NT2D1_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 39.95
+    ofg_tt_NT2D1_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 39.95
+    ofg_tt_NT2D1_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 39.95
+    ofg_tt_NT2D1_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 39.95
+    ofg_tt_NT2D1_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 39.95
+    ofg_tt_NT2D1_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 39.95
+    ofg_tt_NT2D1_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 39.95
+    ofg_tt_NT2D1_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 39.95
+    ofg_tt_NT2D1_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 39.95
+    ofg_tt_NT2D1_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 39.95
+    ofg_tt_NT2D1_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 39.95
+    ofg_tt_NT2D1_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 39.95
+    ofg_tt_OSTEO_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 40.95
+    ofg_tt_OSTEO_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 40.95
+    ofg_tt_OSTEO_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 40.95
+    ofg_tt_OSTEO_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 40.95
+    ofg_tt_OSTEO_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 40.95
+    ofg_tt_OSTEO_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 40.95
+    ofg_tt_OSTEO_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 40.95
+    ofg_tt_OSTEO_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 40.95
+    ofg_tt_OSTEO_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 40.95
+    ofg_tt_OSTEO_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 40.95
+    ofg_tt_OSTEO_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 40.95
+    ofg_tt_OSTEO_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 40.95
+    ofg_tt_OSTEO_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 40.95
+    ofg_tt_SAEC_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 41.95
+    ofg_tt_SAEC_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 41.95
+    ofg_tt_SAEC_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 41.95
+    ofg_tt_SAEC_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 41.95
+    ofg_tt_SAEC_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 41.95
+    ofg_tt_SAEC_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 41.95
+    ofg_tt_SAEC_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 41.95
+    ofg_tt_SAEC_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 41.95
+    ofg_tt_SAEC_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 41.95
+    ofg_tt_SAEC_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 41.95
+    ofg_tt_SAEC_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 41.95
+    ofg_tt_SAEC_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 41.95
+    ofg_tt_SAEC_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 41.95
+    ofg_tt_SKNSHRA_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 42.95
+    ofg_tt_SKNSHRA_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 42.95
+    ofg_tt_SKNSHRA_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 42.95
+    ofg_tt_SKNSHRA_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 42.95
+    ofg_tt_SKNSHRA_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 42.95
+    ofg_tt_SKNSHRA_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 42.95
+    ofg_tt_SKNSHRA_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 42.95
+    ofg_tt_SKNSHRA_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 42.95
+    ofg_tt_SKNSHRA_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 42.95
+    ofg_tt_SKNSHRA_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 42.95
+    ofg_tt_SKNSHRA_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 42.95
+    ofg_tt_SKNSHRA_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 42.95
+    ofg_tt_SKNSHRA_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 42.95
+    ofg_tt_U2OS_H2AZ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.6
+          - 43.95
+    ofg_tt_U2OS_H3K04ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.6
+          - 43.95
+    ofg_tt_U2OS_H3K04ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.6
+          - 43.95
+    ofg_tt_U2OS_H3K04ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.6
+          - 43.95
+    ofg_tt_U2OS_H3K09AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 4.6
+          - 43.95
+    ofg_tt_U2OS_H3K09ACb:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 5.6
+          - 43.95
+    ofg_tt_U2OS_H3K09ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 6.6
+          - 43.95
+    ofg_tt_U2OS_H3K27AC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 7.6
+          - 43.95
+    ofg_tt_U2OS_H3K27ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 8.6
+          - 43.95
+    ofg_tt_U2OS_H3K36ME3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 9.6
+          - 43.95
+    ofg_tt_U2OS_H3K36ME3b:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 10.6
+          - 43.95
+    ofg_tt_U2OS_H3K79ME2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 11.6
+          - 43.95
+    ofg_tt_U2OS_H4K20ME1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 12.6
+          - 43.95

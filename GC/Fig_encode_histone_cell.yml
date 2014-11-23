@@ -1,0 +1,771 @@
+---
+charts:
+  Human_BED_Histone.tag.mg.chart.xlsx:
+    ofg_tag_AG04449:
+      1:
+        - 0
+        - 0
+    ofg_tag_AG04450:
+      1:
+        - 1
+        - 0
+    ofg_tag_AG09309:
+      1:
+        - 2
+        - 0
+    ofg_tag_AG09319:
+      1:
+        - 3
+        - 0
+    ofg_tag_AG10803:
+      1:
+        - 0
+        - 1
+    ofg_tag_AOAF:
+      1:
+        - 1
+        - 1
+    ofg_tag_BJ:
+      1:
+        - 2
+        - 1
+    ofg_tag_CACO2:
+      1:
+        - 3
+        - 1
+    ofg_tag_GM06990:
+      1:
+        - 0
+        - 2
+    ofg_tag_GM12878:
+      1:
+        - 1
+        - 2
+    ofg_tag_H1HESC:
+      1:
+        - 2
+        - 2
+    ofg_tag_H7ES:
+      1:
+        - 3
+        - 2
+    ofg_tag_HASP:
+      1:
+        - 0
+        - 3
+    ofg_tag_HBMEC:
+      1:
+        - 1
+        - 3
+    ofg_tag_HCF:
+      1:
+        - 2
+        - 3
+    ofg_tag_HCM:
+      1:
+        - 3
+        - 3
+    ofg_tag_HCPE:
+      1:
+        - 0
+        - 4
+    ofg_tag_HCT116:
+      1:
+        - 1
+        - 4
+    ofg_tag_HEE:
+      1:
+        - 2
+        - 4
+    ofg_tag_HEK293:
+      1:
+        - 3
+        - 4
+    ofg_tag_HELAS3:
+      1:
+        - 0
+        - 5
+    ofg_tag_HEPG2:
+      1:
+        - 1
+        - 5
+    ofg_tag_HL60:
+      1:
+        - 2
+        - 5
+    ofg_tag_HMEC:
+      1:
+        - 3
+        - 5
+    ofg_tag_HMF:
+      1:
+        - 0
+        - 6
+    ofg_tag_HPAF:
+      1:
+        - 1
+        - 6
+    ofg_tag_HPF:
+      1:
+        - 2
+        - 6
+    ofg_tag_HRE:
+      1:
+        - 3
+        - 6
+    ofg_tag_HRPE:
+      1:
+        - 0
+        - 7
+    ofg_tag_HSMM:
+      1:
+        - 1
+        - 7
+    ofg_tag_HSMMt:
+      1:
+        - 2
+        - 7
+    ofg_tag_HUVEC:
+      1:
+        - 3
+        - 7
+    ofg_tag_HVMF:
+      1:
+        - 0
+        - 8
+    ofg_tag_JURKAT:
+      1:
+        - 1
+        - 8
+    ofg_tag_K562:
+      1:
+        - 2
+        - 8
+    ofg_tag_NHA:
+      1:
+        - 3
+        - 8
+    ofg_tag_NHDFAD:
+      1:
+        - 0
+        - 9
+    ofg_tag_NHDFNEO:
+      1:
+        - 1
+        - 9
+    ofg_tag_NHEK:
+      1:
+        - 2
+        - 9
+    ofg_tag_NHLF:
+      1:
+        - 3
+        - 9
+    ofg_tag_NT2D1:
+      1:
+        - 0
+        - 10
+    ofg_tag_OSTEO:
+      1:
+        - 1
+        - 10
+    ofg_tag_SAEC:
+      1:
+        - 2
+        - 10
+    ofg_tag_SKNSHRA:
+      1:
+        - 3
+        - 10
+    ofg_tag_U2OS:
+      1:
+        - 0
+        - 11
+texts:
+  - text: AG04449
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - -0.05
+  - text: AG04450
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - -0.05
+  - text: AG09309
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - -0.05
+  - text: AG09319
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - -0.05
+  - text: AG10803
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 0.95
+  - text: AOAF
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 0.95
+  - text: BJ
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 0.95
+  - text: CACO2
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 0.95
+  - text: GM06990
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 1.95
+  - text: GM12878
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 1.95
+  - text: H1HESC
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 1.95
+  - text: H7ES
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 1.95
+  - text: HASP
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 2.95
+  - text: HBMEC
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 2.95
+  - text: HCF
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 2.95
+  - text: HCM
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 2.95
+  - text: HCPE
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 3.95
+  - text: HCT116
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 3.95
+  - text: HEE
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 3.95
+  - text: HEK293
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 3.95
+  - text: HELAS3
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 4.95
+  - text: HEPG2
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 4.95
+  - text: HL60
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 4.95
+  - text: HMEC
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 4.95
+  - text: HMF
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 5.95
+  - text: HPAF
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 5.95
+  - text: HPF
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 5.95
+  - text: HRE
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 5.95
+  - text: HRPE
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 6.95
+  - text: HSMM
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 6.95
+  - text: HSMMt
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 6.95
+  - text: HUVEC
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 6.95
+  - text: HVMF
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 7.95
+  - text: JURKAT
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 7.95
+  - text: K562
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 7.95
+  - text: NHA
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 7.95
+  - text: NHDFAD
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 8.95
+  - text: NHDFNEO
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 8.95
+  - text: NHEK
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 8.95
+  - text: NHLF
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 8.95
+  - text: NT2D1
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 9.95
+  - text: OSTEO
+    size: 8
+    bold: 1
+    pos:
+      - 1
+      - 9.95
+  - text: SAEC
+    size: 8
+    bold: 1
+    pos:
+      - 2
+      - 9.95
+  - text: SKNSHRA
+    size: 8
+    bold: 1
+    pos:
+      - 3
+      - 9.95
+  - text: U2OS
+    size: 8
+    bold: 1
+    pos:
+      - 0
+      - 10.95
+ranges:
+  Human_BED_Histone.tag.mg.chart.xlsx:
+    ofg_tag_AG04449:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - -0.05
+    ofg_tag_AG04450:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - -0.05
+    ofg_tag_AG09309:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - -0.05
+    ofg_tag_AG09319:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - -0.05
+    ofg_tag_AG10803:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 0.95
+    ofg_tag_AOAF:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 0.95
+    ofg_tag_BJ:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 0.95
+    ofg_tag_CACO2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 0.95
+    ofg_tag_GM06990:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 1.95
+    ofg_tag_GM12878:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 1.95
+    ofg_tag_H1HESC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 1.95
+    ofg_tag_H7ES:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 1.95
+    ofg_tag_HASP:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 2.95
+    ofg_tag_HBMEC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 2.95
+    ofg_tag_HCF:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 2.95
+    ofg_tag_HCM:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 2.95
+    ofg_tag_HCPE:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 3.95
+    ofg_tag_HCT116:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 3.95
+    ofg_tag_HEE:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 3.95
+    ofg_tag_HEK293:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 3.95
+    ofg_tag_HELAS3:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 4.95
+    ofg_tag_HEPG2:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 4.95
+    ofg_tag_HL60:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 4.95
+    ofg_tag_HMEC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 4.95
+    ofg_tag_HMF:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 5.95
+    ofg_tag_HPAF:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 5.95
+    ofg_tag_HPF:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 5.95
+    ofg_tag_HRE:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 5.95
+    ofg_tag_HRPE:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 6.95
+    ofg_tag_HSMM:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 6.95
+    ofg_tag_HSMMt:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 6.95
+    ofg_tag_HUVEC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 6.95
+    ofg_tag_HVMF:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 7.95
+    ofg_tag_JURKAT:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 7.95
+    ofg_tag_K562:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 7.95
+    ofg_tag_NHA:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 7.95
+    ofg_tag_NHDFAD:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 8.95
+    ofg_tag_NHDFNEO:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 8.95
+    ofg_tag_NHEK:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 8.95
+    ofg_tag_NHLF:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 8.95
+    ofg_tag_NT2D1:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 9.95
+    ofg_tag_OSTEO:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 1.5
+          - 9.95
+    ofg_tag_SAEC:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 2.5
+          - 9.95
+    ofg_tag_SKNSHRA:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 3.5
+          - 9.95
+    ofg_tag_U2OS:
+      - copy: E2
+        size: 8
+        bold: 1
+        pos :
+          - 0.5
+          - 10.95

@@ -1,0 +1,1073 @@
+autofit: A:C
+texts:
+  - text: "distance"
+    pos: A1
+  - text: "variable"
+    pos: B1
+  - text: "value"
+    pos: C1
+  - text: Actinobacillus_pleuropneumoniae
+    pos: B2
+  - text: Actinobacillus_pleuropneumoniae
+    pos: B3
+  - text: Actinobacillus_pleuropneumoniae
+    pos: B4
+  - text: Actinobacillus_pleuropneumoniae
+    pos: B5
+  - text: Actinobacillus_pleuropneumoniae
+    pos: B6
+  - text: Actinobacillus_pleuropneumoniae
+    pos: B7
+  - text: Actinobacillus_pleuropneumoniae
+    pos: B8
+  - text: Actinobacillus_pleuropneumoniae
+    pos: B9
+  - text: Actinobacillus_pleuropneumoniae
+    pos: B10
+  - text: Actinobacillus_pleuropneumoniae
+    pos: B11
+  - text: Actinobacillus_pleuropneumoniae
+    pos: B12
+  - text: Actinobacillus_pleuropneumoniae
+    pos: B13
+  - text: Actinobacillus_pleuropneumoniae
+    pos: B14
+  - text: Actinobacillus_pleuropneumoniae
+    pos: B15
+  - text: Actinobacillus_pleuropneumoniae
+    pos: B16
+  - text: Actinobacillus_pleuropneumoniae
+    pos: B17
+  - text: Aggregatibacter_actinomycetemcomitans
+    pos: B18
+  - text: Aggregatibacter_actinomycetemcomitans
+    pos: B19
+  - text: Aggregatibacter_actinomycetemcomitans
+    pos: B20
+  - text: Aggregatibacter_actinomycetemcomitans
+    pos: B21
+  - text: Aggregatibacter_actinomycetemcomitans
+    pos: B22
+  - text: Aggregatibacter_actinomycetemcomitans
+    pos: B23
+  - text: Aggregatibacter_actinomycetemcomitans
+    pos: B24
+  - text: Aggregatibacter_actinomycetemcomitans
+    pos: B25
+  - text: Aggregatibacter_actinomycetemcomitans
+    pos: B26
+  - text: Aggregatibacter_actinomycetemcomitans
+    pos: B27
+  - text: Aggregatibacter_actinomycetemcomitans
+    pos: B28
+  - text: Aggregatibacter_actinomycetemcomitans
+    pos: B29
+  - text: Aggregatibacter_actinomycetemcomitans
+    pos: B30
+  - text: Aggregatibacter_actinomycetemcomitans
+    pos: B31
+  - text: Aggregatibacter_actinomycetemcomitans
+    pos: B32
+  - text: Aggregatibacter_actinomycetemcomitans
+    pos: B33
+  - text: Alteromonas_macleodii
+    pos: B34
+  - text: Alteromonas_macleodii
+    pos: B35
+  - text: Alteromonas_macleodii
+    pos: B36
+  - text: Alteromonas_macleodii
+    pos: B37
+  - text: Alteromonas_macleodii
+    pos: B38
+  - text: Alteromonas_macleodii
+    pos: B39
+  - text: Alteromonas_macleodii
+    pos: B40
+  - text: Alteromonas_macleodii
+    pos: B41
+  - text: Alteromonas_macleodii
+    pos: B42
+  - text: Alteromonas_macleodii
+    pos: B43
+  - text: Alteromonas_macleodii
+    pos: B44
+  - text: Alteromonas_macleodii
+    pos: B45
+  - text: Alteromonas_macleodii
+    pos: B46
+  - text: Alteromonas_macleodii
+    pos: B47
+  - text: Alteromonas_macleodii
+    pos: B48
+  - text: Alteromonas_macleodii
+    pos: B49
+  - text: Bacillus_amyloliquefaciens
+    pos: B50
+  - text: Bacillus_amyloliquefaciens
+    pos: B51
+  - text: Bacillus_amyloliquefaciens
+    pos: B52
+  - text: Bacillus_amyloliquefaciens
+    pos: B53
+  - text: Bacillus_amyloliquefaciens
+    pos: B54
+  - text: Bacillus_amyloliquefaciens
+    pos: B55
+  - text: Bacillus_amyloliquefaciens
+    pos: B56
+  - text: Bacillus_amyloliquefaciens
+    pos: B57
+  - text: Bacillus_amyloliquefaciens
+    pos: B58
+  - text: Bacillus_amyloliquefaciens
+    pos: B59
+  - text: Bacillus_amyloliquefaciens
+    pos: B60
+  - text: Bacillus_amyloliquefaciens
+    pos: B61
+  - text: Bacillus_amyloliquefaciens
+    pos: B62
+  - text: Bacillus_amyloliquefaciens
+    pos: B63
+  - text: Bacillus_amyloliquefaciens
+    pos: B64
+  - text: Bacillus_amyloliquefaciens
+    pos: B65
+  - text: Bacillus_subtilis
+    pos: B66
+  - text: Bacillus_subtilis
+    pos: B67
+  - text: Bacillus_subtilis
+    pos: B68
+  - text: Bacillus_subtilis
+    pos: B69
+  - text: Bacillus_subtilis
+    pos: B70
+  - text: Bacillus_subtilis
+    pos: B71
+  - text: Bacillus_subtilis
+    pos: B72
+  - text: Bacillus_subtilis
+    pos: B73
+  - text: Bacillus_subtilis
+    pos: B74
+  - text: Bacillus_subtilis
+    pos: B75
+  - text: Bacillus_subtilis
+    pos: B76
+  - text: Bacillus_subtilis
+    pos: B77
+  - text: Bacillus_subtilis
+    pos: B78
+  - text: Bacillus_subtilis
+    pos: B79
+  - text: Bacillus_subtilis
+    pos: B80
+  - text: Bacillus_subtilis
+    pos: B81
+  - text: Bacteroides_fragilis
+    pos: B82
+  - text: Bacteroides_fragilis
+    pos: B83
+  - text: Bacteroides_fragilis
+    pos: B84
+  - text: Bacteroides_fragilis
+    pos: B85
+  - text: Bacteroides_fragilis
+    pos: B86
+  - text: Bacteroides_fragilis
+    pos: B87
+  - text: Bacteroides_fragilis
+    pos: B88
+  - text: Bacteroides_fragilis
+    pos: B89
+  - text: Bacteroides_fragilis
+    pos: B90
+  - text: Bacteroides_fragilis
+    pos: B91
+  - text: Bacteroides_fragilis
+    pos: B92
+  - text: Bacteroides_fragilis
+    pos: B93
+  - text: Bacteroides_fragilis
+    pos: B94
+  - text: Bacteroides_fragilis
+    pos: B95
+  - text: Bacteroides_fragilis
+    pos: B96
+  - text: Bacteroides_fragilis
+    pos: B97
+  - text: Chlamydia_pneumoniae
+    pos: B98
+  - text: Chlamydia_pneumoniae
+    pos: B99
+  - text: Chlamydia_pneumoniae
+    pos: B100
+  - text: Chlamydia_pneumoniae
+    pos: B101
+  - text: Chlamydia_pneumoniae
+    pos: B102
+  - text: Chlamydia_pneumoniae
+    pos: B103
+  - text: Chlamydia_pneumoniae
+    pos: B104
+  - text: Chlamydia_pneumoniae
+    pos: B105
+  - text: Chlamydia_pneumoniae
+    pos: B106
+  - text: Chlamydia_pneumoniae
+    pos: B107
+  - text: Chlamydia_pneumoniae
+    pos: B108
+  - text: Chlamydia_pneumoniae
+    pos: B109
+  - text: Chlamydia_pneumoniae
+    pos: B110
+  - text: Chlamydia_pneumoniae
+    pos: B111
+  - text: Chlamydia_pneumoniae
+    pos: B112
+  - text: Chlamydia_pneumoniae
+    pos: B113
+  - text: Chlamydia_trachomatis
+    pos: B114
+  - text: Chlamydia_trachomatis
+    pos: B115
+  - text: Chlamydia_trachomatis
+    pos: B116
+  - text: Chlamydia_trachomatis
+    pos: B117
+  - text: Chlamydia_trachomatis
+    pos: B118
+  - text: Chlamydia_trachomatis
+    pos: B119
+  - text: Chlamydia_trachomatis
+    pos: B120
+  - text: Chlamydia_trachomatis
+    pos: B121
+  - text: Chlamydia_trachomatis
+    pos: B122
+  - text: Chlamydia_trachomatis
+    pos: B123
+  - text: Chlamydia_trachomatis
+    pos: B124
+  - text: Chlamydia_trachomatis
+    pos: B125
+  - text: Chlamydia_trachomatis
+    pos: B126
+  - text: Chlamydia_trachomatis
+    pos: B127
+  - text: Chlamydia_trachomatis
+    pos: B128
+  - text: Chlamydia_trachomatis
+    pos: B129
+  - text: Coxiella_burnetii
+    pos: B130
+  - text: Coxiella_burnetii
+    pos: B131
+  - text: Coxiella_burnetii
+    pos: B132
+  - text: Coxiella_burnetii
+    pos: B133
+  - text: Coxiella_burnetii
+    pos: B134
+  - text: Coxiella_burnetii
+    pos: B135
+  - text: Coxiella_burnetii
+    pos: B136
+  - text: Coxiella_burnetii
+    pos: B137
+  - text: Coxiella_burnetii
+    pos: B138
+  - text: Coxiella_burnetii
+    pos: B139
+  - text: Coxiella_burnetii
+    pos: B140
+  - text: Coxiella_burnetii
+    pos: B141
+  - text: Coxiella_burnetii
+    pos: B142
+  - text: Coxiella_burnetii
+    pos: B143
+  - text: Coxiella_burnetii
+    pos: B144
+  - text: Coxiella_burnetii
+    pos: B145
+  - text: Dehalococcoides_mccartyi
+    pos: B146
+  - text: Dehalococcoides_mccartyi
+    pos: B147
+  - text: Dehalococcoides_mccartyi
+    pos: B148
+  - text: Dehalococcoides_mccartyi
+    pos: B149
+  - text: Dehalococcoides_mccartyi
+    pos: B150
+  - text: Dehalococcoides_mccartyi
+    pos: B151
+  - text: Dehalococcoides_mccartyi
+    pos: B152
+  - text: Dehalococcoides_mccartyi
+    pos: B153
+  - text: Dehalococcoides_mccartyi
+    pos: B154
+  - text: Dehalococcoides_mccartyi
+    pos: B155
+  - text: Dehalococcoides_mccartyi
+    pos: B156
+  - text: Dehalococcoides_mccartyi
+    pos: B157
+  - text: Dehalococcoides_mccartyi
+    pos: B158
+  - text: Dehalococcoides_mccartyi
+    pos: B159
+  - text: Dehalococcoides_mccartyi
+    pos: B160
+  - text: Dehalococcoides_mccartyi
+    pos: B161
+  - text: Gardnerella_vaginalis
+    pos: B162
+  - text: Gardnerella_vaginalis
+    pos: B163
+  - text: Gardnerella_vaginalis
+    pos: B164
+  - text: Gardnerella_vaginalis
+    pos: B165
+  - text: Gardnerella_vaginalis
+    pos: B166
+  - text: Gardnerella_vaginalis
+    pos: B167
+  - text: Gardnerella_vaginalis
+    pos: B168
+  - text: Gardnerella_vaginalis
+    pos: B169
+  - text: Gardnerella_vaginalis
+    pos: B170
+  - text: Gardnerella_vaginalis
+    pos: B171
+  - text: Gardnerella_vaginalis
+    pos: B172
+  - text: Gardnerella_vaginalis
+    pos: B173
+  - text: Gardnerella_vaginalis
+    pos: B174
+  - text: Gardnerella_vaginalis
+    pos: B175
+  - text: Gardnerella_vaginalis
+    pos: B176
+  - text: Gardnerella_vaginalis
+    pos: B177
+  - text: Lactobacillus_casei
+    pos: B178
+  - text: Lactobacillus_casei
+    pos: B179
+  - text: Lactobacillus_casei
+    pos: B180
+  - text: Lactobacillus_casei
+    pos: B181
+  - text: Lactobacillus_casei
+    pos: B182
+  - text: Lactobacillus_casei
+    pos: B183
+  - text: Lactobacillus_casei
+    pos: B184
+  - text: Lactobacillus_casei
+    pos: B185
+  - text: Lactobacillus_casei
+    pos: B186
+  - text: Lactobacillus_casei
+    pos: B187
+  - text: Lactobacillus_casei
+    pos: B188
+  - text: Lactobacillus_casei
+    pos: B189
+  - text: Lactobacillus_casei
+    pos: B190
+  - text: Lactobacillus_casei
+    pos: B191
+  - text: Lactobacillus_casei
+    pos: B192
+  - text: Lactobacillus_casei
+    pos: B193
+  - text: Lactobacillus_plantarum
+    pos: B194
+  - text: Lactobacillus_plantarum
+    pos: B195
+  - text: Lactobacillus_plantarum
+    pos: B196
+  - text: Lactobacillus_plantarum
+    pos: B197
+  - text: Lactobacillus_plantarum
+    pos: B198
+  - text: Lactobacillus_plantarum
+    pos: B199
+  - text: Lactobacillus_plantarum
+    pos: B200
+  - text: Lactobacillus_plantarum
+    pos: B201
+  - text: Lactobacillus_plantarum
+    pos: B202
+  - text: Lactobacillus_plantarum
+    pos: B203
+  - text: Lactobacillus_plantarum
+    pos: B204
+  - text: Lactobacillus_plantarum
+    pos: B205
+  - text: Lactobacillus_plantarum
+    pos: B206
+  - text: Lactobacillus_plantarum
+    pos: B207
+  - text: Lactobacillus_plantarum
+    pos: B208
+  - text: Lactobacillus_plantarum
+    pos: B209
+  - text: Lactobacillus_rhamnosus
+    pos: B210
+  - text: Lactobacillus_rhamnosus
+    pos: B211
+  - text: Lactobacillus_rhamnosus
+    pos: B212
+  - text: Lactobacillus_rhamnosus
+    pos: B213
+  - text: Lactobacillus_rhamnosus
+    pos: B214
+  - text: Lactobacillus_rhamnosus
+    pos: B215
+  - text: Lactobacillus_rhamnosus
+    pos: B216
+  - text: Lactobacillus_rhamnosus
+    pos: B217
+  - text: Lactobacillus_rhamnosus
+    pos: B218
+  - text: Lactobacillus_rhamnosus
+    pos: B219
+  - text: Lactobacillus_rhamnosus
+    pos: B220
+  - text: Lactobacillus_rhamnosus
+    pos: B221
+  - text: Lactobacillus_rhamnosus
+    pos: B222
+  - text: Lactobacillus_rhamnosus
+    pos: B223
+  - text: Lactobacillus_rhamnosus
+    pos: B224
+  - text: Lactobacillus_rhamnosus
+    pos: B225
+  - text: Paenibacillus_polymyxa
+    pos: B226
+  - text: Paenibacillus_polymyxa
+    pos: B227
+  - text: Paenibacillus_polymyxa
+    pos: B228
+  - text: Paenibacillus_polymyxa
+    pos: B229
+  - text: Paenibacillus_polymyxa
+    pos: B230
+  - text: Paenibacillus_polymyxa
+    pos: B231
+  - text: Paenibacillus_polymyxa
+    pos: B232
+  - text: Paenibacillus_polymyxa
+    pos: B233
+  - text: Paenibacillus_polymyxa
+    pos: B234
+  - text: Paenibacillus_polymyxa
+    pos: B235
+  - text: Paenibacillus_polymyxa
+    pos: B236
+  - text: Paenibacillus_polymyxa
+    pos: B237
+  - text: Paenibacillus_polymyxa
+    pos: B238
+  - text: Paenibacillus_polymyxa
+    pos: B239
+  - text: Paenibacillus_polymyxa
+    pos: B240
+  - text: Paenibacillus_polymyxa
+    pos: B241
+  - text: Pasteurella_multocida
+    pos: B242
+  - text: Pasteurella_multocida
+    pos: B243
+  - text: Pasteurella_multocida
+    pos: B244
+  - text: Pasteurella_multocida
+    pos: B245
+  - text: Pasteurella_multocida
+    pos: B246
+  - text: Pasteurella_multocida
+    pos: B247
+  - text: Pasteurella_multocida
+    pos: B248
+  - text: Pasteurella_multocida
+    pos: B249
+  - text: Pasteurella_multocida
+    pos: B250
+  - text: Pasteurella_multocida
+    pos: B251
+  - text: Pasteurella_multocida
+    pos: B252
+  - text: Pasteurella_multocida
+    pos: B253
+  - text: Pasteurella_multocida
+    pos: B254
+  - text: Pasteurella_multocida
+    pos: B255
+  - text: Pasteurella_multocida
+    pos: B256
+  - text: Pasteurella_multocida
+    pos: B257
+  - text: Porphyromonas_gingivalis
+    pos: B258
+  - text: Porphyromonas_gingivalis
+    pos: B259
+  - text: Porphyromonas_gingivalis
+    pos: B260
+  - text: Porphyromonas_gingivalis
+    pos: B261
+  - text: Porphyromonas_gingivalis
+    pos: B262
+  - text: Porphyromonas_gingivalis
+    pos: B263
+  - text: Porphyromonas_gingivalis
+    pos: B264
+  - text: Porphyromonas_gingivalis
+    pos: B265
+  - text: Porphyromonas_gingivalis
+    pos: B266
+  - text: Porphyromonas_gingivalis
+    pos: B267
+  - text: Porphyromonas_gingivalis
+    pos: B268
+  - text: Porphyromonas_gingivalis
+    pos: B269
+  - text: Porphyromonas_gingivalis
+    pos: B270
+  - text: Porphyromonas_gingivalis
+    pos: B271
+  - text: Porphyromonas_gingivalis
+    pos: B272
+  - text: Porphyromonas_gingivalis
+    pos: B273
+  - text: Shewanella_baltica
+    pos: B274
+  - text: Shewanella_baltica
+    pos: B275
+  - text: Shewanella_baltica
+    pos: B276
+  - text: Shewanella_baltica
+    pos: B277
+  - text: Shewanella_baltica
+    pos: B278
+  - text: Shewanella_baltica
+    pos: B279
+  - text: Shewanella_baltica
+    pos: B280
+  - text: Shewanella_baltica
+    pos: B281
+  - text: Shewanella_baltica
+    pos: B282
+  - text: Shewanella_baltica
+    pos: B283
+  - text: Shewanella_baltica
+    pos: B284
+  - text: Shewanella_baltica
+    pos: B285
+  - text: Shewanella_baltica
+    pos: B286
+  - text: Shewanella_baltica
+    pos: B287
+  - text: Shewanella_baltica
+    pos: B288
+  - text: Shewanella_baltica
+    pos: B289
+  - text: Streptococcus_dysgalactiae
+    pos: B290
+  - text: Streptococcus_dysgalactiae
+    pos: B291
+  - text: Streptococcus_dysgalactiae
+    pos: B292
+  - text: Streptococcus_dysgalactiae
+    pos: B293
+  - text: Streptococcus_dysgalactiae
+    pos: B294
+  - text: Streptococcus_dysgalactiae
+    pos: B295
+  - text: Streptococcus_dysgalactiae
+    pos: B296
+  - text: Streptococcus_dysgalactiae
+    pos: B297
+  - text: Streptococcus_dysgalactiae
+    pos: B298
+  - text: Streptococcus_dysgalactiae
+    pos: B299
+  - text: Streptococcus_dysgalactiae
+    pos: B300
+  - text: Streptococcus_dysgalactiae
+    pos: B301
+  - text: Streptococcus_dysgalactiae
+    pos: B302
+  - text: Streptococcus_dysgalactiae
+    pos: B303
+  - text: Streptococcus_dysgalactiae
+    pos: B304
+  - text: Streptococcus_dysgalactiae
+    pos: B305
+  - text: Streptococcus_equi
+    pos: B306
+  - text: Streptococcus_equi
+    pos: B307
+  - text: Streptococcus_equi
+    pos: B308
+  - text: Streptococcus_equi
+    pos: B309
+  - text: Streptococcus_equi
+    pos: B310
+  - text: Streptococcus_equi
+    pos: B311
+  - text: Streptococcus_equi
+    pos: B312
+  - text: Streptococcus_equi
+    pos: B313
+  - text: Streptococcus_equi
+    pos: B314
+  - text: Streptococcus_equi
+    pos: B315
+  - text: Streptococcus_equi
+    pos: B316
+  - text: Streptococcus_equi
+    pos: B317
+  - text: Streptococcus_equi
+    pos: B318
+  - text: Streptococcus_equi
+    pos: B319
+  - text: Streptococcus_equi
+    pos: B320
+  - text: Streptococcus_equi
+    pos: B321
+  - text: Streptococcus_pneumoniae
+    pos: B322
+  - text: Streptococcus_pneumoniae
+    pos: B323
+  - text: Streptococcus_pneumoniae
+    pos: B324
+  - text: Streptococcus_pneumoniae
+    pos: B325
+  - text: Streptococcus_pneumoniae
+    pos: B326
+  - text: Streptococcus_pneumoniae
+    pos: B327
+  - text: Streptococcus_pneumoniae
+    pos: B328
+  - text: Streptococcus_pneumoniae
+    pos: B329
+  - text: Streptococcus_pneumoniae
+    pos: B330
+  - text: Streptococcus_pneumoniae
+    pos: B331
+  - text: Streptococcus_pneumoniae
+    pos: B332
+  - text: Streptococcus_pneumoniae
+    pos: B333
+  - text: Streptococcus_pneumoniae
+    pos: B334
+  - text: Streptococcus_pneumoniae
+    pos: B335
+  - text: Streptococcus_pneumoniae
+    pos: B336
+  - text: Streptococcus_pneumoniae
+    pos: B337
+  - text: Streptococcus_salivarius
+    pos: B338
+  - text: Streptococcus_salivarius
+    pos: B339
+  - text: Streptococcus_salivarius
+    pos: B340
+  - text: Streptococcus_salivarius
+    pos: B341
+  - text: Streptococcus_salivarius
+    pos: B342
+  - text: Streptococcus_salivarius
+    pos: B343
+  - text: Streptococcus_salivarius
+    pos: B344
+  - text: Streptococcus_salivarius
+    pos: B345
+  - text: Streptococcus_salivarius
+    pos: B346
+  - text: Streptococcus_salivarius
+    pos: B347
+  - text: Streptococcus_salivarius
+    pos: B348
+  - text: Streptococcus_salivarius
+    pos: B349
+  - text: Streptococcus_salivarius
+    pos: B350
+  - text: Streptococcus_salivarius
+    pos: B351
+  - text: Streptococcus_salivarius
+    pos: B352
+  - text: Streptococcus_salivarius
+    pos: B353
+  - text: Streptococcus_suis
+    pos: B354
+  - text: Streptococcus_suis
+    pos: B355
+  - text: Streptococcus_suis
+    pos: B356
+  - text: Streptococcus_suis
+    pos: B357
+  - text: Streptococcus_suis
+    pos: B358
+  - text: Streptococcus_suis
+    pos: B359
+  - text: Streptococcus_suis
+    pos: B360
+  - text: Streptococcus_suis
+    pos: B361
+  - text: Streptococcus_suis
+    pos: B362
+  - text: Streptococcus_suis
+    pos: B363
+  - text: Streptococcus_suis
+    pos: B364
+  - text: Streptococcus_suis
+    pos: B365
+  - text: Streptococcus_suis
+    pos: B366
+  - text: Streptococcus_suis
+    pos: B367
+  - text: Streptococcus_suis
+    pos: B368
+  - text: Streptococcus_suis
+    pos: B369
+  - text: Vibrio_cholerae
+    pos: B370
+  - text: Vibrio_cholerae
+    pos: B371
+  - text: Vibrio_cholerae
+    pos: B372
+  - text: Vibrio_cholerae
+    pos: B373
+  - text: Vibrio_cholerae
+    pos: B374
+  - text: Vibrio_cholerae
+    pos: B375
+  - text: Vibrio_cholerae
+    pos: B376
+  - text: Vibrio_cholerae
+    pos: B377
+  - text: Vibrio_cholerae
+    pos: B378
+  - text: Vibrio_cholerae
+    pos: B379
+  - text: Vibrio_cholerae
+    pos: B380
+  - text: Vibrio_cholerae
+    pos: B381
+  - text: Vibrio_cholerae
+    pos: B382
+  - text: Vibrio_cholerae
+    pos: B383
+  - text: Vibrio_cholerae
+    pos: B384
+  - text: Vibrio_cholerae
+    pos: B385
+  - text: Vibrio_vulnificus
+    pos: B386
+  - text: Vibrio_vulnificus
+    pos: B387
+  - text: Vibrio_vulnificus
+    pos: B388
+  - text: Vibrio_vulnificus
+    pos: B389
+  - text: Vibrio_vulnificus
+    pos: B390
+  - text: Vibrio_vulnificus
+    pos: B391
+  - text: Vibrio_vulnificus
+    pos: B392
+  - text: Vibrio_vulnificus
+    pos: B393
+  - text: Vibrio_vulnificus
+    pos: B394
+  - text: Vibrio_vulnificus
+    pos: B395
+  - text: Vibrio_vulnificus
+    pos: B396
+  - text: Vibrio_vulnificus
+    pos: B397
+  - text: Vibrio_vulnificus
+    pos: B398
+  - text: Vibrio_vulnificus
+    pos: B399
+  - text: Vibrio_vulnificus
+    pos: B400
+  - text: Vibrio_vulnificus
+    pos: B401
+  - text: Yersinia_enterocolitica
+    pos: B402
+  - text: Yersinia_enterocolitica
+    pos: B403
+  - text: Yersinia_enterocolitica
+    pos: B404
+  - text: Yersinia_enterocolitica
+    pos: B405
+  - text: Yersinia_enterocolitica
+    pos: B406
+  - text: Yersinia_enterocolitica
+    pos: B407
+  - text: Yersinia_enterocolitica
+    pos: B408
+  - text: Yersinia_enterocolitica
+    pos: B409
+  - text: Yersinia_enterocolitica
+    pos: B410
+  - text: Yersinia_enterocolitica
+    pos: B411
+  - text: Yersinia_enterocolitica
+    pos: B412
+  - text: Yersinia_enterocolitica
+    pos: B413
+  - text: Yersinia_enterocolitica
+    pos: B414
+  - text: Yersinia_enterocolitica
+    pos: B415
+  - text: Yersinia_enterocolitica
+    pos: B416
+  - text: Yersinia_enterocolitica
+    pos: B417
+  - text: Yersinia_pseudotuberculosis
+    pos: B418
+  - text: Yersinia_pseudotuberculosis
+    pos: B419
+  - text: Yersinia_pseudotuberculosis
+    pos: B420
+  - text: Yersinia_pseudotuberculosis
+    pos: B421
+  - text: Yersinia_pseudotuberculosis
+    pos: B422
+  - text: Yersinia_pseudotuberculosis
+    pos: B423
+  - text: Yersinia_pseudotuberculosis
+    pos: B424
+  - text: Yersinia_pseudotuberculosis
+    pos: B425
+  - text: Yersinia_pseudotuberculosis
+    pos: B426
+  - text: Yersinia_pseudotuberculosis
+    pos: B427
+  - text: Yersinia_pseudotuberculosis
+    pos: B428
+  - text: Yersinia_pseudotuberculosis
+    pos: B429
+  - text: Yersinia_pseudotuberculosis
+    pos: B430
+  - text: Yersinia_pseudotuberculosis
+    pos: B431
+  - text: Yersinia_pseudotuberculosis
+    pos: B432
+  - text: Yersinia_pseudotuberculosis
+    pos: B433
+  - text: Zymomonas_mobilis
+    pos: B434
+  - text: Zymomonas_mobilis
+    pos: B435
+  - text: Zymomonas_mobilis
+    pos: B436
+  - text: Zymomonas_mobilis
+    pos: B437
+  - text: Zymomonas_mobilis
+    pos: B438
+  - text: Zymomonas_mobilis
+    pos: B439
+  - text: Zymomonas_mobilis
+    pos: B440
+  - text: Zymomonas_mobilis
+    pos: B441
+  - text: Zymomonas_mobilis
+    pos: B442
+  - text: Zymomonas_mobilis
+    pos: B443
+  - text: Zymomonas_mobilis
+    pos: B444
+  - text: Zymomonas_mobilis
+    pos: B445
+  - text: Zymomonas_mobilis
+    pos: B446
+  - text: Zymomonas_mobilis
+    pos: B447
+  - text: Zymomonas_mobilis
+    pos: B448
+  - text: Zymomonas_mobilis
+    pos: B449
+ranges:
+  Actinobacillus_pleuropneumoniae.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A2
+      - copy: D3:D18
+        paste: C2
+  Aggregatibacter_actinomycetemcomitans.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A18
+      - copy: D3:D18
+        paste: C18
+  Alteromonas_macleodii.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A34
+      - copy: D3:D18
+        paste: C34
+  Bacillus_amyloliquefaciens.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A50
+      - copy: D3:D18
+        paste: C50
+  Bacillus_subtilis.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A66
+      - copy: D3:D18
+        paste: C66
+  Bacteroides_fragilis.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A82
+      - copy: D3:D18
+        paste: C82
+  Chlamydia_pneumoniae.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A98
+      - copy: D3:D18
+        paste: C98
+  Chlamydia_trachomatis.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A114
+      - copy: D3:D18
+        paste: C114
+  Coxiella_burnetii.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A130
+      - copy: D3:D18
+        paste: C130
+  Dehalococcoides_mccartyi.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A146
+      - copy: D3:D18
+        paste: C146
+  Gardnerella_vaginalis.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A162
+      - copy: D3:D18
+        paste: C162
+  Lactobacillus_casei.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A178
+      - copy: D3:D18
+        paste: C178
+  Lactobacillus_plantarum.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A194
+      - copy: D3:D18
+        paste: C194
+  Lactobacillus_rhamnosus.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A210
+      - copy: D3:D18
+        paste: C210
+  Paenibacillus_polymyxa.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A226
+      - copy: D3:D18
+        paste: C226
+  Pasteurella_multocida.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A242
+      - copy: D3:D18
+        paste: C242
+  Porphyromonas_gingivalis.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A258
+      - copy: D3:D18
+        paste: C258
+  Shewanella_baltica.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A274
+      - copy: D3:D18
+        paste: C274
+  Streptococcus_dysgalactiae.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A290
+      - copy: D3:D18
+        paste: C290
+  Streptococcus_equi.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A306
+      - copy: D3:D18
+        paste: C306
+  Streptococcus_pneumoniae.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A322
+      - copy: D3:D18
+        paste: C322
+  Streptococcus_salivarius.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A338
+      - copy: D3:D18
+        paste: C338
+  Streptococcus_suis.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A354
+      - copy: D3:D18
+        paste: C354
+  Vibrio_cholerae.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A370
+      - copy: D3:D18
+        paste: C370
+  Vibrio_vulnificus.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A386
+      - copy: D3:D18
+        paste: C386
+  Yersinia_enterocolitica.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A402
+      - copy: D3:D18
+        paste: C402
+  Yersinia_pseudotuberculosis.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A418
+      - copy: D3:D18
+        paste: C418
+  Zymomonas_mobilis.common.chart.xlsx:
+    d1_pi_gc_cv:
+      - copy: A3:A18
+        paste: A434
+      - copy: D3:D18
+        paste: C434
