@@ -271,3 +271,7 @@ __END__
 =head1 SYNOPSIS
 
 perl corel_fig.pl -i Fig.S1.yaml
+
+=head1 CAUTIONs
+
+Don't work under CorelDraw X7. Use X6 or below.
