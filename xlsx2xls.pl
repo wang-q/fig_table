@@ -26,6 +26,8 @@ my $dir = '.';
 
 my $suffix = "*.xlsx";
 
+my $csv;
+
 my $man  = 0;
 my $help = 0;
 
@@ -34,6 +36,7 @@ GetOptions(
     'man'        => \$man,
     'd|dir=s'    => \$dir,
     's|suffix=s' => \$suffix,
+    'csv=s'      => \$csv,
 ) or pod2usage(2);
 
 pod2usage(1) if $help;
@@ -57,35 +60,39 @@ for my $file (@files) {
     print $file, "\n";
     my $newbook = $excel->Workbooks->Open($file)
         or die "Cannot open xlsx file\n";
-    my $xls = $file;
-    $xls =~ s/xlsx$/xls/i;
+    my $outfile = $file;
 
     # xlExcel8    56 Excel8
     # xlExcel9795 43 Excel9795 # this doesn't work
-    $newbook->SaveAs( $xls, 56 );
+    # xlCSV       6  CSV
+    if ($csv) {
+        $outfile =~ s/\.\w+$/csv/i;
+        $newbook->SaveAs( $outfile, 6 );
+    }
+    else {
+        $outfile =~ s/\.\w+$/xls/i;
+        $newbook->SaveAs( $outfile, 56 );
+    }
 }
 
 $excel->Quit;
+
 __END__
 
 =head1 NAME
 
-    xlsx2xls.pl - convert xlsx to xls
+xlsx2xls.pl - convert xlsx to xls or csv
 
 =head1 SYNOPSIS
-    perl xlsx2xls.pl -d stat -s *.chart.xlsx
 
-    xlsx2xls.pl [options]
+    perl xlsx2xls.pl [options]
       Options:
         --help              brief help message
         --man               full documentation
-        -d, --dir           dir containing xlsx files
-        -s, --suffix        suffix, default is *.xlsx
+        -d, --dir STR       dir containing xlsx files
+        -s, --suffix STR    suffix, default is *.xlsx
+        --csv               convert to csv
 
-=head1 DESCRIPTION
-
-B<This program> will read the given input file(s) and do someting
-useful with the contents thereof.
+    perl xlsx2xls.pl -d stat -s *.chart.xlsx
 
 =cut
-
