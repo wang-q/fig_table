@@ -36,7 +36,7 @@ GetOptions(
     'man'        => \$man,
     'd|dir=s'    => \$dir,
     's|suffix=s' => \$suffix,
-    'csv=s'      => \$csv,
+    'csv'        => \$csv,
 ) or pod2usage(2);
 
 pod2usage(1) if $help;
@@ -66,7 +66,7 @@ for my $file (@files) {
     # xlExcel9795 43 Excel9795 # this doesn't work
     # xlCSV       6  CSV
     if ($csv) {
-        $outfile =~ s/\.\w+$/csv/i;
+        $outfile =~ s/\.\w+$//i;
         $newbook->SaveAs( $outfile, 6 );
     }
     else {
