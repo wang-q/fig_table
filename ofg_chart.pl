@@ -14,6 +14,7 @@ use Win32::OLE::NLS qw(:LOCALE :DATE);
 use Win32::OLE::Const 'Microsoft Excel';
 
 use Path::Class;
+use List::Util qw{sum};
 use List::MoreUtils qw{natatime zip};
 use Statistics::R;
 
@@ -25,7 +26,7 @@ $Win32::OLE::Warn = 2;    # die on errors...
 # GetOpt section
 #----------------------------------------------------------#
 # running options
-my $file_xlsx = 'Humanvsself_BED_cells_DnaseSeq.ofg.chart.xlsx';
+my $file_input = 'Humanvsself_BED_cells_DnaseSeq.ofg.chart.xlsx';
 
 my $x_lab = "X";
 my $y_lab = "Y";
@@ -42,6 +43,8 @@ my $y_max = 0.6;
 my $regex_background = "ofg_tag";
 my $regex_seperate   = "ofg_all";
 
+my $mean_as_seperate;
+
 # filter by average Y values
 my $filter_top    = 0;
 my $filter_bottom = 0;
@@ -57,7 +60,7 @@ my $help = 0;
 GetOptions(
     'help|?'                => \$help,
     'man'                   => \$man,
-    'i|input=s'             => \$file_xlsx,
+    'i|input=s'             => \$file_input,
     'xl|x_lab=s'            => \$x_lab,
     'yl|y_lab=s'            => \$y_lab,
     'xr|xrange=s'           => \$xrange,
@@ -68,6 +71,7 @@ GetOptions(
     'y_max=s'               => \$y_max,
     'rb|regex_background=s' => \$regex_background,
     'rs|regex_seperate=s'   => \$regex_seperate,
+    'ms|mean_as_seperate'   => \$mean_as_seperate,
     'ft|filter_top=s'       => \$filter_top,
     'fb|filter_bottom=s'    => \$filter_bottom,
     'postfix=s'             => \$postfix,
@@ -83,9 +87,9 @@ pod2usage( -exitstatus => 0, -verbose => 2 ) if $man;
 
 # Excel files should be located in the same dir as the yaml file.
 # new excel table file will be named after yaml file.
-$file_xlsx = file($file_xlsx)->absolute->stringify;
+$file_input = file($file_input)->absolute->stringify;
 
-my $name_base = $file_xlsx;
+my $name_base = $file_input;
 $name_base =~ s/\.xlsx?$//;
 $name_base =~ s{\\}{\/}g;
 my $range_base = "X_${xrange}_Y_${yrange}";
@@ -108,7 +112,7 @@ unlink $file_chart if -e $file_chart;
         die "Cannot init Excel.Application\n";
     }
     my $workbook;
-    unless ( $workbook = $excel->Workbooks->Open($file_xlsx) ) {
+    unless ( $workbook = $excel->Workbooks->Open($file_input) ) {
         die "Cannot open xls file\n";
     }
 
@@ -140,17 +144,16 @@ unlink $file_chart if -e $file_chart;
             warn "Unequal number for two columns\n";
         }
 
-        my @groups
-            = ( $avg_y_of{$sheetname} ? $sheetname : "seperate_$sheetname" ) x
-            scalar(@xs);
+        my @groups = ( $avg_y_of{$sheetname} ? $sheetname : "seperate_$sheetname" ) x scalar(@xs);
         $avg_y_of{$sheetname} = mean(@ys);
 
         my @zips = zip @xs, @groups, @ys;
 
         my $it = natatime 3, @zips;
         while ( my @vals = $it->() ) {
-
-            #print {$fh_csv} join( ",", @vals ), "\n";
+            for (@vals) {
+                $_ = '' if !defined $_;
+            }
             push @lines, join( ",", @vals );
         }
     }
@@ -170,6 +173,30 @@ unlink $file_chart if -e $file_chart;
         print "Filtering top values by $filter_top\n";
         for my $i ( 1 .. $filter_top ) {
             @lines = grep { $_ !~ /\,$sheets_background[-$i]\,/ } @lines;
+        }
+    }
+
+    # calc mean
+    if ($mean_as_seperate) {
+        my $ys_of_x = {};
+        for (@lines) {
+            my ( $x, undef, $y ) = split /,/;
+            next if ( !defined $x or !defined $y );
+            next if ( $x eq '' or $y eq '' );
+            if ( !exists $ys_of_x->{$x} ) {
+                $ys_of_x->{$x} = [$y];
+            }
+            else {
+                push @{ $ys_of_x->{$x} }, $y;
+            }
+        }
+
+        #print Dump $ys_of_x;
+
+        for my $x ( sort { $a <=> $b } keys %{$ys_of_x} ) {
+            my @ys   = @{ $ys_of_x->{$x} };
+            my $mean = sum(@ys) / scalar @ys;
+            push @lines, join( ",", ( $x, 'seperate_mean', $mean ) );
         }
     }
 
