@@ -52,6 +52,9 @@ my $filter_bottom = 0;
 # use red square instead of blue diamond
 my $style_red;
 
+# background lines with dots
+my $style_dot;
+
 my $postfix = "";
 
 my $man  = 0;
@@ -76,6 +79,7 @@ GetOptions(
     'fb|filter_bottom=s'    => \$filter_bottom,
     'postfix=s'             => \$postfix,
     'style_red'             => \$style_red,
+    'style_dot'             => \$style_dot,
 ) or pod2usage(2);
 
 pod2usage(1) if $help;
@@ -92,7 +96,8 @@ $file_input = file($file_input)->absolute->stringify;
 my $name_base = $file_input;
 $name_base =~ s/\.xlsx?$//;
 $name_base =~ s{\\}{\/}g;
-my $range_base = "X_${xrange}_Y_${yrange}";
+my $range_base = "${xrange}_${yrange}";
+$range_base =~ s/://g;
 $range_base =~ s/[^\w]/_/g;
 $name_base = "${name_base}_${range_base}";
 $name_base .= ".$postfix" if $postfix;
@@ -221,6 +226,7 @@ unlink $file_chart if -e $file_chart;
     $R->set( 'y_max',      $y_max );
 
     print "Run\n";
+    # No newlines in the end of $r_code
     my $r_code = q{
         library(ggplot2)
         library(scales)
@@ -244,6 +250,7 @@ unlink $file_chart if -e $file_chart;
         
         mydata_main <- subset(mydata, ! grepl("seperate", mydata$group))
         plot_main <- func_plot(mydata_main)
+            
         
         mydata_sep <- subset(mydata, grepl("seperate", mydata$group))
         plot_sep <- func_plot(mydata_sep)
@@ -251,7 +258,7 @@ unlink $file_chart if -e $file_chart;
             geom_line(colour="blue", size = 0.5) + 
             geom_point(colour="blue", fill="blue", shape=23)
         
-        pdf( file_chart, width = 6, height = 3 )
+        pdf( file_chart, width = 6, height = 3, useDingbats=FALSE )
         grid.arrange(plot_main, plot_sep, ncol=2, nrow=1)
         dev.off()};
 
@@ -259,6 +266,9 @@ unlink $file_chart if -e $file_chart;
         $r_code =~ s{fill\=\"blue\"}{fill\=\"white\"}g;
         $r_code =~ s{\=\"blue\"}{\=\"\#C0504D\"}g;
         $r_code =~ s{shape\=23}{shape\=22}g;
+    }
+    if ($style_dot) {
+        $r_code =~ s{(func_plot\(mydata_main\))}{$1 + geom_point(colour="grey", fill="grey", shape=21, size=1)};
     }
 
     $R->run($r_code);
