@@ -13,7 +13,7 @@ use Win32::OLE::Variant;
 use Win32::OLE::NLS qw(:LOCALE :DATE);
 use Win32::OLE::Const 'Microsoft Excel';
 
-use Path::Class;
+use Path::Tiny;
 use List::Util qw{sum};
 use List::MoreUtils qw{natatime zip};
 use Statistics::R;
@@ -91,7 +91,7 @@ pod2usage( -exitstatus => 0, -verbose => 2 ) if $man;
 
 # Excel files should be located in the same dir as the yaml file.
 # new excel table file will be named after yaml file.
-$file_input = file($file_input)->absolute->stringify;
+$file_input = path($file_input)->absolute->stringify;
 
 my $name_base = $file_input;
 $name_base =~ s/\.xlsx?$//;
@@ -103,10 +103,10 @@ $name_base = "${name_base}_${range_base}";
 $name_base .= ".$postfix" if $postfix;
 
 my $file_csv = "$name_base.csv";
-unlink $file_csv if -e $file_csv;
+path($file_csv)->remove;
 
 my $file_chart = "$name_base.pdf";
-unlink $file_chart if -e $file_chart;
+path($file_chart)->remove;
 
 #----------------------------------------------------------#
 # data from xlsx to csv
