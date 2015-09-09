@@ -231,6 +231,11 @@ unlink $file_chart if -e $file_chart;
         library(ggplot2)
         library(scales)
         library(gridExtra)
+        library(extrafont)
+        
+        # Ghostscript in %PATH%
+        Sys.setenv(R_GSCMD = "gswin32c.exe")
+
         func_plot <- function (plotdata) {
             plot <- ggplot(data=plotdata, aes(x=X, y=Y, group=group)) +
                 geom_line(colour="grey") +
@@ -260,7 +265,8 @@ unlink $file_chart if -e $file_chart;
         
         pdf( file_chart, width = 6, height = 3, useDingbats=FALSE )
         grid.arrange(plot_main, plot_sep, ncol=2, nrow=1)
-        dev.off()};
+        dev.off()
+        embed_fonts(file_chart)};
 
     if ($style_red) {
         $r_code =~ s{fill\=\"blue\"}{fill\=\"white\"}g;
