@@ -218,16 +218,39 @@ path($file_chart)->remove;
     print "Passing variables\n";
     $R->set( 'file_csv',   $file_csv );
     $R->set( 'file_chart', $file_chart );
-    $R->set( 'x_lab',      $x_lab );
-    $R->set( 'y_lab',      $y_lab );
     $R->set( 'x_min',      $x_min );
     $R->set( 'x_max',      $x_max );
     $R->set( 'y_min',      $y_min );
     $R->set( 'y_max',      $y_max );
 
+    # plotmath does not use curly brackets
+    if ( $x_lab =~ /^(.+)(\{.+\})(.*)$/ ) {
+        my $lab_pre  = $1;
+        my $lab_exp  = $2;
+        my $lab_post = $3;
+        my $eval_code
+            = qq{eval(parse( text = \"x_lab <- expression(paste(\\\"$lab_pre\\\", $lab_exp, \\\"$lab_post\\\"))\" ))};
+        $R->run($eval_code);
+    }
+    else {
+        $R->set( 'x_lab', $x_lab );
+    }
+    if ( $y_lab =~ /^(.+)(\{.+\})(.*)$/ ) {
+        my $lab_pre  = $1;
+        my $lab_exp  = $2;
+        my $lab_post = $3;
+        my $eval_code
+            = qq{eval(parse( text = \"y_lab <- expression(paste(\\\"$lab_pre\\\", $lab_exp, \\\"$lab_post\\\"))\" ))};
+        $R->run($eval_code);
+    }
+    else {
+        $R->set( 'y_lab', $y_lab );
+    }
+
     print "Run\n";
+
     # No newlines in the end of $r_code
-    my $r_code = q{
+    my $r_code = <<'EOF';
         library(ggplot2)
         library(scales)
         library(gridExtra)
@@ -263,10 +286,11 @@ path($file_chart)->remove;
             geom_line(colour="blue", size = 0.5) + 
             geom_point(colour="blue", fill="blue", shape=23)
         
-        pdf( file_chart, width = 6, height = 3, useDingbats=FALSE )
+        pdf(file_chart, width = 6, height = 3, useDingbats=FALSE)
         grid.arrange(plot_main, plot_sep, ncol=2, nrow=1)
         dev.off()
-        embed_fonts(file_chart)};
+        embed_fonts(file_chart)
+EOF
 
     if ($style_red) {
         $r_code =~ s{fill\=\"blue\"}{fill\=\"white\"}g;
@@ -274,7 +298,8 @@ path($file_chart)->remove;
         $r_code =~ s{shape\=23}{shape\=22}g;
     }
     if ($style_dot) {
-        $r_code =~ s{(func_plot\(mydata_main\))}{$1 + geom_point(colour="grey", fill="grey", shape=21, size=1)};
+        $r_code
+            =~ s{(func_plot\(mydata_main\))}{$1 + geom_point(colour="grey", fill="grey", shape=21, size=1)};
     }
 
     $R->run($r_code);
