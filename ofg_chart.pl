@@ -278,6 +278,7 @@ path($file_chart)->remove;
     }
 
     $R->run($r_code);
+    print $R->result;
 
     print "Finish charting\n";
     print Dump $R->get('file_chart');
