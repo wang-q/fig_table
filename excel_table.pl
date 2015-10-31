@@ -3,8 +3,8 @@ use strict;
 use warnings;
 use autodie;
 
-use Getopt::Long;
-use Pod::Usage;
+use Getopt::Long qw(HelpMessage);
+use FindBin;
 use YAML qw(Dump Load DumpFile LoadFile);
 
 use Path::Class;
@@ -21,20 +21,17 @@ $Win32::OLE::Warn = 2;    # die on errors...
 #----------------------------------------------------------#
 # GetOpt section
 #----------------------------------------------------------#
-# running options
-my $file_yaml = 'Fig.S1.yaml';
 
-my $man  = 0;
-my $help = 0;
+=head1 SYNOPSIS
+
+    perl excel_table.pl -i Fig.S1.yaml
+
+=cut
 
 GetOptions(
-    'help|?'    => \$help,
-    'man'       => \$man,
-    'i|input=s' => \$file_yaml,
-) or pod2usage(2);
-
-pod2usage(1) if $help;
-pod2usage( -exitstatus => 0, -verbose => 2 ) if $man;
+    'help|?' => sub { HelpMessage(0) },
+    'i|input=s' => \( my $file_yaml = 'Fig.S1.yaml' ),
+) or HelpMessage(1);
 
 #----------------------------------------------------------#
 # init
@@ -183,7 +180,3 @@ $newbook->Save;
 $excel->Quit;
 
 __END__
-
-=head1 SYNOPSIS
-
-perl excel_table.pl -i Fig.S1.yaml

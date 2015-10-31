@@ -3,39 +3,30 @@ use strict;
 use warnings;
 use autodie;
 
-use Getopt::Long;
-use Pod::Usage;
+use Getopt::Long qw(HelpMessage);
+use FindBin;
 use YAML qw(Dump Load DumpFile LoadFile);
 
 use File::Find::Rule;
-use File::Basename;
-use File::Spec;
-
-use FindBin;
+use Path::Tiny;
 
 use Template;
 
 #----------------------------------------------------------#
 # GetOpt section
 #----------------------------------------------------------#
-# running options
-my $dir = '.';
 
-my $output;
+=head1 SYNOPSIS
 
-my $man  = 0;
-my $help = 0;
+    perl collect_common_basic.pl -d d:\wq\GC\autochart\121125_saccharomyces\
+
+=cut
 
 GetOptions(
-    'help|?'  => \$help,
-    'man'     => \$man,
-    'd|dir=s' => \$dir,
-    'o|output=s' => \$output,
-) or pod2usage(2);
-
-pod2usage(1) if $help;
-pod2usage( -exitstatus => 0, -verbose => 2 ) if $man;
-
+    'help|?' => sub { HelpMessage(0) },
+    'dir|d=s' => \( my $dir = '.' ),
+    'output|o=s' => \my $output,
+) or HelpMessage(1);
 
 #----------------------------------------------------------#
 # init
@@ -44,21 +35,20 @@ if ( !$output ) {
     $output = "basicstat";
 }
 
-$dir = File::Spec->rel2abs($dir);
-$output = File::Spec->catfile( $dir, "$output.yml" );
+$dir = path($dir)->absolute->stringify;
+$output = path( $dir, "$output.yml" )->stringify;
 
 my @xls_files
     = sort grep {/common|multi/i}
-    File::Find::Rule->file->maxdepth(1)
-    ->name( '*.common.xlsx', '*.common.chart.xlsx' )->in($dir);
+    File::Find::Rule->file->maxdepth(1)->name( '*.common.xlsx', '*.common.chart.xlsx' )->in($dir);
 
 my @data;
 for my $i ( 0 .. $#xls_files ) {
     my $file     = $xls_files[$i];
-    my $basename = basename( $file, '.common.xlsx', '.common.chart.xlsx', );
+    my $basename = path($file)->basename( '.common.xlsx', '.common.chart.xlsx', );
     my $item     = {
         name => $basename,
-        file => basename($file),
+        file => path($file)->basename,
     };
     push @data, $item;
 }
@@ -129,7 +119,3 @@ print "$output\n";
 system("perl $FindBin::Bin/./excel_table.pl -i $output");
 
 __END__
-
-=head1 SYNOPSIS
-
-perl collect_common_basic.pl -d d:\wq\GC\autochart\121125_saccharomyces\

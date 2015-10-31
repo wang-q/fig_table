@@ -3,12 +3,12 @@ use strict;
 use warnings;
 use autodie;
 
-use Getopt::Long;
-use Pod::Usage;
+use Getopt::Long qw(HelpMessage);
+use FindBin;
 use YAML qw(Dump Load DumpFile LoadFile);
 
 use List::MoreUtils qw(any all uniq zip);
-use Path::Class;
+use Path::Tiny;
 use Set::Scalar;
 
 use Win32::OLE qw(in);
@@ -22,32 +22,25 @@ $Win32::OLE::Warn = 2;    # die on errors...
 #----------------------------------------------------------#
 # GetOpt section
 #----------------------------------------------------------#
-# running options
-my @files_xlsx;
-my @sheetnames;
-my @newnames;
 
-my $output = "collected.xlsx";
+=head1 SYNOPSIS
 
-my $man  = 0;
-my $help = 0;
+    perl collect_excel.pl -f Acetobacter_pasteurianus_paralog.common.xlsx -s d2_pi_gc_cv -n Acetobacter_pasteurianus
+
+=cut
 
 GetOptions(
-    'help|?'     => \$help,
-    'man'        => \$man,
-    'f|file=s'   => \@files_xlsx,
-    's|sheet=s'  => \@sheetnames,
-    'n|name=s'   => \@newnames,
-    'o|output=s' => \$output,
-) or pod2usage(2);
-
-pod2usage(1) if $help;
-pod2usage( -exitstatus => 0, -verbose => 2 ) if $man;
+    'help|?'    => sub { HelpMessage(0) },
+    'f|file=s'  => \my @files_xlsx,
+    's|sheet=s' => \my @sheetnames,
+    'n|name=s'  => \my @newnames,
+    'o|output=s' => \( my $output = "collected.xlsx" ),
+) or HelpMessage(1);
 
 #----------------------------------------------------------#
 # init
 #----------------------------------------------------------#
-$output = file($output)->absolute->stringify;
+$output = path($output)->absolute->stringify;
 unlink $output if -e $output;
 printf "Output filename is [%s]\n\n", $output;
 
@@ -83,7 +76,7 @@ while ( scalar @args ) {
 #----------------------------------------------------------#
 for my $i ( 0 .. $#jobs ) {
     my $filename = $jobs[$i]->[0];
-    $filename = file($filename)->absolute->stringify;
+    $filename = path($filename)->absolute->stringify;
     printf "[file: %s]\n", $filename;
     if ( !-e $filename ) {
         print " " x 4, "File not exists.\n";
@@ -95,7 +88,7 @@ for my $i ( 0 .. $#jobs ) {
     unless ( $workbook = $excel->Workbooks->Open($filename) ) {
         die "Cannot open xls file\n";
     }
-    
+
     # get sheet
     my @sheets;
     for my $sheet ( in $workbook->Worksheets ) {
@@ -109,7 +102,7 @@ for my $i ( 0 .. $#jobs ) {
         print " " x 4, "sheet not exists!\n";
         next;
     }
-    
+
     my $sheet = $workbook->Worksheets($sheetname);
     $sheet->{UsedRange}->copy;
 
@@ -127,7 +120,7 @@ for my $i ( 0 .. $#jobs ) {
 
     # close copy xlsx file
     $workbook->Close;
-    
+
     print "\n";
 }
 
@@ -139,7 +132,3 @@ $newbook->Save;
 $excel->Quit;
 
 __END__
-
-=head1 SYNOPSIS
-
-perl excel_table.pl -i Fig.S1.yaml
