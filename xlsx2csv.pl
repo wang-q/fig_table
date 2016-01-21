@@ -9,6 +9,7 @@ use YAML qw(Dump Load DumpFile LoadFile);
 
 use Path::Tiny;
 use Spreadsheet::XLSX;
+use Spreadsheet::ParseExcel;
 use Text::CSV_XS;
 
 #----------------------------------------------------------#
@@ -50,16 +51,22 @@ elsif ( !path($file_excel)->is_file ) {
 
 $file_excel = path($file_excel)->absolute->stringify;
 
-my $excel  = Spreadsheet::XLSX->new($file_excel);
+my $excel;
+if ( $file_excel =~ /\.xlsx$/ ) {
+    $excel = Spreadsheet::XLSX->new($file_excel);
+}
+else {
+    $excel = Spreadsheet::ParseExcel->new->parse($file_excel);
+}
 my $csv = Text::CSV_XS->new;
 
-my @sheets = @{ $excel->{Worksheet} };
+my @sheets = $excel->worksheets;
 if ( !defined $sheetname ) {
-    $sheetname = $sheets[0]->{Name};
+    $sheetname = $sheets[0]->get_name;
 }
 
 for my $sheet (@sheets) {
-    if ( $sheet->{Name} eq $sheetname ) {
+    if ( $sheet->get_name eq $sheetname ) {
         $sheet->{MaxRow} ||= $sheet->{MinRow};
 
         for my $row ( $sheet->{MinRow} .. $sheet->{MaxRow} ) {
