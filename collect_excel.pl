@@ -7,10 +7,6 @@ use Getopt::Long qw(HelpMessage);
 use FindBin;
 use YAML qw(Dump Load DumpFile LoadFile);
 
-use List::MoreUtils qw(any all uniq zip);
-use Path::Tiny;
-use Set::Scalar;
-
 use Win32::OLE qw(in);
 use Win32::OLE::Const;
 use Win32::OLE::Variant;
@@ -18,6 +14,10 @@ use Win32::OLE::NLS qw(:LOCALE :DATE);
 use Win32::OLE::Const 'Microsoft Excel';
 
 $Win32::OLE::Warn = 2;    # die on errors...
+
+use List::MoreUtils qw(any all uniq zip);
+use Path::Tiny;
+use Set::Scalar;
 
 #----------------------------------------------------------#
 # GetOpt section
@@ -31,10 +31,10 @@ $Win32::OLE::Warn = 2;    # die on errors...
 
 GetOptions(
     'help|?'    => sub { HelpMessage(0) },
-    'f|file=s'  => \my @files_xlsx,
-    's|sheet=s' => \my @sheetnames,
-    'n|name=s'  => \my @newnames,
-    'o|output=s' => \( my $output = "collected.xlsx" ),
+    'file|f=s'  => \my @files_xlsx,
+    'sheet|s=s' => \my @sheetnames,
+    'name|n=s'  => \my @newnames,
+    'output|o=s' => \( my $output = "collected.xlsx" ),
 ) or HelpMessage(1);
 
 #----------------------------------------------------------#

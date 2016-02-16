@@ -3,8 +3,8 @@ use strict;
 use warnings;
 use autodie;
 
-use Getopt::Long;
-use Pod::Usage;
+use Getopt::Long qw(HelpMessage);
+use FindBin;
 use YAML qw(Dump Load DumpFile LoadFile);
 
 use Win32::OLE qw(in);
@@ -14,28 +14,27 @@ use Win32::OLE::NLS qw(:LOCALE :DATE);
 use Win32::OLE::Const 'Microsoft Excel';
 use Win32::OLE::Const 'Corel - CorelDRAW';
 
-use Path::Class;
-use Set::Scalar;
-
 $Win32::OLE::Warn = 2;    # die on errors...
+
+use Path::Tiny;
+use Set::Scalar;
 
 #----------------------------------------------------------#
 # GetOpt section
 #----------------------------------------------------------#
-# running options
-my $file_yaml = 'Fig.S1.yaml';
 
-my $man  = 0;
-my $help = 0;
+=head1 SYNOPSIS
+
+Don't work under CorelDraw X7. Use X6 or below.
+
+    perl corel_fig.pl -i Fig.S1.yaml
+
+=cut
 
 GetOptions(
-    'help|?'    => \$help,
-    'man'       => \$man,
-    'i|input=s' => \$file_yaml,
-) or pod2usage(2);
-
-pod2usage(1) if $help;
-pod2usage( -exitstatus => 0, -verbose => 2 ) if $man;
+    'help|?' => sub { HelpMessage(0) },
+    'input|i=s' => \( my $file_yaml = 'Fig.S1.yaml' ),
+) or HelpMessage(1);
 
 #----------------------------------------------------------#
 # init
@@ -52,8 +51,8 @@ my $y_unit   = $dispatch->{unit}{y} || 37.5;
 
 # Excel files should be located in the same dir as the yaml file.
 # cdr file will be named after yaml file.
-$file_yaml = file($file_yaml)->absolute;
-my $base_dir = $file_yaml->dir->stringify;
+$file_yaml = path($file_yaml)->absolute;
+my $base_dir = $file_yaml->parent->stringify;
 my $cfile    = $file_yaml->stringify;
 $cfile =~ s/\.ya?ml$/\.cdr/;
 
@@ -84,8 +83,8 @@ $doc->{ReferencePoint} = cdrTopLeft;      # selected shape's topleft
 
 # A4 210 * 297 mm
 $cda->{ActivePage}->SetSize( 210, 297 );
-$doc->{DrawingOriginX} = -105 + 5;        
-$doc->{DrawingOriginY} = 148.5 - 5;# give space for texts
+$doc->{DrawingOriginX} = -105 + 5;
+$doc->{DrawingOriginY} = 148.5 - 5;       # give space for texts
 
 #----------------------------------------------------------#
 # Paste every charts
@@ -94,7 +93,7 @@ for my $filename ( sort keys %{$charts} ) {
     printf "[file: %s]\n", $filename;
 
     # open xls file
-    my $efile = file( $base_dir, $filename )->stringify;
+    my $efile = path( $base_dir, $filename )->stringify;
     if ( !-e $efile ) {
         warn "File not exists: $efile\n";
         next;
@@ -148,7 +147,7 @@ for my $filename ( sort keys %{$ranges} ) {
     printf "[file: %s]\n", $filename;
 
     # open xls file
-    my $efile = file( $base_dir, $filename )->stringify;
+    my $efile = path( $base_dir, $filename )->stringify;
     if ( !-e $efile ) {
         warn "File not exists: $efile\n";
         next;
@@ -205,8 +204,8 @@ for my $filename ( sort keys %{$ranges} ) {
 #    my ( $x, $y ) = @{ $i->{pos} };
 #
 #    printf "[file: %s]\n", $name;
-#    
-#    my $ffile = file( $base_dir, $name )->absolute->stringify;
+#
+#    my $ffile = path( $base_dir, $name )->absolute->stringify;
 #    if ( !-e $ffile ) {
 #        warn "File not exists: $ffile\n";
 #        next;
@@ -222,7 +221,6 @@ for my $filename ( sort keys %{$ranges} ) {
 #    $selection->SetPosition( $x * $x_unit, -$y * $y_unit );
 #    sleep 1;
 #}
-
 
 #----------------------------------------------------------#
 # Write every texts
@@ -267,11 +265,3 @@ $excel->Quit;
 $cda->Quit;
 
 __END__
-
-=head1 SYNOPSIS
-
-perl corel_fig.pl -i Fig.S1.yaml
-
-=head1 CAUTIONs
-
-Don't work under CorelDraw X7. Use X6 or below.

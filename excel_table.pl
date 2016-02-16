@@ -7,9 +7,6 @@ use Getopt::Long qw(HelpMessage);
 use FindBin;
 use YAML qw(Dump Load DumpFile LoadFile);
 
-use Path::Class;
-use Set::Scalar;
-
 use Win32::OLE qw(in);
 use Win32::OLE::Const;
 use Win32::OLE::Variant;
@@ -17,6 +14,9 @@ use Win32::OLE::NLS qw(:LOCALE :DATE);
 use Win32::OLE::Const 'Microsoft Excel';
 
 $Win32::OLE::Warn = 2;    # die on errors...
+
+use Path::Tiny;
+use Set::Scalar;
 
 #----------------------------------------------------------#
 # GetOpt section
@@ -30,7 +30,7 @@ $Win32::OLE::Warn = 2;    # die on errors...
 
 GetOptions(
     'help|?' => sub { HelpMessage(0) },
-    'i|input=s' => \( my $file_yaml = 'Fig.S1.yaml' ),
+    'input|i=s' => \( my $file_yaml = 'Fig.S1.yaml' ),
 ) or HelpMessage(1);
 
 #----------------------------------------------------------#
@@ -45,8 +45,8 @@ my $borders  = $dispatch->{borders};
 
 # Excel files should be located in the same dir as the yaml file.
 # new excel table file will be named after yaml file.
-$file_yaml = file($file_yaml)->absolute;
-my $base_dir = $file_yaml->dir->stringify;
+$file_yaml = path($file_yaml)->absolute;
+my $base_dir = $file_yaml->parent->stringify;
 my $newfile  = $file_yaml->stringify;
 $newfile =~ s/\.ya?ml$/.xlsx/;
 unlink $newfile if -e $newfile;
@@ -80,7 +80,7 @@ for my $filename ( sort keys %{$ranges} ) {
     printf "[file: %s]\n", $filename;
 
     # open xls file
-    my $efile = file( $base_dir, $filename )->stringify;
+    my $efile = path( $base_dir, $filename )->stringify;
     if ( !-e $efile ) {
         warn "File not exists: $efile\n";
         next;

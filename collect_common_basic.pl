@@ -116,6 +116,6 @@ EOF
 $tt->process( \$text, { data => \@data, }, $output ) or die Template->error;
 print "$output\n";
 
-system("perl $FindBin::Bin/./excel_table.pl -i $output");
+system("perl $FindBin::Bin/excel_table.pl -i $output");
 
 __END__

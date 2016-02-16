@@ -3,44 +3,31 @@ use strict;
 use warnings;
 use autodie;
 
-use Getopt::Long;
-use Pod::Usage;
+use Getopt::Long qw(HelpMessage);
+use FindBin;
 use YAML qw(Dump Load DumpFile LoadFile);
 
 use Win32::OLE qw(in);
 use Win32::OLE::Const;
 use Win32::OLE::Variant;
 use Win32::OLE::NLS qw(:LOCALE :DATE);
-use Win32::OLE::Const 'Corel - CorelDRAW 15.0 Type Library';
-
-use Path::Class;
-use File::Find::Rule;
-use File::Spec;
+use Win32::OLE::Const 'Corel - CorelDRAW';
 
 $Win32::OLE::Warn = 3;    # die on errors...
+
+use Path::Tiny;
+use File::Find::Rule;
 
 #----------------------------------------------------------#
 # GetOpt section
 #----------------------------------------------------------#
-# running options
-my $dir = '.';
-
-my $resolution = 300;     # dpi
-my $format     = 'png';
-
-my $man  = 0;
-my $help = 0;
 
 GetOptions(
-    'help|?'         => \$help,
-    'man'            => \$man,
-    'd|dir=s'        => \$dir,
-    'r|resolution=s' => \$resolution,
-    'f|format=s'     => \$format,
-) or pod2usage(2);
-
-pod2usage(1) if $help;
-pod2usage( -exitstatus => 0, -verbose => 2 ) if $man;
+    'help|?' => sub { HelpMessage(0) },
+    'dir|d=s'        => \( my $dir        = '.' ),
+    'resolution|r=s' => \( my $resolution = 300 ),
+    'format|f=s'     => \( my $format     = 'png' ),
+) or HelpMessage(1);
 
 #----------------------------------------------------------#
 # init
@@ -61,7 +48,7 @@ while ( $cs->IsDocument ) {    #Close all currently open documents
 }
 
 for my $file (@files) {
-    $file = File::Spec->rel2abs($file);
+    $file = path($file)->absolute->stringify;
     print $file, "\n";
 
     $cs->FileOpen($file) or die "Cannot open file [$file]\n";
@@ -109,9 +96,8 @@ for my $file (@files) {
     #$opt->{ResolutionX}      = 97;
     #$opt->{ResolutionY}      = 97;
     #
-    $doc->ExportBitmap( $export, cdrPNG, 1, 4, 0,
-        0, 72, 72, cdrUndefined , cdrUndefined, cdrUndefined, cdrUndefined, cdrUndefined);
-
+    $doc->ExportBitmap( $export, cdrPNG, 1, 4, 0, 0, 72, 72, cdrUndefined, cdrUndefined,
+        cdrUndefined, cdrUndefined, cdrUndefined );
 
     $cs->FileClose;
 }
@@ -134,7 +120,3 @@ for my $file (@files) {
 $cda->Quit;
 
 __END__
-
-=head1 SYNOPSIS
-
-perl corel_fig.pl -i Fig.S1.yaml

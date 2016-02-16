@@ -35,7 +35,7 @@ xlsx2csv.pl - convert xlsx to csv
 GetOptions(
     'help|?'   => sub { HelpMessage(0) },
     'file|f=s' => \( my $file_excel ),
-    'sheet=s'  => \my $sheetname,
+    'sheet=s'  => \( my $sheetname ),
 ) or HelpMessage(1);
 
 if ( !defined $file_excel ) {
