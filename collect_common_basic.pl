@@ -68,7 +68,7 @@ texts:
     pos: D1
   - text: "Indels per 100 bp"
     pos: E1
-  - text: "SNVs per 100 bp"
+  - text: "Substitutions per 100 bp"
     pos: F1
   - text: "D on average"
     pos: G1
