@@ -87,7 +87,6 @@ texts:
 borders:
   - range: A1:J1
     top: 1
-  - range: A1:J1
     bottom: 1
 ranges:
 [% FOREACH item IN data -%]
@@ -116,6 +115,6 @@ EOF
 $tt->process( \$text, { data => \@data, }, $output ) or die Template->error;
 print "$output\n";
 
-system("perl $FindBin::Bin/excel_table.pl -i $output");
+system("perl $FindBin::Bin/xlsx_table.pl -i $output");
 
 __END__
