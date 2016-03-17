@@ -66,8 +66,12 @@ my %font = (
 my $format = { NORMAL => $newbook->add_format( color => 'black', %font, ), };
 my $format_set = {};
 
-for my $i ( 0 .. scalar @{$borders} ) {
+for my $i ( 0 .. scalar @{$borders} - 1 ) {
+    printf "[Borders]\n";
+
     my $range = $borders->[$i]{range};
+    printf " " x 4 . "[%s]\n", $range;
+
     my ( $row1, $col1, $row2, $col2 ) = range_to_rowcol($range);
     my $set = Set::Scalar->new;
     for my $row ( $row1 .. $row2 ) {
@@ -75,23 +79,21 @@ for my $i ( 0 .. scalar @{$borders} ) {
             $set->insert("$row-$col");
         }
     }
+    $format_set->{$i} = $set;
 
-    my $format = $newbook->add_format( color => 'black', %font, );
+    $format->{$i} = $newbook->add_format( color => 'black', %font, );
     if ( $borders->[$i]{top} ) {
-        $format->set_top(1);
+        $format->{$i}->set_top(1);
     }
     if ( $borders->[$i]{bottom} ) {
-        $format->set_bottom(1);
+        $format->{$i}->set_bottom(1);
     }
     if ( $borders->[$i]{left} ) {
-        $format->set_left(1);
+        $format->{$i}->set_left(1);
     }
     if ( $borders->[$i]{right} ) {
-        $format->set_right(1);
+        $format->{$i}->set_right(1);
     }
-
-    $format_set->{$i} = $set;
-    $format->{$i}     = $format;
 }
 
 #----------------------------------------------------------#
