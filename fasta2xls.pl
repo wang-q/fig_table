@@ -12,7 +12,6 @@ use Spreadsheet::WriteExcel;
 use Spreadsheet::WriteExcel::Big;
 
 use AlignDB::IntSpan;
-use AlignDB::Util qw(:all);
 
 #----------------------------------------------------------#
 # GetOpt section
@@ -248,7 +247,7 @@ foreach my $fasta_file (@fasta_files) {
                     die "indel_color = $indel_color\n";
                 }
             }
-            
+
             if ($ref_exist) {
                 if ( $indel_occured eq
                     ( '1' . ( '0' x ( ( length $indel_occured ) - 1 ) ) ) )
@@ -444,7 +443,7 @@ foreach my $fasta_file (@fasta_files) {
                 $worksheet->write(
                     $row,
                     $col + 2,
-                    (         $indels[$i]->{'position'} 
+                    (         $indels[$i]->{'position'}
                             + $indels[$i]->{'length'} - 1
                     ),
                     $pos_format
@@ -493,7 +492,7 @@ foreach my $fasta_file (@fasta_files) {
                 $worksheet->write(
                     $row,
                     $col + 2,
-                    (         $indels[$i]->{'position'} 
+                    (         $indels[$i]->{'position'}
                             + $indels[$i]->{'length'} - 1
                     ),
                     $pos_format
@@ -542,7 +541,7 @@ foreach my $fasta_file (@fasta_files) {
                 $worksheet->write(
                     $row,
                     $col + 2,
-                    (         $indels[$i]->{'position'} 
+                    (         $indels[$i]->{'position'}
                             + $indels[$i]->{'length'} - 1
                     ),
                     $pos_format
@@ -581,7 +580,7 @@ foreach my $fasta_file (@fasta_files) {
                 $worksheet->write(
                     $row,
                     $col + 2,
-                    (         $indels[$i]->{'position'} 
+                    (         $indels[$i]->{'position'}
                             + $indels[$i]->{'length'} - 1
                     ),
                     $pos_format
@@ -630,7 +629,7 @@ foreach my $fasta_file (@fasta_files) {
                 $worksheet->write(
                     $row,
                     $col + 2,
-                    (         $indels[$i]->{'position'} 
+                    (         $indels[$i]->{'position'}
                             + $indels[$i]->{'length'} - 1
                     ),
                     $pos_format
@@ -679,7 +678,7 @@ foreach my $fasta_file (@fasta_files) {
                 $worksheet->write(
                     $row,
                     $col + 2,
-                    (         $indels[$i]->{'position'} 
+                    (         $indels[$i]->{'position'}
                             + $indels[$i]->{'length'} - 1
                     ),
                     $pos_format
