@@ -25,7 +25,9 @@ use Set::Scalar;
 
 =head1 SYNOPSIS
 
-    perl collect_excel.pl -f Acetobacter_pasteurianus_paralog.common.xlsx -s d2_pi_gc_cv -n Acetobacter_pasteurianus
+    perl collect_xlsx.pl -f Acetobacter_pasteurianus_paralog.common.xlsx \
+        -s d2_pi_gc_cv \
+        -n Acetobacter_pasteurianus
 
 =cut
 
