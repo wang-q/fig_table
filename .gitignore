@@ -1,6 +1,7 @@
 *.cdr
 *.xls
 *.xlsx
+*.csv
 *.pdf
 
 # put any other files you don't want to check in here,

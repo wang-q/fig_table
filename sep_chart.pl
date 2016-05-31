@@ -6,20 +6,13 @@ use autodie;
 use Getopt::Long;
 use YAML::Syck;
 
-use Win32::OLE qw(in);
-use Win32::OLE::Const;
-use Win32::OLE::Variant;
-use Win32::OLE::NLS qw(:LOCALE :DATE);
-use Win32::OLE::Const 'Microsoft Excel';
-
+use List::Util;
+use List::MoreUtils::PP;
 use Path::Tiny;
-use List::Util qw{sum};
-use List::MoreUtils qw{natatime zip};
+use Spreadsheet::XLSX;
+use Spreadsheet::ParseExcel;
 use Statistics::R;
-
-use AlignDB::Util qw(:all);
-
-$Win32::OLE::Warn = 2;    # die on errors...
+use App::Fasops::Common;
 
 #----------------------------------------------------------#
 # GetOpt section
@@ -27,34 +20,44 @@ $Win32::OLE::Warn = 2;    # die on errors...
 
 =head1 SYNOPSIS
 
-    perl ofg_chart.pl -i Humanvsself.ofg.xlsx [options]
+    perl sep_chart.pl -i Humanvsself.ofg.xlsx [options]
       Options:
-        --help              -?      brief help message
-        --regex_background  -rt STR 
-        --regex_seperate    -rs STR 
-        --filter_top        -ft INT filter by average Y values
-        --filter_bottom     -fb INT filter by average Y values
-        --style_red                 use red square instead of blue diamond
-        --style_dot                 background lines with dots
+        --help              -?          brief help message
+        --input             -i  STR     input xlsx file
+        --x_lab             -xl STR     X label
+        --y_lab             -yl STR     Y label
+        --x_range           -xr STR     X range
+        --y_range           -yr STR     Y range
+        --x_min                 STR
+        --x_max                 STR
+        --y_min                 STR
+        --y_max                 STR
+        --regex_background  -rt STR
+        --regex_separate    -rs STR
+        --mean_as_separate  -ms
+        --filter_top        -ft INT     filter by average Y values
+        --filter_bottom     -fb INT     filter by average Y values
+        --postfix               STR
+        --style_red                     use red square instead of blue diamond
+        --style_dot                     background lines with dots
 =cut
 
 # running options
-my $file_input = 'Humanvsself.ofg.xlsx';
 
 GetOptions(
-    'help|?'    => sub { Getopt::Long::HelpMessage(0) },
-    'input|i=s' => \$file_input,
+    'help|?' => sub { Getopt::Long::HelpMessage(0) },
+    'input|i=s'             => \( my $file_input       = 'Humanvsself.ofg.xlsx' ),
     'x_lab|xl=s'            => \( my $x_lab            = "X" ),
     'y_lab|yl=s'            => \( my $y_lab            = "Y" ),
-    'xrange|xr=s'           => \( my $xrange           = "A2:A17" ),
-    'yrange|yr=s'           => \( my $yrange           = "F2:F17" ),
+    'x_range|xr=s'          => \( my $xrange           = "A2:A17" ),
+    'y_range|yr=s'          => \( my $yrange           = "F2:F17" ),
     'x_min=s'               => \( my $x_min            = 0 ),
     'x_max=s'               => \( my $x_max            = 15 ),
     'y_min=s'               => \( my $y_min            = 0.4 ),
     'y_max=s'               => \( my $y_max            = 0.6 ),
     'regex_background|rb=s' => \( my $regex_background = "ofg_tag" ),
-    'regex_seperate|rs=s'   => \( my $regex_seperate   = "ofg_all" ),
-    'mean_as_seperate|ms'   => \my $mean_as_seperate,
+    'regex_separate|rs=s'   => \( my $regex_separate   = "ofg_all" ),
+    'mean_as_separate|ms'   => \my $mean_as_separate,
     'filter_top|ft=i'       => \( my $filter_top       = 0 ),
     'filter_bottom|fb=i'    => \( my $filter_bottom    = 0 ),
     'postfix=s'             => \( my $postfix          = "" ),
@@ -86,49 +89,40 @@ path($file_chart)->remove;
 # data from xlsx to csv
 #----------------------------------------------------------#
 {
-    my $excel;    # excel object
-    unless ( $excel = Win32::OLE->new("Excel.Application") ) {
-        die "Cannot init Excel.Application\n";
+    my $excel;
+    if ( $file_input =~ /\.xlsx$/ ) {
+        $excel = Spreadsheet::XLSX->new($file_input);
     }
-    my $workbook;
-    unless ( $workbook = $excel->Workbooks->Open($file_input) ) {
-        die "Cannot open xls file\n";
+    else {
+        $excel = Spreadsheet::ParseExcel->new->parse($file_input);
     }
 
-    my @sheet_names       = sheet_names($workbook);
-    my @sheets_background = grep {/$regex_background/} @sheet_names;
-    my @sheets_seperate   = grep {/$regex_seperate/} @sheet_names;
+    my @sheets            = $excel->worksheets;
+    my @sheets_background = grep { $_->get_name =~ /$regex_background/ } @sheets;
+    my @sheets_separate   = grep { $_->get_name =~ /$regex_separate/ } @sheets;
 
     # store average Y values for filtering
-    my %avg_y_of = map { $_ => 1 } @sheets_background;
+    my %avg_y_of = map { $_->get_name => 1 } @sheets_background;
 
     my @lines;    # output contents
-    for my $sheetname ( @sheets_background, @sheets_seperate ) {
+    for my $sheet ( @sheets_background, @sheets_separate ) {
+        my $sheetname = $sheet->get_name;
         printf "[sheet: %s]\n", $sheetname;
-        my $sheet = $workbook->Worksheets($sheetname);
 
         printf "[range]\n";
 
-        my @xs;
-        for my $cell ( in $sheet->Range($xrange) ) {
-            push @xs, $cell->{Value};
-        }
-
-        my @ys;
-        for my $cell ( in $sheet->Range($yrange) ) {
-            push @ys, $cell->{Value};
-        }
-
+        my @xs = values_in_range( $sheet, $xrange );
+        my @ys = values_in_range( $sheet, $yrange );
         if ( @xs != @ys ) {
             warn "Unequal number for two columns\n";
         }
 
-        my @groups = ( $avg_y_of{$sheetname} ? $sheetname : "seperate_$sheetname" ) x scalar(@xs);
-        $avg_y_of{$sheetname} = mean(@ys);
+        my @groups = ( $avg_y_of{$sheetname} ? $sheetname : "separate_$sheetname" ) x scalar(@xs);
+        $avg_y_of{$sheetname} = App::Fasops::Common::mean(@ys);
 
-        my @zips = zip @xs, @groups, @ys;
+        my @zips = List::MoreUtils::PP::mesh @xs, @groups, @ys;
 
-        my $it = natatime 3, @zips;
+        my $it = List::MoreUtils::PP::natatime 3, @zips;
         while ( my @vals = $it->() ) {
             for (@vals) {
                 $_ = '' if !defined $_;
@@ -136,12 +130,12 @@ path($file_chart)->remove;
             push @lines, join( ",", @vals );
         }
     }
-    $workbook->Close;
-    $excel->Quit;
+
+    #print YAML::Syck::Dump $ys_of_x;
 
     # filtering
     @sheets_background
-        = sort { $avg_y_of{$a} <=> $avg_y_of{$b} } @sheets_background;
+        = sort { $avg_y_of{ $a->get_name } <=> $avg_y_of{ $b->get_name } } @sheets_background;
     if ($filter_bottom) {
         print "Filtering bottom values by $filter_bottom\n";
         for my $i ( 0 .. $filter_bottom - 1 ) {
@@ -156,7 +150,7 @@ path($file_chart)->remove;
     }
 
     # calc mean
-    if ($mean_as_seperate) {
+    if ($mean_as_separate) {
         my $ys_of_x = {};
         for (@lines) {
             my ( $x, undef, $y ) = split /,/;
@@ -170,12 +164,12 @@ path($file_chart)->remove;
             }
         }
 
-        #print Dump $ys_of_x;
+        #print YAML::Syck::Dump $ys_of_x;
 
         for my $x ( sort { $a <=> $b } keys %{$ys_of_x} ) {
             my @ys   = @{ $ys_of_x->{$x} };
-            my $mean = sum(@ys) / scalar @ys;
-            push @lines, join( ",", ( $x, 'seperate_mean', $mean ) );
+            my $mean = List::Util::sum(@ys) / scalar @ys;
+            push @lines, join( ",", ( $x, 'separate_mean', $mean ) );
         }
     }
 
@@ -229,9 +223,7 @@ path($file_chart)->remove;
         library(scales)
         library(gridExtra)
         library(extrafont)
-        
-        # Ghostscript in %PATH%
-        Sys.setenv(R_GSCMD = "gswin32c.exe")
+        #loadfonts()
 
         func_plot <- function (plotdata) {
             plot <- ggplot(data=plotdata, aes(x=X, y=Y, group=group)) +
@@ -250,21 +242,25 @@ path($file_chart)->remove;
         mydata$X <- as.numeric(mydata$X)
         rownames(mydata) <- NULL
         
-        mydata_main <- subset(mydata, ! grepl("seperate", mydata$group))
+        mydata_main <- subset(mydata, ! grepl("separate", mydata$group))
         plot_main <- func_plot(mydata_main)
             
         
-        mydata_sep <- subset(mydata, grepl("seperate", mydata$group))
+        mydata_sep <- subset(mydata, grepl("separate", mydata$group))
         plot_sep <- func_plot(mydata_sep)
         plot_sep <- plot_sep + 
             geom_line(colour="blue", size = 0.5) + 
             geom_point(colour="blue", fill="blue", shape=23)
         
-        pdf(file_chart, width = 6, height = 3, useDingbats=FALSE)
+        pdf(file_chart, family="Arial", width = 6, height = 3, useDingbats=FALSE)
         grid.arrange(plot_main, plot_sep, ncol=2, nrow=1)
         dev.off()
         embed_fonts(file_chart)
 EOF
+
+    if ( $^O eq "MSWin32" ) {
+        $r_code =~ s{###Ghostscript}{Sys\.setenv\(R_GSCMD = "gswin32c\.exe"\)};
+    }
 
     if ($style_red) {
         $r_code =~ s{fill\=\"blue\"}{fill\=\"white\"}g;
@@ -286,15 +282,71 @@ EOF
 
 exit;
 
-sub sheet_names {
-    my $workbook = shift;
+#----------------------------------------------------------#
+# Subroutines
+#----------------------------------------------------------#
+sub range_to_rowcol {
+    my $range = shift;
 
-    my @sheet_names;
-    for my $sheet ( in $workbook->Worksheets ) {
-        push @sheet_names, $sheet->{Name};
+    my @cell = split /:/, $range;
+
+    if ( @cell == 1 ) {
+        return cell_to_rowcol( $cell[0] ), cell_to_rowcol( $cell[0] );
+    }
+    elsif ( @cell == 2 ) {
+        return cell_to_rowcol( $cell[0] ), cell_to_rowcol( $cell[1] );
+    }
+    else {
+        return ( 0, 0, 0, 0 );
+    }
+}
+
+sub cell_to_rowcol {
+    my $cell = shift;
+
+    return ( 0, 0 ) unless $cell;
+
+    $cell =~ /([A-Z]{1,3})(\d+)/;
+
+    my $col = $1;
+    my $row = $2;
+
+    # Convert base26 column string to number
+    my @chars = split //, $col;
+    my $expn = 0;
+    $col = 0;
+
+    while (@chars) {
+        my $char = pop(@chars);    # LS char first
+        $col += ( ord($char) - ord('A') + 1 ) * ( 26**$expn );
+        $expn++;
     }
 
-    return @sheet_names;
+    # Convert 1-index to zero-index
+    $row--;
+    $col--;
+
+    return ( $row, $col );
+}
+
+sub values_in_range {
+    my $sheet = shift;
+    my $range = shift;
+
+    my @values;
+
+    my ( $row1, $col1, $row2, $col2 ) = range_to_rowcol($range);
+    if ( $col1 != $col2 ) {
+        warn "Range should contain only ONE column\n";
+        return;
+    }
+
+    for my $row ( $row1 .. $row2 ) {
+        my $value = $sheet->{Cells}[$row][$col1]->{Val};
+        push @values, $value;
+    }
+
+    return @values;
 }
 
 __END__
