@@ -175,7 +175,7 @@ for my $t ( @{$texts} ) {
         }
     }
 
-    if ( ( $row1 != $row2 ) and ( $col1 != $col2 ) ) {
+    if ( ( $row1 != $row2 ) or ( $col1 != $col2 ) ) {
         $newsheet->merge_range( $row1, $col1, $row2, $col2, $text, $format->{$flag} );
     }
     else {
