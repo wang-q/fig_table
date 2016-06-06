@@ -42,8 +42,6 @@ use App::Fasops::Common;
         --style_dot                     background lines with dots
 =cut
 
-# running options
-
 GetOptions(
     'help|?' => sub { Getopt::Long::HelpMessage(0) },
     'input|i=s'             => \( my $file_input       = 'Humanvsself.ofg.xlsx' ),
@@ -219,6 +217,9 @@ path($file_chart)->remove;
 
     # No newlines in the end of $r_code
     my $r_code = <<'EOF';
+        library(readr)
+        library(dplyr)
+
         library(ggplot2)
         library(scales)
         library(gridExtra)
@@ -237,21 +238,18 @@ path($file_chart)->remove;
                 theme(panel.grid.minor.x = element_blank(), panel.grid.minor.y = element_blank())
             return(plot)
         }
+
+        mydata <- read_csv(file_csv, col_names = TRUE)
         
-        mydata <- read.csv(file_csv, header = TRUE)
-        mydata$X <- as.numeric(mydata$X)
-        rownames(mydata) <- NULL
-        
-        mydata_main <- subset(mydata, ! grepl("separate", mydata$group))
+        mydata_main <- filter(mydata, ! grepl("separate", group))
         plot_main <- func_plot(mydata_main)
-            
-        
-        mydata_sep <- subset(mydata, grepl("separate", mydata$group))
+
+        mydata_sep <- filter(mydata, grepl("separate", group))
         plot_sep <- func_plot(mydata_sep)
         plot_sep <- plot_sep + 
             geom_line(colour="blue", size = 0.5) + 
             geom_point(colour="blue", fill="blue", shape=23)
-        
+
         pdf(file_chart, family="Arial", width = 6, height = 3, useDingbats=FALSE)
         grid.arrange(plot_main, plot_sep, ncol=2, nrow=1)
         dev.off()
