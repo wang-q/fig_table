@@ -12,7 +12,8 @@ use Win32::OLE::Const;
 use Win32::OLE::Variant;
 use Win32::OLE::NLS qw(:LOCALE :DATE);
 use Win32::OLE::Const 'Microsoft Excel';
-use Win32::OLE::Const 'Corel - CorelDRAW';
+#use Win32::OLE::Const 'Corel - CorelDRAW';
+use Win32::OLE::Const 'Corel - CorelDRAW 15.0 Type Library';
 
 $Win32::OLE::Warn = 2;    # die on errors...
 
@@ -47,7 +48,7 @@ my $ranges   = $dispatch->{ranges};
 my $files    = $dispatch->{files};
 my $texts    = $dispatch->{texts};
 my $x_unit   = $dispatch->{unit}{x} || 50;
-my $y_unit   = $dispatch->{unit}{y} || 37.5;
+my $y_unit   = $dispatch->{unit}{y} || 45;
 
 # Excel files should be located in the same dir as the yaml file.
 # cdr file will be named after yaml file.
