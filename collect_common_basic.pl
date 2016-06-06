@@ -60,9 +60,9 @@ autofit: A:J
 texts:
   - text: "Name"
     pos: A1
-  - text: "No. of strains"
+  - text: "No. of genomes"
     pos: B1
-  - text: "Target length (Mb)"
+  - text: "Genome size on average (Mb)"
     pos: C1
   - text: "Aligned length (Mb)"
     pos: D1
