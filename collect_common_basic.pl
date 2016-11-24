@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use autodie;
 
-use Getopt::Long qw(HelpMessage);
+use Getopt::Long;
 use FindBin;
 use YAML qw(Dump Load DumpFile LoadFile);
 
@@ -23,10 +23,10 @@ use Template;
 =cut
 
 GetOptions(
-    'help|?' => sub { HelpMessage(0) },
+    'help|?' => sub { Getopt::Long::HelpMessage(0) },
     'dir|d=s' => \( my $dir = '.' ),
     'output|o=s' => \my $output,
-) or HelpMessage(1);
+) or Getopt::Long::HelpMessage(1);
 
 #----------------------------------------------------------#
 # init
@@ -39,8 +39,8 @@ $dir = path($dir)->absolute->stringify;
 $output = path( $dir, "$output.yml" )->stringify;
 
 my @xls_files
-    = sort grep {/common|multi/i}
-    File::Find::Rule->file->maxdepth(1)->name( '*.common.xlsx', '*.common.chart.xlsx' )->in($dir);
+    = sort File::Find::Rule->file->maxdepth(1)->name( '*.common.xlsx', '*.common.chart.xlsx' )
+    ->in($dir);
 
 my @data;
 for my $i ( 0 .. $#xls_files ) {

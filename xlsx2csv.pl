@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use autodie;
 
-use Getopt::Long qw(HelpMessage);
+use Getopt::Long;
 use FindBin;
 use YAML qw(Dump Load DumpFile LoadFile);
 
@@ -33,13 +33,13 @@ xlsx2csv.pl - convert xlsx to csv
 =cut
 
 GetOptions(
-    'help|?'   => sub { HelpMessage(0) },
+    'help|?'   => sub { Getopt::Long::HelpMessage(0) },
     'file|f=s' => \( my $file_excel ),
     'sheet=s'  => \( my $sheetname ),
-) or HelpMessage(1);
+) or Getopt::Long::HelpMessage(1);
 
 if ( !defined $file_excel ) {
-    die HelpMessage(1);
+    die Getopt::Long::HelpMessage(1);
 }
 elsif ( !path($file_excel)->is_file ) {
     die "Error: can't find file [$file_excel]";

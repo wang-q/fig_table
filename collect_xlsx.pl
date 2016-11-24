@@ -86,7 +86,9 @@ for my $i ( 0 .. $#jobs ) {
         next;
     }
 
-    my $newname  = $jobs[$i]->[2];
+    my $newname = $jobs[$i]->[2];
+
+    #@type Excel::Writer::XLSX::Worksheet
     my $newsheet = $newbook->add_worksheet($newname);
 
     for my $sheet (@sheets) {
@@ -95,7 +97,6 @@ for my $i ( 0 .. $#jobs ) {
 
             for my $row ( $sheet->{MinRow} .. $sheet->{MaxRow} ) {
                 $sheet->{MaxCol} ||= $sheet->{MinCol};
-                my @fields;
                 for my $col ( $sheet->{MinCol} .. $sheet->{MaxCol} ) {
                     my $cell = $sheet->{Cells}[$row][$col];
 

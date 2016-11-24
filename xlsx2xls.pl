@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use autodie;
 
-use Getopt::Long qw(HelpMessage);
+use Getopt::Long;
 use FindBin;
 use YAML qw(Dump Load DumpFile LoadFile);
 
@@ -40,12 +40,12 @@ xlsx2xls.pl - convert xlsx to xls or csv
 =cut
 
 GetOptions(
-    'help|?' => sub { HelpMessage(0) },
+    'help|?' => sub { Getopt::Long::HelpMessage(0) },
     'dir|d=s'    => \( my $dir    = '.' ),
     'suffix|s=s' => \( my $suffix = "*.xlsx" ),
     'csv'        => \my $csv,
     'sheet=s'    => \my $sheetnames,
-) or HelpMessage(1);
+) or Getopt::Long::HelpMessage(1);
 
 #----------------------------------------------------------#
 # init

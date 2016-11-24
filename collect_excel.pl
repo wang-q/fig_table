@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use autodie;
 
-use Getopt::Long qw(HelpMessage);
+use Getopt::Long;
 use FindBin;
 use YAML qw(Dump Load DumpFile LoadFile);
 
@@ -32,12 +32,12 @@ use Set::Scalar;
 =cut
 
 GetOptions(
-    'help|?'    => sub { HelpMessage(0) },
+    'help|?'    => sub { Getopt::Long::HelpMessage(0) },
     'file|f=s'  => \my @files_xlsx,
     'sheet|s=s' => \my @sheetnames,
     'name|n=s'  => \my @newnames,
     'output|o=s' => \( my $output = "collected.xlsx" ),
-) or HelpMessage(1);
+) or Getopt::Long::HelpMessage(1);
 
 #----------------------------------------------------------#
 # init

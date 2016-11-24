@@ -216,6 +216,7 @@ path($file_chart)->remove;
     print "Run\n";
 
     # No newlines in the end of $r_code
+    #@inject R
     my $r_code = <<'EOF';
         library(readr)
         library(dplyr)

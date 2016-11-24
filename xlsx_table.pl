@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use autodie;
 
-use Getopt::Long qw(HelpMessage);
+use Getopt::Long;
 use FindBin;
 use YAML qw(Dump Load DumpFile LoadFile);
 
@@ -24,25 +24,27 @@ use Set::Scalar;
 =cut
 
 GetOptions(
-    'help|?' => sub { HelpMessage(0) },
-    'input|i=s' => \( my $file_yaml = 'Table.S1.yaml' ),
-    'font=s'    => \( my $font_name = 'Arial' ),
-    'size=i'    => \( my $font_size = 10 ),
-) or HelpMessage(1);
+    'help|?' => sub { Getopt::Long::HelpMessage(0) },
+    'input|i=s' => \( my $file_input = 'Table.S1.yaml' ),
+    'font=s'    => \( my $font_name  = 'Arial' ),
+    'size=i'    => \( my $font_size  = 10 ),
+) or Getopt::Long::HelpMessage(1);
 
 #----------------------------------------------------------#
 # init
 #----------------------------------------------------------#
 # The structure of yaml file:
 # filename:sheetname:chart_serial:[x, y] coordinates
-my $dispatch = LoadFile($file_yaml);
+my $dispatch = LoadFile($file_input);
 my $ranges   = $dispatch->{ranges};
 my $texts    = $dispatch->{texts};
 my $borders  = $dispatch->{borders};
 
 # Excel files should be located in the same dir as the yaml file.
 # new excel table file will be named after yaml file.
-$file_yaml = path($file_yaml)->absolute;
+#@type Path::Tiny
+my $file_yaml = path($file_input);
+$file_yaml = $file_yaml->absolute;
 my $base_dir = $file_yaml->parent->stringify;
 my $newfile  = $file_yaml->stringify;
 $newfile =~ s/\.ya?ml$/.xlsx/;
@@ -54,6 +56,8 @@ $newname =~ s/[^\w]/_/g;
 if ( length $newname > 30 ) {
     $newname = substr $newname, 0, 20;
 }
+
+#@type Excel::Writer::XLSX::Worksheet
 my $newsheet = $newbook->add_worksheet($newname);
 
 #----------------------------#

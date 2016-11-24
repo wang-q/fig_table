@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use autodie;
 
-use Getopt::Long qw(HelpMessage);
+use Getopt::Long;
 use FindBin;
 use YAML qw(Dump Load DumpFile LoadFile);
 
@@ -12,6 +12,7 @@ use Win32::OLE::Const;
 use Win32::OLE::Variant;
 use Win32::OLE::NLS qw(:LOCALE :DATE);
 use Win32::OLE::Const 'Microsoft Excel';
+
 #use Win32::OLE::Const 'Corel - CorelDRAW';
 use Win32::OLE::Const 'Corel - CorelDRAW 15.0 Type Library';
 
@@ -33,9 +34,9 @@ Don't work under CorelDraw X7. Use X6 or below.
 =cut
 
 GetOptions(
-    'help|?' => sub { HelpMessage(0) },
+    'help|?' => sub { Getopt::Long::HelpMessage(0) },
     'input|i=s' => \( my $file_yaml = 'Fig.S1.yaml' ),
-) or HelpMessage(1);
+) or Getopt::Long::HelpMessage(1);
 
 #----------------------------------------------------------#
 # init

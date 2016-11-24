@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use autodie;
 
-use Getopt::Long qw(HelpMessage);
+use Getopt::Long;
 use FindBin;
 use YAML qw(Dump Load DumpFile LoadFile);
 
@@ -23,11 +23,11 @@ use File::Find::Rule;
 #----------------------------------------------------------#
 
 GetOptions(
-    'help|?' => sub { HelpMessage(0) },
+    'help|?' => sub { Getopt::Long::HelpMessage(0) },
     'dir|d=s'        => \( my $dir        = '.' ),
     'resolution|r=s' => \( my $resolution = 300 ),
     'format|f=s'     => \( my $format     = 'png' ),
-) or HelpMessage(1);
+) or Getopt::Long::HelpMessage(1);
 
 #----------------------------------------------------------#
 # init
