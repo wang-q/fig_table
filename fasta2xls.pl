@@ -296,7 +296,7 @@ foreach my $fasta_file (@fasta_files) {
         }
 
         #print $snp_positon,"\n";
-        unless ( $comparable_set->member($snp_positon) ) {
+        unless ( $comparable_set->contains($snp_positon) ) {
             $snp_positon++;
             next;
         }
