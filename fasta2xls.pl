@@ -1,142 +1,470 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 use strict;
 use warnings;
+use autodie;
 
-use Getopt::Long;
-use Pod::Usage;
-use Config::Tiny;
-use YAML qw(Dump Load DumpFile LoadFile);
+use Getopt::Long::Descriptive;
+use YAML::Syck;
 
-use File::Find::Rule;
-use Spreadsheet::WriteExcel;
-use Spreadsheet::WriteExcel::Big;
+use Excel::Writer::XLSX;
+use List::Util;
+use List::MoreUtils::PP;
+use Path::Tiny;
 
 use AlignDB::IntSpan;
+use App::Fasops::Common;
 
 #----------------------------------------------------------#
 # GetOpt section
 #----------------------------------------------------------#
 
-my $fastadir  = '';
-my $outfile   = '';
-my $align_cnt = 4;
-my $ref_exist = 1;
-my $step      = 0;
-my $spices;
+my $description = <<'EOF';
+Generate a colorful excel file for one alignment
 
-my $man  = 0;
-my $help = 0;
+    perl fasta2xlsx.pl example.fas
 
-GetOptions(
-    'help|?'      => \$help,
-    'man'         => \$man,
-    'fastadir=s'  => \$fastadir,
-    'spices=s'    => \$spices,
-    'align_cnt=i' => \$align_cnt,
-    'ref_exist=i' => \$ref_exist,
-    'step=i'      => \$step,
-    'outfile=s'   => \$outfile
-) or pod2usage(2);
+Usage: perl %c <in.fasta> [options]
+EOF
 
-pod2usage(1) if $help;
-pod2usage( -exitstatus => 0, -verbose => 2 ) if $man;
+(
+    #@type Getopt::Long::Descriptive::Opts
+    my $opt,
 
-#if($align_cnt > 6){
-#    die "not enough colors\noption --align should less than 7\n";
-#}
+    #@type Getopt::Long::Descriptive::Usage
+    my $usage,
+    )
+    = Getopt::Long::Descriptive::describe_options(
+    $description,
+    [ 'help|h', 'display this message' ],
+    [],
+    [ 'wrap=i',      'wrap length',          { default => 50 }, ],
+    [ 'spacing=i',   'wrapped line spacing', { default => 1 }, ],
+    [ 'outfile|o=s', 'output filename', ],
+    [ 'outgroup',    'alignments have an outgroup', ],
+    { show_defaults => 1, }
+    );
 
-unless ($outfile) {
-    $outfile = $fastadir;
-    $outfile =~ s/\.fa.+/\.xls/;
+$usage->die if $opt->{help};
+
+if ( @ARGV != 1 ) {
+    my $message = "This script need one input fasta files.\n\tIt found";
+    $message .= sprintf " [%s]", $_ for @ARGV;
+    $message .= ".\n";
+    $usage->die( { pre_text => $message } );
+}
+for (@ARGV) {
+    if ( !Path::Tiny::path($_)->is_file ) {
+        $usage->die( { pre_text => "The input file [$_] doesn't exist.\n" } );
+    }
+}
+
+if ( !exists $opt->{outfile} ) {
+    $opt->{outfile} = Path::Tiny::path( $ARGV[0] )->absolute . ".xlsx";
 }
 
 #----------------------------------------------------------#
-# Search for all FASTA files
+# store all variations
 #----------------------------------------------------------#
-my @fasta_files = File::Find::Rule->file->name( '*.fa', '*.fas', '*.fasta' )
-    ->in($fastadir);
 
-my $using_color_cnt = ( 2**$align_cnt ) / 2 - 1;
-my $row             = 0;
-my $col             = 1;
-my $workbook        = Spreadsheet::WriteExcel::Big->new($outfile);
-my $worksheet       = $workbook->add_worksheet($outfile);
-$worksheet->set_column( 1, 61, 1.2 );
+sub get_indels {
+    my $seq_refs = shift;
 
-# snp base format
-my $snp_fg_of = {
-    A   => { color => 'green', },
-    C   => { color => 'blue', },
-    G   => { color => 'pink', },
-    T   => { color => 'red', },
-    N   => { color => 'black' },
-    '-' => { color => 'black' },
-};
+    my $seq_count = scalar @{$seq_refs};
 
-my @colors = qw{
-    26 27
-    43 42
-    51 50
-    22 24
-    31 30
-    46 48
-    54 62
-};
+    my $indel_set = AlignDB::IntSpan->new;
+    for my $i ( 0 .. $seq_count - 1 ) {
+        my $seq_indel_set = App::Fasops::Common::indel_intspan( $seq_refs->[$i] );
+        $indel_set->merge($seq_indel_set);
+    }
 
-my @patterns = (
-    1,     # solid
-           #11, # thin, hor
-           #12, # thin, ver
-    18,    # 6.25% grep
-);
+    my @sites;
 
-my $bg_of     = {};
-my $bg_number = 1;
-while ( my @pair_colors = splice @colors, 0, 2 ) {
-    for my $i (@patterns) {
-        for my $j (@pair_colors) {
-            $bg_of->{$bg_number}->{pattern}  = $i;
-            $bg_of->{$bg_number}->{bg_color} = $j;
-            $bg_number++;
+    # indels
+    for my $cur_indel ( $indel_set->spans ) {
+        my ( $indel_start, $indel_end ) = @{$cur_indel};
+        my $indel_length = $indel_end - $indel_start + 1;
+
+        my @indel_seqs;
+        for my $seq ( @{$seq_refs} ) {
+            push @indel_seqs, ( substr $seq, $indel_start - 1, $indel_length );
+        }
+        my $indel_all_seqs = join "|", @indel_seqs;
+
+        my $indel_type;
+        my @uniq_indel_seqs = List::MoreUtils::PP::uniq(@indel_seqs);
+
+        # seqs with least '-' char wins
+        my ($indel_seq) = map { $_->[0] }
+            sort { $a->[1] <=> $b->[1] }
+            map { [ $_, tr/-/-/ ] } @uniq_indel_seqs;
+
+        if ( scalar @uniq_indel_seqs < 2 ) {
+            Carp::confess "no indel!\n";
+            next;
+        }
+        elsif ( scalar @uniq_indel_seqs > 2 ) {
+            $indel_type = 'C';
+        }
+        elsif ( $indel_seq =~ /-/ ) {
+            $indel_type = 'C';
+        }
+        else {
+            #   'D': means deletion relative to target/first seq
+            #        target is ----
+            #   'I': means insertion relative to target/first seq
+            #        target is AAAA
+            if ( $indel_seqs[0] eq $indel_seq ) {
+                $indel_type = 'I';
+            }
+            else {
+                $indel_type = 'D';
+            }
+        }
+
+        my $indel_freq = 0;
+        my $indel_occured;
+        if ( $indel_type eq 'C' ) {
+            $indel_freq    = -1;
+            $indel_occured = 'unknown';
+        }
+        else {
+            for (@indel_seqs) {
+
+                # same as target 'x', not 'o'
+                if ( $indel_seqs[0] eq $_ ) {
+                    $indel_freq++;
+                    $indel_occured .= '0';
+                }
+                else {
+                    $indel_occured .= '1';
+                }
+            }
+        }
+
+        # here freq is the minor allele freq
+        $indel_freq = List::Util::min( $indel_freq, $seq_count - $indel_freq );
+
+        push @sites,
+            {
+            indel_start    => $indel_start,
+            indel_end      => $indel_end,
+            indel_length   => $indel_length,
+            indel_seq      => $indel_seq,
+            indel_all_seqs => $indel_all_seqs,
+            indel_freq     => $indel_freq,
+            indel_occured  => $indel_occured,
+            indel_type     => $indel_type,
+            };
+    }
+
+    return \@sites;
+}
+
+sub polarize_indel {
+    my $sites        = shift;
+    my $outgroup_seq = shift;
+
+    my $outgroup_indel_set = App::Fasops::Common::indel_intspan($outgroup_seq);
+
+    for my $site ( @{$sites} ) {
+        my @indel_seqs = split /\|/, $site->{indel_all_seqs};
+
+        my $outgroup_bases = substr $outgroup_seq, $site->{indel_start} - 1, $site->{indel_length};
+
+        my ( $indel_type, $indel_occured, $indel_freq );
+
+        my $indel_set = AlignDB::IntSpan->new(" $site->{indel_start}- $site->{indel_end}");
+
+        # this line is different to previous subroutines
+        my @uniq_indel_seqs = List::MoreUtils::PP::uniq( @indel_seqs, $outgroup_bases );
+
+        # seqs with least '-' char wins
+        my ($indel_seq) = map { $_->[0] }
+            sort { $a->[1] <=> $b->[1] }
+            map { [ $_, tr/-/-/ ] } @uniq_indel_seqs;
+
+        if ( scalar @uniq_indel_seqs < 2 ) {
+            Carp::confess "no indel!\n";
+        }
+        elsif ( scalar @uniq_indel_seqs > 2 ) {
+            $indel_type = 'C';
+        }
+        elsif ( $indel_seq =~ /-/ ) {
+            $indel_type = 'C';
+        }
+        else {
+
+            if (    ( $outgroup_bases !~ /\-/ )
+                and ( $indel_seq ne $outgroup_bases ) )
+            {
+
+                # this section should already be judged in previes
+                # uniq_indel_seqs section, but I keep it here for safe
+
+                # reference indel content does not contain '-' and is not equal
+                # to the one of alignment
+                #     AAA
+                #     A-A
+                # ref ACA
+                $indel_type = 'C';
+            }
+            elsif ( $outgroup_indel_set->intersect($indel_set)->is_not_empty ) {
+                my $island = $outgroup_indel_set->find_islands($indel_set);
+                if ( $island->equal($indel_set) ) {
+
+                    #     NNNN
+                    #     N--N
+                    # ref N--N
+                    $indel_type = 'I';
+                }
+                else {
+                    # reference indel island is larger or smaller
+                    #     NNNN
+                    #     N-NN
+                    # ref N--N
+                    # or
+                    #     NNNN
+                    #     N--N
+                    # ref N-NN
+                    $indel_type = 'C';
+                }
+            }
+            elsif ( $outgroup_indel_set->intersect($indel_set)->is_empty ) {
+
+                #     NNNN
+                #     N--N
+                # ref NNNN
+                $indel_type = 'D';
+            }
+            else {
+                Carp::confess "Errors when polarizing indel!\n";
+            }
+        }
+
+        if ( $indel_type eq 'C' ) {
+            $indel_occured = 'unknown';
+            $indel_freq    = -1;
+        }
+        else {
+            for my $seq (@indel_seqs) {
+                if ( $seq eq $outgroup_bases ) {
+                    $indel_occured .= '0';
+                }
+                else {
+                    $indel_occured .= '1';
+                    $indel_freq++;
+                }
+            }
+        }
+
+        $site->{indel_ref_seq} = $outgroup_bases;
+        $site->{indel_type}    = $indel_type;
+        $site->{indel_occured} = $indel_occured;
+        $site->{indel_freq}    = $indel_freq;
+    }
+
+    return;
+}
+
+sub get_substitutions {
+    my $seq_refs = shift;
+
+    my $align_length = length $seq_refs->[0];
+    my $seq_count    = scalar @{$seq_refs};
+
+    # SNPs
+    my $snp_bases_of = {};
+    for my $pos ( 1 .. $align_length ) {
+        my @bases;
+        for my $i ( 0 .. $seq_count - 1 ) {
+            my $base = substr( $seq_refs->[$i], $pos - 1, 1 );
+            push @bases, $base;
+        }
+
+        if ( List::MoreUtils::PP::all { $_ =~ /[agct]/i } @bases ) {
+            if ( List::MoreUtils::PP::any { $_ ne $bases[0] } @bases ) {
+                $snp_bases_of->{$pos} = \@bases;
+            }
         }
     }
+
+    my @sites;
+    for my $pos ( sort { $a <=> $b } keys %{$snp_bases_of} ) {
+
+        my @bases = @{ $snp_bases_of->{$pos} };
+
+        my $target_base = $bases[0];
+        my $all_bases = join '', @bases;
+
+        my $query_base;
+        my $mutant_to;
+        my $snp_freq = 0;
+        my $snp_occured;
+        my @class = List::MoreUtils::PP::uniq(@bases);
+        if ( scalar @class < 2 ) {
+            Carp::confess "no snp\n";
+        }
+        elsif ( scalar @class > 2 ) {
+            $snp_freq    = -1;
+            $snp_occured = 'unknown';
+        }
+        else {
+            for (@bases) {
+                if ( $target_base ne $_ ) {
+                    $snp_freq++;
+                    $snp_occured .= '0';
+                }
+                else {
+                    $snp_occured .= '1';
+                }
+            }
+            ($query_base) = grep { $_ ne $target_base } @bases;
+            $mutant_to = $target_base . '<->' . $query_base;
+        }
+
+        # here freq is the minor allele freq
+        $snp_freq = List::Util::min( $snp_freq, $seq_count - $snp_freq );
+
+        push @sites,
+            {
+            snp_pos     => $pos,
+            target_base => $target_base,
+            query_base  => $query_base,
+            all_bases   => $all_bases,
+            mutant_to   => $mutant_to,
+            snp_freq    => $snp_freq,
+            snp_occured => $snp_occured,
+            };
+    }
+
+    return \@sites;
 }
-$bg_of->{unknown}->{bg_color} = 9;
 
-#DumpFile( "var.yaml", $bg_of );
+sub polarize_snp {
+    my $sites        = shift;
+    my $outgroup_seq = shift;
 
-my $snp_format = {};
-for my $fg ( keys %{$snp_fg_of} ) {
-    for my $bg ( keys %{$bg_of} ) {
-        $snp_format->{"$fg$bg"} = $workbook->add_format(
-            font  => 'Courier New',
-            size  => 8,
-            bold  => 1,
-            align => 'center',
-            %{ $snp_fg_of->{$fg} },
-            %{ $bg_of->{$bg} },
-        );
+    for my $site ( @{$sites} ) {
+        my $outgroup_base = substr $outgroup_seq, $site->{snp_pos} - 1, 1;
+
+        my @nts = split '', $site->{all_bases};
+        my @class;
+        for my $nt (@nts) {
+            my $class_bool = 0;
+            for (@class) {
+                if ( $_ eq $nt ) { $class_bool = 1; }
+            }
+            unless ($class_bool) {
+                push @class, $nt;
+            }
+        }
+
+        my ( $mutant_to, $snp_freq, $snp_occured );
+
+        if ( scalar @class < 2 ) {
+            Carp::confess "Not a real SNP\n";
+        }
+        elsif ( scalar @class == 2 ) {
+            for my $nt (@nts) {
+                if ( $nt eq $outgroup_base ) {
+                    $snp_occured .= '0';
+                }
+                else {
+                    $snp_occured .= '1';
+                    $snp_freq++;
+                    $mutant_to = "$outgroup_base->$nt";
+                }
+            }
+        }
+        else {
+            $snp_freq    = -1;
+            $mutant_to   = 'Complex';
+            $snp_occured = 'unknown';
+        }
+
+        # ref_base is not equal to any nts
+        if ( $snp_occured eq ( '1' x ( length $snp_occured ) ) ) {
+            $snp_freq    = -1;
+            $mutant_to   = 'Complex';
+            $snp_occured = 'unknown';
+        }
+
+        $site->{ref_base}    = $outgroup_base;
+        $site->{mutant_to}   = $mutant_to;
+        $site->{snp_freq}    = $snp_freq;
+        $site->{snp_occured} = $snp_occured;
+    }
+
+    return;
+}
+
+# including indels and snps
+my %variations;
+
+my $seq_of = App::Fasops::Common::read_fasta( $ARGV[0] );
+
+{
+    my $seq_refs = [];
+    for ( keys %{$seq_of} ) {
+        push @{$seq_refs}, uc $seq_of->{$_};
+    }
+
+    # check align length
+    my $align_length = length $seq_refs->[0];
+    for ( @{$seq_refs} ) {
+        if ( ( length $_ ) != $align_length ) {
+            die "Sequences should have the same length!\n";
+        }
+    }
+
+    # outgroup
+    my $out_seq;
+    if ( $opt->{outgroup} ) {
+        $out_seq = pop @{$seq_refs};
+    }
+
+    my $seq_count = scalar @{$seq_refs};
+    if ( $seq_count < 2 ) {
+        Carp::confess "Too few sequences [$seq_count]\n";
+    }
+
+    my $indel_sites = get_indels($seq_refs);
+    if ( $opt->{outgroup} ) {
+        polarize_indel( $indel_sites, $out_seq );
+    }
+
+    for my $site ( @{$indel_sites} ) {
+        $site->{var_type} = 'indel';
+        $variations{ $site->{indel_start} } = $site;
+    }
+
+    my $snp_sites = get_substitutions($seq_refs);
+    if ( $opt->{outgroup} ) {
+        polarize_snp( $snp_sites, $out_seq );
+    }
+
+    for my $site ( @{$snp_sites} ) {
+        $site->{var_type} = 'snp';
+        $variations{ $site->{snp_pos} } = $site;
     }
 }
-$snp_format->{'-'} = $workbook->add_format(
-    font  => 'Courier New',
-    size  => 8,
-    bold  => 1,
-    align => 'center',
+
+#----------------------------------------------------------#
+# Excel format
+#----------------------------------------------------------#
+# Create workbook and worksheet objects
+my $workbook = Excel::Writer::XLSX->new( $opt->{outfile} );
+
+#@type Excel::Writer::XLSX::Worksheet
+my $sheet = $workbook->add_worksheet;
+
+# species name
+my $name_format = $workbook->add_format(
+    font => 'Courier New',
+    size => 10,
 );
 
-my $indel_format = {};
-for my $bg ( keys %{$bg_of} ) {
-    $indel_format->{$bg} = $workbook->add_format(
-        font  => 'Courier New',
-        size  => 8,
-        bold  => 1,
-        align => 'center',
-        %{ $bg_of->{$bg} },
-    );
-}
-
-# variation position format
+# variation position
 my $pos_format = $workbook->add_format(
     font     => 'Courier New',
     size     => 8,
@@ -145,598 +473,240 @@ my $pos_format = $workbook->add_format(
     rotation => 90,
 );
 
-foreach my $fasta_file (@fasta_files) {
+my $snp_format   = {};
+my $indel_format = {};
 
-    my ( $seq_of, $seq_names ) = read_fasta($fasta_file);
-    my @seq_names = @{$seq_names};
-    my @seqs;
-    for (@seq_names) {
-        push @seqs, $seq_of->{$_};
+{    # background
+    my $bg_of = {};
+
+    # 14
+    my @colors = (
+        26,    # Ivory
+        27,    # Lite Turquoise
+        43,    # Light Yellow
+        42,    # Light Green
+        51,    # Gold
+        50,    # Lime
+        22,    # Gray-25%, silver
+        24,    # Periwinkle
+        31,    # Ice Blue
+        30,    # Ocean Blue
+        46,    # lightpurple
+        48,    # Light Blue
+        54,    # Blue-Gray
+        62,    # Indigo
+    );
+
+    for my $i ( 0 .. $#colors ) {
+        $bg_of->{$i}{bg_color} = $colors[$i];
+
+    }
+    $bg_of->{unknown}{bg_color} = 9;    # white
+
+    # snp base
+    my $snp_fg_of = {
+        A   => { color => 'green', },
+        C   => { color => 'blue', },
+        G   => { color => 'pink', },
+        T   => { color => 'red', },
+        N   => { color => 'black' },
+        '-' => { color => 'black' },
+    };
+
+    for my $fg ( keys %{$snp_fg_of} ) {
+        for my $bg ( keys %{$bg_of} ) {
+            $snp_format->{"$fg$bg"} = $workbook->add_format(
+                font   => 'Courier New',
+                size   => 10,
+                align  => 'center',
+                valign => 'vcenter',
+                %{ $snp_fg_of->{$fg} },
+                %{ $bg_of->{$bg} },
+            );
+        }
+    }
+    $snp_format->{'-'} = $workbook->add_format(
+        font   => 'Courier New',
+        size   => 10,
+        align  => 'center',
+        valign => 'vcenter',
+    );
+
+    for my $bg ( keys %{$bg_of} ) {
+        $indel_format->{$bg} = $workbook->add_format(
+            font   => 'Courier New',
+            size   => 10,
+            bold   => 1,
+            align  => 'center',
+            valign => 'vcenter',
+            %{ $bg_of->{$bg} },
+        );
+    }
+}
+
+#----------------------------------------------------------#
+# write execel
+#----------------------------------------------------------#
+print "Write excel...\n";
+
+my $seq_count = scalar keys %{$seq_of};
+if ( $opt->{outgroup} ) {
+    $seq_count--;
+}
+
+my $col_cursor     = 1;
+my $section        = 1;
+my $section_height = ( scalar( keys %{$seq_of} ) + 1 ) + $opt->{spacing};
+
+for my $pos ( sort { $a <=> $b } keys %variations ) {
+    my $var = $variations{$pos};
+    my $pos_row = $section_height * ( $section - 1 );
+
+    # write SNPs
+    if ( $var->{var_type} eq 'snp' ) {
+
+        # write position
+        $sheet->write( $pos_row, $col_cursor, $var->{snp_pos}, $pos_format );
+
+        for my $i ( 1 .. $seq_count ) {
+            my $base = substr $var->{all_bases},   $i - 1, 1;
+            my $occ  = substr $var->{snp_occured}, $i - 1, 1;
+
+            if ( $occ eq "1" ) {
+
+                my $bg_idx
+                    = $var->{snp_occured} eq "unknown"
+                    ? "unknown"
+                    : oct( '0b' . $var->{snp_occured} ) % 14;
+                my $base_color = $base . $bg_idx;
+                $sheet->write( $pos_row + $i, $col_cursor, $base, $snp_format->{$base_color} );
+            }
+            else {
+                my $base_color = $base . "unknown";
+                $sheet->write( $pos_row + $i, $col_cursor, $base, $snp_format->{$base_color} );
+            }
+        }
+
+        if ( $opt->{outgroup} ) {
+            my $base_color = $var->{ref_base} . "unknown";
+            $sheet->write( $pos_row + $seq_count + 1,
+                $col_cursor, $var->{ref_base}, $snp_format->{$base_color} );
+        }
+
+        # increase column cursor
+        $col_cursor++;
     }
 
-    my @indels;
-    my @snps;
+    # write indels
+    if ( $var->{var_type} eq 'indel' ) {
 
-    my $align_length = length $seqs[0];
+        # how many column does this indel take up
+        my $col_taken = List::Util::min( $var->{indel_length}, 3 );
 
-    # find indel
-    my $indel_set = AlignDB::IntSpan->new;
-    my $ref = shift @seqs;
-    for (@seqs) {
-        my $cur_indel_set = find_indel_set($_);
-        $indel_set->merge($cur_indel_set);
-    }
-    unshift @seqs, $ref;
+        # if exceed the wrap limit, start a new section
+        if ( $col_cursor + $col_taken > $opt->{wrap} ) {
+            $col_cursor = 1;
+            $section++;
+            $pos_row = $section_height * ( $section - 1 );
+        }
 
-    my $align_set      = AlignDB::IntSpan->new("1-$align_length");
-    my $comparable_set = $align_set->diff($indel_set);
+        my $indel_string = "$var->{indel_type}$var->{indel_length}";
 
-    #indels
-    if ( $indel_set->is_not_empty ) {
-        for my $cur_indel ( $indel_set->spans ) {
-            my ( $indel_start, $indel_end ) = @{$cur_indel};
-            my $indel_length = $indel_end - $indel_start + 1;
-            my @indel_seqs;
-            for my $curr_seq (@seqs) {
-                push @indel_seqs,
-                    ( substr $curr_seq, $indel_start - 1, $indel_length );
+        my $bg_idx = 'unknown';
+        if ( $var->{indel_occured} ne 'unknown' ) {
+            $bg_idx = oct( '0b' . $var->{indel_occured} ) % 14;
+        }
+
+        for my $i ( 1 .. $seq_count ) {
+            my $flag = 0;
+            if ( $var->{indel_occured} eq "unknown" ) {
+                $flag = 1;
             }
-
-
-            my $indel_seq = '';
-            my $indel_type;
-            my @indel_class;
-            foreach my $seq (@indel_seqs) {
-                unless ( $seq =~ /-/ || $seq =~ /N/ ) {
-                    if ( $indel_seq =~ /-/ ) { die "aaaa$seq\n"; }
-                    $indel_seq = $seq;
-                }
-                my $class_bull = 0;
-                foreach (@indel_class) {
-                    if ( $_ eq $seq ) { $class_bull = 1; }
-                }
-                unless ($class_bull) {
-                    push @indel_class, $seq;
+            else {
+                my $occ = substr $var->{indel_occured}, $i - 1, 1;
+                if ( $occ eq '1' ) {
+                    $flag = 1;
                 }
             }
 
-            if ( scalar @indel_class < 2 ) {
-                die "no indel!\n";
-            }
-            elsif ( scalar @indel_class > 2 ) {
-                $indel_type = 'C';
-            }
-            my $ref_seq = shift @indel_seqs;
-            unless ($indel_type) {
-                if ( $ref_seq eq ( '-' x ( length $ref_seq ) ) ) {
-                    $indel_type = 'I';
+            if ($flag) {
+                if ( $col_taken == 1 ) {
+
+                    # write position
+                    $sheet->write( $pos_row, $col_cursor, $var->{indel_start}, $pos_format );
+
+                    # write in indel occured lineage
+                    $sheet->write( $pos_row + $i,
+                        $col_cursor, $indel_string, $indel_format->{$bg_idx} );
                 }
-                elsif ( !( $ref_seq =~ /-/ ) ) {
-                    $indel_type = 'D';
+                elsif ( $col_taken == 2 ) {
+
+                    # write indel_start position
+                    $sheet->write( $pos_row, $col_cursor, $var->{indel_start}, $pos_format );
+
+                    # write indel_end position
+                    $sheet->write( $pos_row, $col_cursor + 1, $var->{indel_end}, $pos_format );
+
+                    # merge two indel position
+                    $sheet->merge_range(
+                        $pos_row + $i,
+                        $col_cursor,
+                        $pos_row + $i,
+                        $col_cursor + 1,
+                        $indel_string, $indel_format->{$bg_idx},
+                    );
                 }
                 else {
-                    die $cur_indel;
-                }
-            }
-            my $indel_frequency = 0;
-            my $indel_occured;
-            if ( $indel_type eq 'C' ) {
-                $indel_frequency = -1;
-                $indel_occured   = 'unknown';
-            }
-            else {
-                foreach (@indel_seqs) {
-                    if ( $ref_seq ne $_ ) {
-                        $indel_frequency++;
-                        $indel_occured .= '0';
-                    }
-                    else {
-                        $indel_occured .= '1';
-                    }
-                }
-            }
 
-            my $indel_color = 'unknown';
-            unless ( $indel_occured eq 'unknown' ) {
-                $indel_color = '0b' . $indel_occured;
-                $indel_color = oct $indel_color;
-                if ( $indel_color > $using_color_cnt ) {
-                    $indel_color = $using_color_cnt * 2 - $indel_color + 1;
-                }
-                if ( $indel_color > $using_color_cnt ) {
-                    die "indel_color = $indel_color\n";
-                }
-            }
+                    # write indel_start position
+                    $sheet->write( $pos_row, $col_cursor, $var->{indel_start}, $pos_format );
 
-            if ($ref_exist) {
-                if ( $indel_occured eq
-                    ( '1' . ( '0' x ( ( length $indel_occured ) - 1 ) ) ) )
-                {
-                    next;
-                }
-                if ( $indel_occured eq
-                    ( '0' . ( '1' x ( ( length $indel_occured ) - 1 ) ) ) )
-                {
-                    next;
+                    # write middle sign
+                    $sheet->write( $pos_row, $col_cursor + 1, '|', $pos_format );
+
+                    # write indel_end position
+                    $sheet->write( $pos_row, $col_cursor + 2, $var->{indel_end}, $pos_format );
+
+                    # merge two indel position
+                    $sheet->merge_range(
+                        $pos_row + $i,
+                        $col_cursor,
+                        $pos_row + $i,
+                        $col_cursor + 2,
+                        $indel_string, $indel_format->{$bg_idx},
+                    );
                 }
             }
-            my $ref;
-            $ref->{'position'} = $indel_start;
-            $ref->{'length'}   = $indel_end - $indel_start + 1;
-            $ref->{'occured'}  = $indel_occured;
-            $ref->{'color'}    = $indel_color;
-            $ref->{'seq'}      = $indel_seq;
-            $ref->{'type'}     = $indel_type;
-            push @indels, $ref;
         }
+
+        # increase column cursor
+        $col_cursor += $col_taken;
     }
-    print "indels found\n";
 
-    #snps
-    $comparable_set = $comparable_set->diff($indel_set);
-    my $snp_positon = 1;
-    while ( $snp_positon <= $align_length ) {
-        if ( $snp_positon % 1000 == 0 ) {
-            print "$snp_positon:$align_length\n";
-        }
-        if ( $step && $step + $snp_positon <= $align_length ) {
-            my $bull = 1;
-            my $ref_seq = substr $seqs[0], $snp_positon - 1, $step;
-            foreach my $current_seq (@seqs) {
-                my $test_seq = substr $current_seq, $snp_positon - 1, $step;
-                if ( $test_seq ne $ref_seq ) {
-                    $bull = 0;
-                    last;
-                }
-            }
-            if ($bull) {
-                $snp_positon += $step;
-                next;
-            }
-        }
-
-        #print $snp_positon,"\n";
-        unless ( $comparable_set->contains($snp_positon) ) {
-            $snp_positon++;
-            next;
-        }
-        my @nucleotides;
-        my $class = 1;
-        foreach my $current_seq (@seqs) {
-            my $current_nuc = substr $current_seq, $snp_positon - 1, 1;
-            foreach my $test_nuc (@nucleotides) {
-                if ( $test_nuc ne $current_nuc ) { $class++; }
-            }
-            push @nucleotides, $current_nuc;
-        }
-        if ( $class > 1 ) {
-            my $snp_base = join '', @nucleotides;
-            my @snp_class;
-            my $snp_occured = '';
-            my $complex     = 0;
-            foreach my $nuc (@nucleotides) {
-                my $class_bull = 0;
-                foreach (@snp_class) {
-                    if ( $_ eq $nuc ) { $class_bull = 1; }
-                    unless (/[ATCG]/i) { $complex = 1; }
-                }
-                unless ($class_bull) {
-                    push @snp_class, $nuc;
-                }
-            }
-
-            if ( scalar @snp_class < 2 ) {
-                die "no snp!\n";
-            }
-            elsif ( scalar @snp_class > 2 || $complex ) {
-                $snp_occured = 'unknown';
-            }
-            else {
-                my $ref_base = $nucleotides[0];
-                foreach (@nucleotides) {
-                    if ( $_ eq $ref_base ) {
-                        $snp_occured .= '0';
-                    }
-                    else {
-                        $snp_occured .= '1';
-                    }
-                }
-            }
-
-            my $snp_color = 'unknown';
-            unless ( $snp_occured eq 'unknown' ) {
-                $snp_color = '0b' . $snp_occured;
-                $snp_color = oct $snp_color;
-                if ( $snp_color > $using_color_cnt ) {
-                    $snp_color = $using_color_cnt * 2 - $snp_color + 1;
-                }
-                if ( $snp_color > $using_color_cnt ) {
-                    die "snp_color = $snp_color\n";
-                }
-            }
-
-            if ($ref_exist) {
-                if ( $snp_occured eq
-                    ( '1' . ( '0' x ( ( length $snp_occured ) - 1 ) ) ) )
-                {
-                    $snp_positon++;
-                    next;
-                }
-                if ( $snp_occured eq
-                    ( '0' . ( '1' x ( ( length $snp_occured ) - 1 ) ) ) )
-                {
-                    $snp_positon++;
-                    next;
-                }
-            }
-
-            my $ref;
-            $ref->{'position'} = $snp_positon;
-            $ref->{'base'}     = $snp_base;
-            $ref->{'occured'}  = $snp_occured;
-            $ref->{'color'}    = $snp_color;
-            push @snps, $ref;
-        }
-        $snp_positon++;
+    if ( $col_cursor > $opt->{wrap} ) {
+        $col_cursor = 1;
+        $section++;
     }
-    print "snps found\nwriting excel\n";
-
-    my ( $i, $j ) = ( 0, 0 );
-
-    #my ($line1,$line2,$line3,$line4,$line5);
-    my $line_control = 60;
-    my $write_cycal  = 0;
-    while ( $write_cycal < $align_cnt ) {
-        $worksheet->write( $row + $write_cycal + 1,
-            0, $seq_names[$write_cycal] );
-        $write_cycal++;
-    }
-    while ( ( $i < ( scalar @indels ) ) || ( $j < ( scalar @snps ) ) ) {
-        if ( ( $i > ( scalar @indels ) ) || ( $j > ( scalar @snps ) ) ) {
-            die;
-        }
-        if ( $i == ( scalar @indels ) ) {
-            if ( $col > 60 ) {
-                $col = 1;
-                $row += ( $align_cnt + 1 );
-                $write_cycal = 0;
-                while ( $write_cycal < $align_cnt ) {
-                    $worksheet->write( $row + $write_cycal + 1,
-                        0, $seq_names[$write_cycal] );
-                    $write_cycal++;
-                }
-            }
-            my @smp_bases = split //, $snps[$j]->{'base'};
-            $worksheet->write( $row, $col, ( $snps[$j]->{'position'} ),
-                $pos_format );
-            $write_cycal = 0;
-            while ( $write_cycal < $align_cnt ) {
-                $worksheet->write(
-                    $row + $write_cycal + 1,
-                    $col,
-                    $smp_bases[$write_cycal],
-                    $snp_format->{ $smp_bases[$write_cycal]
-                            . $snps[$j]->{'color'} }
-                );
-                $write_cycal++;
-            }
-            $col++;
-            $j++;
-            next;
-        }
-        if ( $j == ( scalar @snps ) ) {
-            if ( $col > 58 ) {
-                $col = 1;
-                $row += ( $align_cnt + 1 );
-                $write_cycal = 0;
-                while ( $write_cycal < $align_cnt ) {
-                    $worksheet->write( $row + $write_cycal + 1,
-                        0, $seq_names[$write_cycal] );
-                    $write_cycal++;
-                }
-            }
-            if ( $indels[$i]->{'type'} eq 'I' ) {
-                $worksheet->write( $row, $col, ( $indels[$i]->{'position'} ),
-                    $pos_format );
-                $worksheet->write( $row, $col + 1, '-',
-                    ( $snp_format->{'-'} ) );
-                $worksheet->write(
-                    $row,
-                    $col + 2,
-                    (         $indels[$i]->{'position'}
-                            + $indels[$i]->{'length'} - 1
-                    ),
-                    $pos_format
-                );
-                my @occur_temps = split //, $indels[$i]->{'occured'};
-                unless ( scalar @occur_temps == $align_cnt ) {
-                    die "indel occur error\n";
-                }
-                my $k = 0;
-                while ( $k < $align_cnt ) {
-                    if ( $occur_temps[$k] eq '0' ) {
-                        my $temp = 'D' . $indels[$i]->{'length'};
-                        $worksheet->write( $row + $k + 1,
-                            $col + 1, $temp,
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                        $worksheet->write( $row + $k + 1,
-                            $col, '',
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                        $worksheet->write( $row + $k + 1,
-                            $col + 2, '',
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                    }
-                    elsif ( $occur_temps[$k] eq '1' ) {
-                        my $temp = 'D' . $indels[$i]->{'length'};
-                        $worksheet->write( $row + $k + 1,
-                            $col + 1, '',
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                        $worksheet->write( $row + $k + 1,
-                            $col, '',
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                        $worksheet->write( $row + $k + 1,
-                            $col + 2, '',
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                    }
-                    else {
-                        die "indel type error 218\n";
-                    }
-                    $k++;
-                }
-            }
-            elsif ( $indels[$i]->{'type'} eq 'D' ) {
-                $worksheet->write( $row, $col, ( $indels[$i]->{'position'} ),
-                    $pos_format );
-                $worksheet->write( $row, $col + 1, '-',
-                    ( $snp_format->{'-'} ) );
-                $worksheet->write(
-                    $row,
-                    $col + 2,
-                    (         $indels[$i]->{'position'}
-                            + $indels[$i]->{'length'} - 1
-                    ),
-                    $pos_format
-                );
-                my @occur_temps = split //, $indels[$i]->{'occured'};
-                unless ( scalar @occur_temps == $align_cnt ) {
-                    die "indel occur error\n";
-                }
-                my $k = 0;
-                while ( $k < $align_cnt ) {
-                    if ( $occur_temps[$k] eq '0' ) {
-                        my $temp = 'D' . $indels[$i]->{'length'};
-                        $worksheet->write( $row + $k + 1,
-                            $col + 1, $temp,
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                        $worksheet->write( $row + $k + 1,
-                            $col, '',
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                        $worksheet->write( $row + $k + 1,
-                            $col + 2, '',
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                    }
-                    elsif ( $occur_temps[$k] eq '1' ) {
-                        my $temp = 'D' . $indels[$i]->{'length'};
-                        $worksheet->write( $row + $k + 1,
-                            $col + 1, '',
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                        $worksheet->write( $row + $k + 1,
-                            $col, '',
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                        $worksheet->write( $row + $k + 1,
-                            $col + 2, '',
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                    }
-                    else {
-                        die "indel type error 241\n";
-                    }
-                    $k++;
-                }
-            }
-            elsif ( $indels[$i]->{'type'} eq 'C' ) {
-                $worksheet->write( $row, $col, ( $indels[$i]->{'position'} ),
-                    $pos_format );
-                $worksheet->write( $row, $col + 1, '-',
-                    ( $snp_format->{'-'} ) );
-                $worksheet->write(
-                    $row,
-                    $col + 2,
-                    (         $indels[$i]->{'position'}
-                            + $indels[$i]->{'length'} - 1
-                    ),
-                    $pos_format
-                );
-                my $temp = 'C' . $indels[$i]->{'length'};
-                $worksheet->write( $row + 1, $col + 1, $temp,
-                    $indel_format->{ $indels[$i]->{'color'} } );
-                $worksheet->write( $row + 1, $col, '',
-                    $indel_format->{ $indels[$i]->{'color'} } );
-                $worksheet->write( $row + 1, $col + 2, '',
-                    $indel_format->{ $indels[$i]->{'color'} } );
-            }
-            else {
-                die;
-            }
-            $i++;
-            $col += 3;
-            next;
-        }
-        if ( $indels[$i]->{'position'} < $snps[$j]->{'position'} ) {
-            if ( $col > 58 ) {
-                $col = 1;
-                $row += ( $align_cnt + 1 );
-                $write_cycal = 0;
-                while ( $write_cycal < $align_cnt ) {
-                    $worksheet->write( $row + $write_cycal + 1,
-                        0, $seq_names[$write_cycal] );
-                    $write_cycal++;
-                }
-            }
-            if ( $indels[$i]->{'type'} eq 'I' ) {
-                $worksheet->write( $row, $col, ( $indels[$i]->{'position'} ),
-                    $pos_format );
-                $worksheet->write( $row, $col + 1, '-',
-                    ( $snp_format->{'-'} ) );
-                $worksheet->write(
-                    $row,
-                    $col + 2,
-                    (         $indels[$i]->{'position'}
-                            + $indels[$i]->{'length'} - 1
-                    ),
-                    $pos_format
-                );
-                my @occur_temps = split //, $indels[$i]->{'occured'};
-                unless ( scalar @occur_temps == $align_cnt ) {
-                    die "indel occur error\n";
-                }
-                my $k = 0;
-                while ( $k < $align_cnt ) {
-                    if ( $occur_temps[$k] eq '0' ) {
-                        my $temp = 'D' . $indels[$i]->{'length'};
-                        $worksheet->write( $row + $k + 1,
-                            $col + 1, $temp,
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                        $worksheet->write( $row + $k + 1,
-                            $col, '',
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                        $worksheet->write( $row + $k + 1,
-                            $col + 2, '',
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                    }
-                    elsif ( $occur_temps[$k] eq '1' ) {
-                        my $temp = 'D' . $indels[$i]->{'length'};
-                        $worksheet->write( $row + $k + 1,
-                            $col + 1, '',
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                        $worksheet->write( $row + $k + 1,
-                            $col, '',
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                        $worksheet->write( $row + $k + 1,
-                            $col + 2, '',
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                    }
-                    else {
-                        die "indel type error 288\n";
-                    }
-                    $k++;
-                }
-            }
-            elsif ( $indels[$i]->{'type'} eq 'D' ) {
-                $worksheet->write( $row, $col, ( $indels[$i]->{'position'} ),
-                    $pos_format );
-                $worksheet->write( $row, $col + 1, '-',
-                    ( $snp_format->{'-'} ) );
-                $worksheet->write(
-                    $row,
-                    $col + 2,
-                    (         $indels[$i]->{'position'}
-                            + $indels[$i]->{'length'} - 1
-                    ),
-                    $pos_format
-                );
-                my @occur_temps = split //, $indels[$i]->{'occured'};
-                unless ( scalar @occur_temps == $align_cnt ) {
-                    die "indel occur error\n";
-                }
-                my $k = 0;
-                while ( $k < $align_cnt ) {
-                    if ( $occur_temps[$k] eq '1' ) {
-                        my $temp = 'D' . $indels[$i]->{'length'};
-                        $worksheet->write( $row + $k + 1,
-                            $col + 1, $temp,
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                        $worksheet->write( $row + $k + 1,
-                            $col, '',
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                        $worksheet->write( $row + $k + 1,
-                            $col + 2, '',
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                    }
-                    elsif ( $occur_temps[$k] eq '0' ) {
-                        my $temp = 'D' . $indels[$i]->{'length'};
-                        $worksheet->write( $row + $k + 1,
-                            $col + 1, '',
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                        $worksheet->write( $row + $k + 1,
-                            $col, '',
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                        $worksheet->write( $row + $k + 1,
-                            $col + 2, '',
-                            $indel_format->{ $indels[$i]->{'color'} } );
-                    }
-                    else {
-                        die "indel type error 311,$occur_temps[$k]\n";
-                    }
-                    $k++;
-                }
-            }
-            elsif ( $indels[$i]->{'type'} eq 'C' ) {
-                $worksheet->write( $row, $col, ( $indels[$i]->{'position'} ),
-                    $pos_format );
-                $worksheet->write( $row, $col + 1, '-',
-                    ( $snp_format->{'-'} ) );
-                $worksheet->write(
-                    $row,
-                    $col + 2,
-                    (         $indels[$i]->{'position'}
-                            + $indels[$i]->{'length'} - 1
-                    ),
-                    $pos_format
-                );
-                my $temp = 'C' . $indels[$i]->{'length'};
-                $worksheet->write( $row + 1, $col + 1, $temp,
-                    $indel_format->{ $indels[$i]->{'color'} } );
-                $worksheet->write( $row + 1, $col, '',
-                    $indel_format->{ $indels[$i]->{'color'} } );
-                $worksheet->write( $row + 1, $col + 2, '',
-                    $indel_format->{ $indels[$i]->{'color'} } );
-            }
-            else {
-                die;
-            }
-            $i++;
-            $col += 3;
-        }
-        elsif ( $indels[$i]->{'position'} > $snps[$j]->{'position'} ) {
-            if ( $col > 60 ) {
-                $col = 1;
-                $row += ( $align_cnt + 1 );
-                $write_cycal = 0;
-                while ( $write_cycal < $align_cnt ) {
-                    $worksheet->write( $row + $write_cycal + 1,
-                        0, $seq_names[$write_cycal] );
-                    $write_cycal++;
-                }
-            }
-            my @smp_bases = split //, $snps[$j]->{'base'};
-            $worksheet->write( $row, $col, ( $snps[$j]->{'position'} ),
-                $pos_format );
-            $write_cycal = 0;
-            while ( $write_cycal < $align_cnt ) {
-                $worksheet->write(
-                    $row + $write_cycal + 1,
-                    $col,
-                    $smp_bases[$write_cycal],
-                    $snp_format->{ $smp_bases[$write_cycal]
-                            . $snps[$j]->{'color'} }
-                );
-                $write_cycal++;
-            }
-            $col++;
-            $j++;
-        }
-        else {
-            die;
-        }
-    }
-    $col = 1;
-    $i += ( $align_cnt + 1 );
 }
 
-my $i = 0;
-while ( $i < $row ) {
-    $worksheet->set_row( $i, 50 );
-    $i += ( $align_cnt + 1 );
+# write names
+my @seq_names = keys %{$seq_of};
+for my $i ( 1 .. $section ) {
+    my $pos_row = $section_height * ( $i - 1 );
+
+    for my $j ( 1 .. scalar @seq_names ) {
+        $sheet->write( $pos_row + $j, 0, $seq_names[ $j - 1 ], $name_format );
+
+    }
 }
-print "all done\n";
-exit(0);
+
+# format column
+my $max_name_length = List::Util::max( map {length} @seq_names );
+$sheet->set_column( 0, 0, $max_name_length + 2 );
+$sheet->set_column( 1, $opt->{wrap} + 3, 1.6 );
+
+$workbook->close;
+
+exit;
+
+__END__
