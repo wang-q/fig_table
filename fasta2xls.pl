@@ -476,41 +476,51 @@ my $pos_format = $workbook->add_format(
 my $snp_format   = {};
 my $indel_format = {};
 
+my $color_loop;
 {    # background
     my $bg_of = {};
 
-    # 14
+    # 16
     my @colors = (
-        26,    # Ivory
-        27,    # Lite Turquoise
-        43,    # Light Yellow
-        42,    # Light Green
-        51,    # Gold
-        50,    # Lime
         22,    # Gray-25%, silver
+        43,    # Light Yellow       0b001
+        42,    # Light Green        0b010
+        27,    # Lite Turquoise
+        44,    # Pale Blue          0b100
+        46,    # Lavender
+        47,    # Tan
         24,    # Periwinkle
+        49,    # Aqua
+        51,    # Gold
+        45,    # Rose
+        52,    # Light Orange
+        26,    # Ivory
+        29,    # Coral
         31,    # Ice Blue
-        30,    # Ocean Blue
-        46,    # lightpurple
-        48,    # Light Blue
-        54,    # Blue-Gray
-        62,    # Indigo
+
+        #        50,    # Lime
+        #        48,    # Light Blue
+        #        41,    # Light Turquoise, again
+        #        30,    # Ocean Blue
+        #        54,    # Blue-Gray
+        #        62,    # Indigo
     );
+    $color_loop = scalar @colors;
 
     for my $i ( 0 .. $#colors ) {
         $bg_of->{$i}{bg_color} = $colors[$i];
 
     }
-    $bg_of->{unknown}{bg_color} = 9;    # white
+    $bg_of->{unknown}{bg_color} = 9;    # White
 
     # snp base
     my $snp_fg_of = {
-        A   => { color => 'green', },
-        C   => { color => 'blue', },
-        G   => { color => 'pink', },
-        T   => { color => 'red', },
-        N   => { color => 'black' },
-        '-' => { color => 'black' },
+        A   => { color => 58, },        # Dark Green
+        C   => { color => 18, },        # Dark Blue
+        G   => { color => 28, },        # Dark Purple
+        T   => { color => 16, },        # Dark Red
+        N   => { color => 8 },          # Black
+        '-' => { color => 8 },          # Black
     };
 
     for my $fg ( keys %{$snp_fg_of} ) {
@@ -577,7 +587,7 @@ for my $pos ( sort { $a <=> $b } keys %variations ) {
                 my $bg_idx
                     = $var->{snp_occured} eq "unknown"
                     ? "unknown"
-                    : oct( '0b' . $var->{snp_occured} ) % 14;
+                    : oct( '0b' . $var->{snp_occured} ) % $color_loop;
                 my $base_color = $base . $bg_idx;
                 $sheet->write( $pos_row + $i, $col_cursor, $base, $snp_format->{$base_color} );
             }
@@ -614,7 +624,7 @@ for my $pos ( sort { $a <=> $b } keys %variations ) {
 
         my $bg_idx = 'unknown';
         if ( $var->{indel_occured} ne 'unknown' ) {
-            $bg_idx = oct( '0b' . $var->{indel_occured} ) % 14;
+            $bg_idx = oct( '0b' . $var->{indel_occured} ) % $color_loop;
         }
 
         for my $i ( 1 .. $seq_count ) {
