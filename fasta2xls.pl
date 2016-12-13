@@ -493,7 +493,7 @@ my $indel_format = {};
         30,    # Ocean Blue
         46,    # lightpurple
         48,    # Light Blue
-        54,    # Blue-Gray
+        31,    # Light Pink
         62,    # Indigo
     );
 
