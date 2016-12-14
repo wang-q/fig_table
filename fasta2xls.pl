@@ -37,11 +37,11 @@ EOF
     $description,
     [ 'help|h', 'display this message' ],
     [],
-    [ "length|l=i",  "the threshold of alignment length", { default => 500 } ],
-    [ 'wrap=i',      'wrap length',                       { default => 50 }, ],
-    [ 'spacing=i',   'wrapped line spacing',              { default => 1 }, ],
     [ 'outfile|o=s', 'output filename', ],
-    [ 'outgroup',    'alignments have an outgroup', ],
+    [ "length|l=i", "the threshold of alignment length", { default => 1 } ],
+    [ 'wrap=i',     'wrap length',                       { default => 50 }, ],
+    [ 'spacing=i',  'wrapped line spacing',              { default => 1 }, ],
+    [ 'outgroup',   'alignments have an outgroup', ],
     { show_defaults => 1, }
     );
 
@@ -438,14 +438,14 @@ sub paint_variations {
         my $pos_row = $section_height * ( $i - 1 );
 
         for my $j ( 1 .. scalar @{$name_refs} ) {
-            $worksheet->write( $pos_row + $j, 0, $name_refs->[ $j - 1 ], $format_of->{name} );
+            $sheet->write( $pos_row + $j, 0, $name_refs->[ $j - 1 ], $format_of->{name} );
         }
     }
 
     # format column
     my $max_name_length = List::Util::max( map {length} @{$name_refs} );
-    $worksheet->set_column( 0, 0, $max_name_length + 1 );
-    $worksheet->set_column( 1, $opt->{wrap} + 3, 1.6 );
+    $sheet->set_column( 0, 0, $max_name_length + 1 );
+    $sheet->set_column( 1, $opt->{wrap} + 3, 1.6 );
 
     $section_cur++;
     return $section_cur;
