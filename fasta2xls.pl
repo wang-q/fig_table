@@ -66,32 +66,32 @@ if ( !exists $opt->{outfile} ) {
 #----------------------------------------------------------#
 # Excel format
 #----------------------------------------------------------#
-# Create workbook and worksheet objects
-my $workbook = Excel::Writer::XLSX->new( $opt->{outfile} );
+sub create_formats {
 
-#@type Excel::Writer::XLSX::Worksheet
-my $worksheet = $workbook->add_worksheet;
+    #@type Excel::Writer::XLSX
+    my $workbook = shift;
 
-# species name
-my $name_format = $workbook->add_format(
-    font => 'Courier New',
-    size => 10,
-);
+    my $format_of = {};
 
-# variation position
-my $pos_format = $workbook->add_format(
-    font     => 'Courier New',
-    size     => 8,
-    align    => 'center',
-    valign   => 'vcenter',
-    rotation => 90,
-);
+    # species name
+    $format_of->{name} = $workbook->add_format(
+        font => 'Courier New',
+        size => 10,
+    );
 
-my $snp_format   = {};
-my $indel_format = {};
+    # variation position
+    $format_of->{pos} = $workbook->add_format(
+        font     => 'Courier New',
+        size     => 8,
+        align    => 'center',
+        valign   => 'vcenter',
+        rotation => 90,
+    );
 
-my $color_loop;
-{    # background
+    $format_of->{snp}   = {};
+    $format_of->{indel} = {};
+
+    # background
     my $bg_of = {};
 
     # 16
@@ -119,7 +119,7 @@ my $color_loop;
         #        54,    # Blue-Gray
         #        62,    # Indigo
     );
-    $color_loop = scalar @colors;
+    my $loop = scalar @colors;
 
     for my $i ( 0 .. $#colors ) {
         $bg_of->{$i}{bg_color} = $colors[$i];
@@ -139,7 +139,7 @@ my $color_loop;
 
     for my $fg ( keys %{$snp_fg_of} ) {
         for my $bg ( keys %{$bg_of} ) {
-            $snp_format->{"$fg$bg"} = $workbook->add_format(
+            $format_of->{snp}{"$fg$bg"} = $workbook->add_format(
                 font   => 'Courier New',
                 size   => 10,
                 align  => 'center',
@@ -149,7 +149,7 @@ my $color_loop;
             );
         }
     }
-    $snp_format->{'-'} = $workbook->add_format(
+    $format_of->{snp}{'-'} = $workbook->add_format(
         font   => 'Courier New',
         size   => 10,
         align  => 'center',
@@ -157,7 +157,7 @@ my $color_loop;
     );
 
     for my $bg ( keys %{$bg_of} ) {
-        $indel_format->{$bg} = $workbook->add_format(
+        $format_of->{indel}->{$bg} = $workbook->add_format(
             font   => 'Courier New',
             size   => 10,
             bold   => 1,
@@ -166,12 +166,24 @@ my $color_loop;
             %{ $bg_of->{$bg} },
         );
     }
+
+    return ( $format_of, $loop );
 }
+
+# Create workbook and worksheet objects
+#@type Excel::Writer::XLSX
+my $workbook = Excel::Writer::XLSX->new( $opt->{outfile} );
+
+#@type Excel::Writer::XLSX::Worksheet
+my $worksheet = $workbook->add_worksheet;
+
+my ( $format_of, $color_loop ) = create_formats($workbook);
 
 #----------------------------------------------------------#
 # Read every blocks
 #----------------------------------------------------------#
 
+#@type IO::Zlib
 my $in_fh = IO::Zlib->new( $ARGV[0], "rb" );
 
 my $section = 1;
@@ -292,31 +304,32 @@ sub paint_variations {
         if ( $var->{var_type} eq 'snp' ) {
 
             # write position
-            $sheet->write( $pos_row, $col_cursor, $var->{snp_pos}, $pos_format );
+            $sheet->write( $pos_row, $col_cursor, $var->{snp_pos}, $format_of->{pos} );
 
             for my $i ( 1 .. $seq_count ) {
                 my $base = substr $var->{all_bases},   $i - 1, 1;
                 my $occ  = substr $var->{snp_occured}, $i - 1, 1;
 
                 if ( $occ eq "1" ) {
-
                     my $bg_idx
                         = $var->{snp_occured} eq "unknown"
                         ? "unknown"
                         : oct( '0b' . $var->{snp_occured} ) % $color_loop;
                     my $base_color = $base . $bg_idx;
-                    $sheet->write( $pos_row + $i, $col_cursor, $base, $snp_format->{$base_color} );
+                    $sheet->write( $pos_row + $i,
+                        $col_cursor, $base, $format_of->{snp}{$base_color} );
                 }
                 else {
                     my $base_color = $base . "unknown";
-                    $sheet->write( $pos_row + $i, $col_cursor, $base, $snp_format->{$base_color} );
+                    $sheet->write( $pos_row + $i,
+                        $col_cursor, $base, $format_of->{snp}{$base_color} );
                 }
             }
 
             if ( $opt->{outgroup} ) {
                 my $base_color = $var->{outgroup_base} . "unknown";
                 $sheet->write( $pos_row + $seq_count + 1,
-                    $col_cursor, $var->{outgroup_base}, $snp_format->{$base_color} );
+                    $col_cursor, $var->{outgroup_base}, $format_of->{snp}{$base_color} );
             }
 
             # increase column cursor
@@ -359,19 +372,22 @@ sub paint_variations {
                     if ( $col_taken == 1 ) {
 
                         # write position
-                        $sheet->write( $pos_row, $col_cursor, $var->{indel_start}, $pos_format );
+                        $sheet->write( $pos_row, $col_cursor, $var->{indel_start},
+                            $format_of->{pos} );
 
                         # write in indel occured lineage
                         $sheet->write( $pos_row + $i,
-                            $col_cursor, $indel_string, $indel_format->{$bg_idx} );
+                            $col_cursor, $indel_string, $format_of->{indel}{$bg_idx} );
                     }
                     elsif ( $col_taken == 2 ) {
 
                         # write indel_start position
-                        $sheet->write( $pos_row, $col_cursor, $var->{indel_start}, $pos_format );
+                        $sheet->write( $pos_row, $col_cursor, $var->{indel_start},
+                            $format_of->{pos} );
 
                         # write indel_end position
-                        $sheet->write( $pos_row, $col_cursor + 1, $var->{indel_end}, $pos_format );
+                        $sheet->write( $pos_row, $col_cursor + 1,
+                            $var->{indel_end}, $format_of->{pos} );
 
                         # merge two indel position
                         $sheet->merge_range(
@@ -379,19 +395,21 @@ sub paint_variations {
                             $col_cursor,
                             $pos_row + $i,
                             $col_cursor + 1,
-                            $indel_string, $indel_format->{$bg_idx},
+                            $indel_string, $format_of->{indel}{$bg_idx},
                         );
                     }
                     else {
 
                         # write indel_start position
-                        $sheet->write( $pos_row, $col_cursor, $var->{indel_start}, $pos_format );
+                        $sheet->write( $pos_row, $col_cursor, $var->{indel_start},
+                            $format_of->{pos} );
 
                         # write middle sign
-                        $sheet->write( $pos_row, $col_cursor + 1, '|', $pos_format );
+                        $sheet->write( $pos_row, $col_cursor + 1, '|', $format_of->{pos} );
 
                         # write indel_end position
-                        $sheet->write( $pos_row, $col_cursor + 2, $var->{indel_end}, $pos_format );
+                        $sheet->write( $pos_row, $col_cursor + 2,
+                            $var->{indel_end}, $format_of->{pos} );
 
                         # merge two indel position
                         $sheet->merge_range(
@@ -399,7 +417,7 @@ sub paint_variations {
                             $col_cursor,
                             $pos_row + $i,
                             $col_cursor + 2,
-                            $indel_string, $indel_format->{$bg_idx},
+                            $indel_string, $format_of->{indel}{$bg_idx},
                         );
                     }
                 }
@@ -420,7 +438,7 @@ sub paint_variations {
         my $pos_row = $section_height * ( $i - 1 );
 
         for my $j ( 1 .. scalar @{$name_refs} ) {
-            $worksheet->write( $pos_row + $j, 0, $name_refs->[ $j - 1 ], $name_format );
+            $worksheet->write( $pos_row + $j, 0, $name_refs->[ $j - 1 ], $format_of->{name} );
         }
     }
 
